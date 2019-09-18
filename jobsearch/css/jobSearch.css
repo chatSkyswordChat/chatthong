@@ -1,0 +1,57 @@
+.container-top{ margin-top: 120px;}
+/*แบบปกติ*/
+.bg-border-white{ background: #fff; border: 1px solid #bfbfbf; width: 100%;}
+
+/*แบบอ่านแล้ว*/
+.read-border-white{ background: #ebebeb; border: 1px solid #bfbfbf; width: 100%;}
+
+/*แบบมี feature*/
+.border-hilight{ background: #f7f3f2; border: 1px solid #bfbfbf; width: 100%; border-right: 5px solid #412e6e;}
+
+.margin-0{ margin-top: 0;}
+.margin-15{ margin: 0 -15px;}
+.padding-15{ padding: 15px 0;}
+button{ cursor: pointer;}
+
+.orchid-form-control{ height: 34px;}
+.orchid-search{ cursor: pointer; background: #412e6e; border: 1px solid #412e6e;}
+.orchid-search:hover{ background: #b9467d; border: 1px solid #b9467d;}
+.input-group-text{ background: transparent; border: 0; color: #fff;}
+
+.logo-company{ border: 1px solid #bfbfbf; text-align: center; background: #fff;}
+.logo-company a{ display: block;}
+.logo-company img{ object-fit: scale-down; height: 150px; padding: 5px;}
+
+@media (max-width: 480px){
+	.logo-company img{ height: 100px;}
+}
+
+.click-all{ display: block; overflow: hidden; position: relative;}
+.orchid-position{ display: block; text-decoration: none !important; color: #412e6e;}
+.orchid-position:hover{ color: #b9467d;}
+.feature{ background: #412e6e; border-radius: 4px; padding: 3px 5px; color: #fff;}
+
+.work-right{ text-align: right;}
+.company-work img{ max-width: 25px;}
+
+@media (max-width: 767px){
+	.work-right{ text-align: left;}
+}
+
+.apply{ text-align: right;}
+.apply ul{ margin: 0 -10px; padding: 0; list-style: none; display: inline-block; position: absolute; right: 15px; bottom: 0;}
+.apply ul li{ float: left; padding: 0 10px;}
+.apply ul li button{ border-radius: 4px; padding: 5px 10px;}
+.apply ul li button.oc-save{ background: #fff; border: 1px solid #bfbfbf; color: #555;}
+.apply ul li button.oc-applying{ background: #412e6e; border: 1px solid #412e6e; color: #fff;}
+.apply ul li button:hover{ background: #b9467d; color: #fff; border: 1px solid #b9467d;}
+
+@media (max-width: 767px){
+	.apply{ text-align: left;}
+	.apply ul{ position: relative; right: 0; bottom: 0;}
+}
+
+.oc-breadcrumb{ background: transparent; padding: 0; margin-bottom: 20px;}
+.pagination{ display: inline-flex;}
+.page-link{ color: #412e6e;}
+.page-link:hover, .page-link.active{ background: #412e6e; color: #fff;}

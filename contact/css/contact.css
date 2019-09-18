@@ -1,0 +1,53 @@
+.bg-contact-main{ background: url(../images/contact.jpg) no-repeat top center; background-size: cover; 
+	min-height: 576px; margin-top: 70px;}
+.head-contact h1{ margin-top: 300px; font-size: 8rem; font-weight: bold; text-decoration: underline; color: #b9467d;}
+
+.box-contact{ margin: 40px 0;}
+.contact-sub-text{ text-align: center;}
+.contact-sub-text h2{ color: #412e6e; font-size: 4rem; margin-bottom: 10px;}
+.contact-sub-text h6{ font-size: 1.6rem;}
+
+.contact-align-text{ text-align: center; margin-top: 40px;}
+.contact-align-text h6{ font-size: 1.6rem;}
+.contact-align-text span{ color: #b9467d; font-size: 1.8rem;}
+
+.container-contact{ width: 640px; margin: 0 auto;}
+.box-form-contact{ margin-bottom: 20px;}
+.bg-form-contact{ background: #412e6e; padding: 15px;}
+.head-form{ text-align: center; margin-bottom: 40px;}
+.head-form h2{ font-size: 2.5rem; color: #b9467d; margin-bottom: 10px;}
+.head-form h6{ font-size: 1.6rem; color: #fff;}
+
+.sub-form{ margin-bottom: 20px;}
+label.label-contact{ font-size: 1.6rem; color: #fff; text-transform: uppercase;}
+.form-control-contact{ padding: 6px 12px; font-size: 1.6rem; color: #555; height: 34px;}
+textarea.form-control-contact{ height: 100px;}
+
+.form-attach{ margin-bottom: 6px;}
+.form-attach h6{ font-size: 1.6rem; color: #fff; text-transform: uppercase;}
+label.label-attach{ padding: 6px; background: #b9467d; display: table; color: #fff; font-weight: 100; border-radius: 4px; cursor: pointer; margin-bottom: 0; width: 100%; 
+	text-align: center; height: 34px; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -ms-transition: all 0.3s ease-in;}
+label.label-attach:hover{ background: #fff; color: #412e6e;}
+label.label-attach input[type="file"] { display: none;}
+
+.captcha{ background: #b9467d; text-align: center; height: 34px; color: #fff; padding: 6px 12px; border-radius: 4px; font-size: 1.6rem;}
+
+.push-submit{ text-align: center;}
+.submit{ background: #fff; color: #412e6e; border: 1px solid #412e6e; border-radius: 4px; padding: 6px 12px; cursor: pointer;
+	font-size: 1.6rem; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; 
+	-moz-transition: all 0.3s ease-in; -ms-transition: all 0.3s ease-in;}
+.submit:hover{ background: #b9467d; color: #fff; -webkit-transform: scale(1.05); -ms-transform: scale(1.05); transform: scale(1.05);}
+
+@media (max-width: 1199px){
+	.head-contact h1{ font-size: 6rem;}
+}
+
+@media (max-width: 767px){
+	.bg-contact-main{ background-position: 70% 0; min-height: 300px;}
+	.head-contact h1{ margin-top: 150px; font-size: 4.5rem;}
+}
+
+@media (max-width: 576px){
+	.head-contact h1{ font-size: 4rem;}
+	.contact-sub-text h6, .contact-align-text h6, .head-form h6, label.label-contact, .form-control-contact, .form-attach h6, .captcha{ font-size: 1.4rem;}
+}

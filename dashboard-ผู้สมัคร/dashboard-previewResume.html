@@ -1,0 +1,1303 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>dashboard Preview Resume</title>
+
+<link rel="stylesheet" type="text/css" href="../asset/css/bootstrap-reboot.min.css">
+<link rel="stylesheet" type="text/css" href="../asset/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../asset/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="../asset/css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="../asset/css/main.css">
+<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+<link rel="stylesheet" type="text/css" href="css/prePrint.css">
+</head>
+
+<body>
+	<!--แถบเมนู ล็อคอิน ภาษา-->
+	<header class="bg-menu fixed-top">
+		<section class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<!-- menu vertical -->
+					<nav id="menu" class="left">
+						<ul>
+							<li class=" lang-mobile">
+								<a href="#"><i class="fas fa-globe-asia"></i>Language <i class="fa fa-caret-down"></i></a>
+								<ul>
+									<li><a href="#"><img src="../asset/images/eng-flag.png" class="flag-lang"> English</a></li>
+									<li><a href="#"><img src="../asset/images/thai-flag.png" class="flag-lang"> Thailand</a></li>
+								</ul>
+							</li>
+							<li><a href="../index.html" class="active"><i class="fa fa-home"></i>Home</a></li>
+							<li><a href="../about-us/about-us.html"><i class="far fa-address-book"></i>About us</a></li>
+							<li>
+								<a href="../service/service-main.html"><i class="fa fa-laptop"></i>Services</a>
+							</li>
+							<li><a href="https://rms.orchidjobs.com/th/resume/resume_select_lang"><i class="fas fa-edit"></i>Create Resume</a></li>
+							<li><a href="#"><i class="fas fa-search"></i>Jobs Search</a></li>
+							<li><a href="../blog/blog.html"><i class="fas fa-th-large"></i>Blog</a></li>
+							<li><a href="../contact/contact.html"><i class="fa fa-phone"></i>Contact us</a></li>
+						</ul>
+						<!--ปุ่มฉอมเบอเกอ-->
+						<a id="showmenu"><i class="fa fa-bars"></i></a>
+					</nav>
+					<!-- /menu vertical -->
+
+					<!--โลโก้ orchid-->
+					<div class="logo-orchid">
+						<a href="../index.html" target="_blank"><img src="../asset/images/logo.png"></a>
+					</div>
+					<!--end โลโก้ orchid-->
+
+					<!--ล็อคอิน ภาษา-->
+					<div class="login-lang">
+						<!--ล็อคอิน-->
+						<div class="login-orchid">
+							<ul class="nav">
+								<li class="resume-respon swal"><a href="https://rms.orchidjobs.com/th/resume/resume_select_lang" class="active">Create Resume</a></li>
+								<li class="button-dropdown"><a href="javascript:void(0)" class="dropdown-toggle"><i class="far fa-edit"></i> Register</a>
+									<ul class="dropdown-menu dropdown-menu-left">
+										<li><a href="#">ผู้ประกอบการลงทะเบียน</a></li>
+										<li><a href="#">ผู้สมัครงานลงทะเบียน</a></li>
+										<li><a href="#">เอเจนซี่ลงทะเบียน</a></li>
+									</ul>
+								</li>
+								<li class="button-dropdown border-right-0"><a href="javascript:void(0)" class="dropdown-toggle"><i class="fas fa-lock"></i> เข้าสู่ระบบ</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">ผู้ประกอบการเข้าสู่ระบบ</a></li>
+										<li><a href="#">ผู้สมัครงานเข้าสู่ระบบ</a></li>
+										<li><a href="#">เอเจนซี่เข้าสู่ระบบ</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<!--end ล็อคอิน-->
+
+						<!--ภาษา-->
+						<div id="dd" class="wrapper-dropdown-5" tabindex="1"><img src="../asset/images/eng-flag.png" class="flag-lang"> English
+							<ul class="dropdown">
+								<li><a href="#"><img src="../asset/images/eng-flag.png" class="flag-lang"> English</a></li>
+								<li><a href="#"><img src="../asset/images/thai-flag.png" class="flag-lang"> Thailand</a></li>
+							</ul>
+						</div>
+						<!--end ภาษา-->
+					</div>
+					<!--end ล็อคอิน ภาษา-->
+				</div>
+			</div>
+		</section>
+	</header>
+	<!--end แถบเมนู ล็อคอิน ภาษา-->
+
+	<!--dashboard-->
+	<section class="container container-banner container-top container-height margin-bottom-40">
+		<article class="row">
+			<div class="col-12 font-size-18 bread-print">
+				<div class="row">
+					<!--breadcrumb-->
+					<div class="col-8">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Home</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Library</li>
+							</ol>
+						</nav>
+					</div>
+					<!--end breadcrumb-->
+					
+					<div class="col-4 print">
+						<button type="button" onclick="window.print();return false;"><i class="fas fa-print"></i> พิมพ์</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-12 hiddenPrint">
+				<div class="row alignItem">
+					<div class="col-6 margin-bottom-20">
+						<div class="switchToggle">
+							<input type="checkbox" id="switch">
+							<label for="switch">Toggle</label>
+						</div>
+					</div>
+					
+					<div class="col-6 margin-bottom-20 font-size-16 nameUpdate">
+						<p><b>Admin update :</b> 18 dec 2020</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-12 printLogo">
+				<figure><img src="images/logo.png"></figure>
+			</div>
+			
+			<!--ข้อมูลฝั่งซ้าย-->
+			<div class="col-xl-4 col-lg-5 col-md-12 col-paddingRight colPrint-4">
+				<div class="bg-left" id="pre-left">
+					<!--box รูป-->
+					<div class="col-12 margin-bottom-10">
+						<div class="row">
+							<!--รูป-->
+							<div class="col-12">
+								<figure class="hexa">
+									<div class="hex1">
+										<div class="hex2">
+											<img src="images/1560832016122.jpg">
+										</div>
+									</div>
+								</figure>
+							</div>
+							<!--end รูป-->
+						
+							<!--ชื่อ ตำแหน่ง-->
+							<div class="col-12 text-align-center">
+								<div class="row">
+									<div class="col-12">
+										<figcaption>
+											<p class="font-size-28 color-white">Chatthong Hongwisuthikul</p>
+										</figcaption>
+									</div>
+
+									<div class="col-12">
+										<figcaption>
+											<p class="font-size-22 color-pink">Web Designer</p>
+										</figcaption>
+									</div>
+								</div>
+							</div>
+							<!--end ชื่อ ตำแหน่ง-->
+						</div>
+					</div>	
+					<!--end box รูป-->
+						
+					<!--หัวข้อ profile-->
+					<div class="col-12 color-white margin-bottom-10">
+						<div class="row">
+							<!--profile-->
+							<div class="col-12">
+								<div class="hr-flex">
+									<figure class="icon-pre">
+										<img src="images/icon-preview-resume-1.png">
+									</figure>
+ 										
+ 									<div class="head-pre">
+ 										<p class="font-size-24"><b>Profile</b></p>
+ 									</div>
+ 									
+  									<div class="hr-line white"></div>
+								</div>
+							</div>
+							<!--end profile-->
+							
+							<!--รายละเอียด profile-->
+							<div class="col-12 font-size-16">
+								<div class="row">
+									<div class="col-12 margin-bottom420">
+										<div class="row">
+											<div class="col-5 colPrint-6 pre-left">
+												<p><b>เพศ :</b></p>
+											</div>
+											
+											<div class="col-7 colPrint-6 pad-left">
+												<p>ชาย</p>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-12 margin-bottom420">
+										<div class="row">
+											<div class="col-5 colPrint-6 pre-left">
+												<p><b>วันเกิด :</b></p>
+											</div>
+											
+											<div class="col-7 colPrint-6 pad-left">
+												<p>30 มกราคม 1987</p>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-12 margin-bottom420">
+										<div class="row">
+											<div class="col-5 colPrint-6 pre-left">
+												<p><b>ส่วนสูง / น้ำหนัก :</b></p>
+											</div>
+											
+											<div class="col-7 colPrint-6 pad-left">
+												<p>165 ซม. / 56 กก.</p>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-12 margin-bottom420">
+										<div class="row">
+											<div class="col-5 colPrint-6 pre-left">
+												<p><b>สัญชาติ :</b></p>
+											</div>
+											
+											<div class="col-7 colPrint-6 pad-left">
+												<p>ไทย</p>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-12 margin-bottom420">
+										<div class="row">
+											<div class="col-5 colPrint-6 pre-left">
+												<p><b>ศาสนา :</b></p>
+											</div>
+											
+											<div class="col-7 colPrint-6 pad-left">
+												<p>พุทธ</p>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-12 margin-bottom420">
+										<div class="row">
+											<div class="col-5 colPrint-6 pre-left">
+												<p><b>สถานภาพสมรส :</b></p>
+											</div>
+											
+											<div class="col-7 colPrint-6 pad-left">
+												<p>โสด</p>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-12 margin-bottom420">
+										<div class="row">
+											<div class="col-5 colPrint-6 pre-left">
+												<p><b>สถานภาพทางทหาร :</b></p>
+											</div>
+											
+											<div class="col-7 colPrint-6 pad-left">
+												<p>ได้รับการยกเว้น</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--end รายละเอียด profile-->
+						</div>
+					</div>
+					<!--end หัวข้อ profile-->
+					
+					<!--หัวข้อ contact me-->
+					<div class="col-12 color-white margin-bottom-10">
+						<div class="row">
+							<!--contact me-->
+							<div class="col-12">
+								<div class="hr-flex">
+									<figure class="icon-pre">
+										<img src="images/icon-preview-resume-2.png">
+									</figure>
+ 										
+ 									<div class="head-pre">
+ 										<p class="font-size-24"><b>Contact Me</b></p>
+ 									</div>
+ 									
+  									<div class="hr-line white"></div>
+								</div>
+							</div>
+							<!--end contact me-->
+							
+							<!--รายละเอียด contact me-->
+							<div class="col-12 font-size-16">
+								<div class="row">
+									<div class="col-12 margin-bottom420">
+										<div class="row">
+											<div class="col-5 colPrint-6 pre-left">
+												<p><b>เลขบัตรประชาชน :</b></p>
+											</div>
+											
+											<div class="col-7 colPrint-6 pad-left">
+												<p>99999999999</p>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-12 margin-bottom420">
+										<div class="row">
+											<div class="col-5 colPrint-6 pre-left">
+												<p><b>ที่อยู่ปัจจุบัน :</b></p>
+											</div>
+											
+											<div class="col-7 colPrint-6 pad-left">
+												<p>448 ถ.ลาดพร้าว 107 แขวงคลองถม อำเภอบึงกุ่ม กทม.10310</p>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-12 margin-bottom420">
+										<div class="row">
+											<div class="col-5 colPrint-6 pre-left">
+												<p><b>เบอร์ติดต่อ :</b></p>
+											</div>
+											
+											<div class="col-7 colPrint-6 pad-left">
+												<p>08-9762-0645</p>
+											</div>
+										</div>
+									</div>
+									
+<!--
+									<div class="col-12 margin-bottom420">
+										<div class="row">
+											<div class="col-5 col-cus-12 pre-left">
+												<p><b>อีเมล :</b></p>
+											</div>
+											
+											<div class="col-7 col-cus-12 pad-left">
+												<p>dynastystrike_chatthong@gmail.com</p>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-12 margin-bottom420">
+										<div class="row">
+											<div class="col-5 col-cus-12 pre-left">
+												<p><b>ไลน์ :</b></p>
+											</div>
+											
+											<div class="col-7 col-cus-12 pad-left">
+												<p>dynastystrike@gmail.com</p>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-12 margin-bottom420">
+										<div class="row">
+											<div class="col-5 col-cus-12 pre-left">
+												<p><b>เฟสบุ๊ค :</b></p>
+											</div>
+											
+											<div class="col-7 col-cus-12 pad-left">
+												<p>dynastystrike@gmail.com</p>
+											</div>
+										</div>
+									</div>
+-->
+									
+									<div class="col-12 margin-bottom-10 margin-top-10">
+										<div class="line-line"></div>
+									</div>
+									
+									<div class="col-12 margin-bottom420">
+										<div class="row">
+											<div class="col-12">
+												<p><b>อีเมล :</b></p>
+											</div>
+											
+											<div class="col-12">
+												<p>dynastystrike_chatthong@gmail.com</p>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-12 margin-bottom420">
+										<div class="row">
+											<div class="col-12">
+												<p><b>ไลน์ :</b></p>
+											</div>
+											
+											<div class="col-12">
+												<p>dynastystrike@gmail.com</p>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-12 margin-bottom420">
+										<div class="row">
+											<div class="col-12">
+												<p><b>เฟสบุ๊ค :</b></p>
+											</div>
+											
+											<div class="col-12">
+												<p>dynastystrike@gmail.com</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--end รายละเอียด contact me-->
+						</div>
+					</div>
+					<!--end หัวข้อ contact me-->
+					
+					<!--หัวข้อ อื่นๆ-->
+					<div class="col-12 color-white margin-bottom-10">
+						<div class="row">
+							<!--อื่นๆ-->
+							<div class="col-12">
+								<div class="hr-flex">
+									<figure class="icon-pre">
+										<img src="images/icon-preview-resume-7.png">
+									</figure>
+ 										
+ 									<div class="head-pre">
+ 										<p class="font-size-24"><b>Other</b></p>
+ 									</div>
+ 									
+  									<div class="hr-line white"></div>
+								</div>
+							</div>
+							<!--end อื่นๆ-->
+							
+							<!--รายละเอียด อื่นๆ-->
+							<div class="col-12 font-size-16">
+								<div class="row">
+									<div class="col-12 margin-bottom-20">
+										<div class="row">
+											<div class="col-12 color-pink">
+												<p><b>ความสามารถพิเศษ :</b></p>
+											</div>
+											
+											<div class="col-12 attachments-ellipsis">
+												<p>เป็นคำที่ใช้เรียกประโยคข้อความจำลองชุดหนึ่งที่ไม่มีความหมายอะไรเลย ซึ่งเมื่ออยู่บน Layout แล้วจะช่วยไม่แย่งความสนใจของคนดูไปจากภาพหลัก ด้วยเหตุนี้จึงนิยมใช้ Lorem Ipsum มาเป็นข้อความจำลองในการจัด Layout เพื่อนำเสนอลูกค้า</p>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-12">
+										<div class="row">
+											<div class="col-12 color-pink">
+												<p><b>โครงการ ผลงาน เกียรติประวัติ และประสบการณ์อื่น ๆ :</b></p>
+											</div>
+											
+											<div class="col-12 attachments-ellipsis">
+												<p>เป็นคำที่ใช้เรียกประโยคข้อความจำลองชุดหนึ่งที่ไม่มีความหมายอะไรเลย ซึ่งเมื่ออยู่บน Layout แล้วจะช่วยไม่แย่งความสนใจของคนดูไปจากภาพหลัก ด้วยเหตุนี้จึงนิยมใช้ Lorem Ipsum มาเป็นข้อความจำลองในการจัด Layout เพื่อนำเสนอลูกค้า</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--end รายละเอียด อื่นๆ-->
+						</div>
+					</div>
+					<!--end หัวข้อ อื่นๆ-->
+					
+					<!--หัวข้อ บุคคลอ้างอิง-->
+					<div class="col-12 color-white margin-bottom-10">
+						<div class="row">
+							<!--บุคคลอ้างอิง-->
+							<div class="col-12">
+								<div class="hr-flex">
+									<figure class="icon-pre">
+										<img src="images/icon-preview-resume-6.png">
+									</figure>
+ 										
+ 									<div class="head-pre">
+ 										<p class="font-size-24"><b>บุคคลอ้างอิง</b></p>
+ 									</div>
+ 									
+  									<div class="hr-line white"></div>
+								</div>
+							</div>
+							<!--end บุคคลอ้างอิง-->
+							
+											
+							<div class="col-12 margin-bottom-20 font-size-16">
+								<p>เกรียงไกร กลั่นแก้ว</p>
+							</div>
+						</div>
+					</div>
+					<!--end หัวข้อ บุคคลอ้างอิง-->
+				</div>
+			</div>
+			<!--end ข้อมูลฝั่งซ้าย-->
+			
+			<!--ข้อมูลฝั่งขวา-->
+			<div class="col-xl-8 col-lg-7 col-md-12 col-paddingLeft colPrint-8 colText">
+				<div class="bg-right" id="pre-right">
+					<!--box ประวัติการทำงาน-->
+					<div class="col-12">
+						<div class="row">
+							<!--head ประวัติการทำงาน / ฝึกงาน-->
+							<div class="col-12">
+								<div class="hr-flex">
+									<figure class="icon-pre">
+										<img src="images/icon-preview-resume-3.png">
+									</figure>
+
+									<div class="head-pre">
+										<p class="font-size-24"><b>ประวัติการทำงาน / ฝึกงาน</b></p>
+									</div>
+
+									<div class="hr-line gray"></div>
+								</div>
+							</div>
+							<!--end head ประวัติการทำงาน / ฝึกงาน-->
+						
+							<!--ประวัติการทำงาน / ฝึกงาน-->
+							<div class="col-12 font-size-16">
+								<div class="row">
+									<!--อันดับ 1-->
+									<div class="col-12 margin-bottom-20">
+										<div class="row">
+											<div class="col-1 font-size-20 work-left">
+												<p><b>1.</b></p>	
+											</div>
+											
+											<div class="col-10">
+												<div class="row">
+													<div class="col-12 font-size-20 margin-bottom-10">
+														<p><b>บริษัท จัดหางาน จ๊อบบีเคเค ดอท คอม จำกัด</b></p>
+													</div>
+													
+													<div class="col-12 work-list">
+														<ul>
+															<li><b>ตำแหน่งงาน : </b>Web Designer</li>
+															<li><b>ระดับ : </b>Senior</li>
+															<li><b>เงินเดือน : </b>40000 บาท</li>
+														</ul>
+													</div>
+													
+													<div class="col-12 start-list">
+														<ul>
+															<li><b>เริ่มการทำงาน : </b>12 มิถุนายน 2560</li>
+															<li><b>สิ้นสุดการทำงาน : </b>1 กันยายน 2562</li>
+														</ul>
+													</div>
+													
+													<div class="col-12">
+														<p><b>หน้าที่รับผิดชอบ :</b> ออกแบบ website, ออกแบบ banner, ออกแบบป้ายสิ่งพิมพ์ต่างๆ, เขียน html css responsive ออกแบบสื่อประชาสัมพันธ์ต่างๆ</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--end อันดับ 1-->
+									
+									<!--อันดับ 2-->
+									<div class="col-12 margin-bottom-20">
+										<div class="row">
+											<div class="col-1 font-size-20 work-left">
+												<p><b>2.</b></p>	
+											</div>
+											
+											<div class="col-10">
+												<div class="row">
+													<div class="col-12 font-size-20 margin-bottom-10">
+														<p><b>บริษัท จัดหางาน จ๊อบบีเคเค ดอท คอม จำกัด</b></p>
+													</div>
+													
+													<div class="col-12 work-list">
+														<ul>
+															<li><b>ตำแหน่งงาน : </b>Web Designer</li>
+															<li><b>ระดับ : </b>Senior</li>
+															<li><b>เงินเดือน : </b>40000 บาท</li>
+														</ul>
+													</div>
+													
+													<div class="col-12 start-list">
+														<ul>
+															<li><b>เริ่มการทำงาน : </b>12 มิถุนายน 2560</li>
+															<li><b>สิ้นสุดการทำงาน : </b>1 กันยายน 2562</li>
+														</ul>
+													</div>
+													
+													<div class="col-12">
+														<p><b>หน้าที่รับผิดชอบ :</b> ออกแบบ website, ออกแบบ banner, ออกแบบป้ายสิ่งพิมพ์ต่างๆ, เขียน html css responsive ออกแบบสื่อประชาสัมพันธ์ต่างๆ</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--end อันดับ 2-->
+									
+									<!--อันดับ 3-->
+									<div class="col-12 margin-bottom-20">
+										<div class="row">
+											<div class="col-1 font-size-20 work-left">
+												<p><b>3.</b></p>	
+											</div>
+											
+											<div class="col-10">
+												<div class="row">
+													<div class="col-12 font-size-20 margin-bottom-10">
+														<p><b>บริษัท จัดหางาน จ๊อบบีเคเค ดอท คอม จำกัด</b></p>
+													</div>
+													
+													<div class="col-12 work-list">
+														<ul>
+															<li><b>ตำแหน่งงาน : </b>Web Designer</li>
+															<li><b>ระดับ : </b>Senior</li>
+															<li><b>เงินเดือน : </b>40000 บาท</li>
+														</ul>
+													</div>
+													
+													<div class="col-12 start-list">
+														<ul>
+															<li><b>เริ่มการทำงาน : </b>12 มิถุนายน 2560</li>
+															<li><b>สิ้นสุดการทำงาน : </b>1 กันยายน 2562</li>
+														</ul>
+													</div>
+													
+													<div class="col-12">
+														<p><b>หน้าที่รับผิดชอบ :</b> ออกแบบ website, ออกแบบ banner, ออกแบบป้ายสิ่งพิมพ์ต่างๆ, เขียน html css responsive ออกแบบสื่อประชาสัมพันธ์ต่างๆ</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--end อันดับ 3-->
+								</div>	
+							</div>
+							<!--end ประวัติการทำงาน / ฝึกงาน-->
+						</div>
+					</div>
+					<!--end box ประวัติการทำงาน-->
+					
+					<!--box การศึกษา-->
+					<div class="col-12">
+						<div class="row">
+							<!--head การศึกษา-->
+							<div class="col-12">
+								<div class="hr-flex">
+									<figure class="icon-pre">
+										<img src="images/icon-preview-resume-4.png">
+									</figure>
+
+									<div class="head-pre">
+										<p class="font-size-24"><b>การศึกษา</b></p>
+									</div>
+
+									<div class="hr-line gray"></div>
+								</div>
+							</div>
+							<!--end head การศึกษา-->
+						
+							<!--การศึกษา-->
+							<div class="col-12 font-size-16">
+								<div class="row">
+									<!--อันดับ 1-->
+									<div class="col-12 margin-bottom-20">
+										<div class="row">
+											<div class="col-1 font-size-20 work-left">
+												<p><b>1.</b></p>	
+											</div>
+											
+											<div class="col-10">
+												<div class="row">
+													<div class="col-12 font-size-20 margin-bottom-10">
+														<p><b>โรงเรียนนวมินทราชินูทิศ บดินทรเดชา</b></p>
+													</div>
+													
+													<div class="col-12 work-list">
+														<ul>
+															<li><b>ระดับการศึกษา : </b>มัธยมศึกษาตอนปลาย</li>
+															<li><b>ปีการศึกษา : </b>2548</li>
+														</ul>
+													</div>
+													
+													<div class="col-12 start-list">
+														<ul>
+															<li><b>คณะ : </b></li>
+															<li><b>สาขา : </b>ศิลป์คำนวณ</li>
+															<li><b>เกรดเฉลี่ย : </b>2.5</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--end อันดับ 1-->
+									
+									<!--อันดับ 2-->
+									<div class="col-12 margin-bottom-20">
+										<div class="row">
+											<div class="col-1 font-size-20 work-left">
+												<p><b>2.</b></p>	
+											</div>
+											
+											<div class="col-10">
+												<div class="row">
+													<div class="col-12 font-size-20 margin-bottom-10">
+														<p><b>มหาวิทยาลัยราชภัฏสวนสุนันทา</b></p>
+													</div>
+													
+													<div class="col-12 work-list">
+														<ul>
+															<li><b>ระดับการศึกษา : </b>ปริญญาตรี</li>
+															<li><b>ปีการศึกษา : </b>2552</li>
+														</ul>
+													</div>
+													
+													<div class="col-12 start-list">
+														<ul>
+															<li><b>คณะ : </b>ศิลปกรรม</li>
+															<li><b>สาขา : </b>ออกแบบนิเทศศิลป์</li>
+															<li><b>เกรดเฉลี่ย : </b>3.07</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--end อันดับ 2-->
+								</div>	
+							</div>
+							<!--end การศึกษา-->
+						</div>
+					</div>
+					<!--end box การศึกษา-->
+					
+					<!--box ความสามารถ ผลงาน และเกียรติประวัติ-->
+					<div class="col-12">
+						<div class="row">
+							<!--head ความสามารถ ผลงาน และเกียรติประวัติ-->
+							<div class="col-12">
+								<div class="hr-flex">
+									<figure class="icon-pre">
+										<img src="images/icon-preview-resume-5.png">
+									</figure>
+
+									<div class="head-pre">
+										<p class="font-size-24"><b>ความสามารถ ผลงาน และเกียรติประวัติ</b></p>
+									</div>
+
+									<div class="hr-line gray"></div>
+								</div>
+							</div>
+							<!--end head ความสามารถ ผลงาน และเกียรติประวัติ-->
+						
+							<!--ความชำนาญในทักษะต่างๆ-->
+							<div class="col-12 margin-bottom-20 font-size-16">
+								<div class="row">
+									<!--box-ภาษา-->
+									<div class="col-12">
+										<div class="row">
+											<div class="col-12 font-size-20 margin-bottom-10">
+												<p><b>ความสามารถทางภาษา</b></p>
+											</div>
+											
+											<!--ไทย-->
+											<div class="col-12 margin-bottom-10">
+												<div class="row">
+													<div class="col-xl-2 col-lg-3 col-md-3 col-3 colPrint-2">
+														<p><b>ภาษาไทย</b></p>
+													</div>
+															
+													<div class="col-xl-10 col-lg-9 col-md-9 col-9 colPrint-10">
+														<div class="row">
+															<div class="col-xl-3 col-lg-6 col-md-3 col-sm-6 col-6 colPrint-3 paddingPrint">
+																<p><b>การฟัง : </b>Excellent</p>
+															</div>
+															
+															<div class="col-xl-3 col-lg-6 col-md-3 col-sm-6 col-6 colPrint-3 paddingPrint">
+																<p><b>การพูด : </b>Excellent</p>
+															</div>
+															
+															<div class="col-xl-3 col-lg-6 col-md-3 col-sm-6 col-6 colPrint-3 paddingPrint">
+																<p><b>การอ่าน : </b>Excellent</p>
+															</div>
+															
+															<div class="col-xl-3 col-lg-6 col-md-3 col-sm-6 col-6 colPrint-3 paddingPrint">
+																<p><b>การเขียน : </b>Excellent</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end ไทย-->
+											
+											<!--อังกฤษ-->
+											<div class="col-12 margin-bottom-10">
+												<div class="row">
+													<div class="col-xl-2 col-lg-3 col-md-3 col-3 colPrint-2">
+														<p><b>ภาษาอังกฤษ</b></p>
+													</div>
+															
+													<div class="col-xl-10 col-lg-9 col-md-9 col-9 colPrint-10">
+														<div class="row">
+															<div class="col-xl-3 col-lg-6 col-md-3 col-sm-6 col-6 colPrint-3 paddingPrint">
+																<p><b>การฟัง : </b>Excellent</p>
+															</div>
+															
+															<div class="col-xl-3 col-lg-6 col-md-3 col-sm-6 col-6 colPrint-3 paddingPrint">
+																<p><b>การพูด : </b>Excellent</p>
+															</div>
+															
+															<div class="col-xl-3 col-lg-6 col-md-3 col-sm-6 col-6 colPrint-3 paddingPrint">
+																<p><b>การอ่าน : </b>Excellent</p>
+															</div>
+															
+															<div class="col-xl-3 col-lg-6 col-md-3 col-sm-6 col-6 colPrint-3 paddingPrint">
+																<p><b>การเขียน : </b>Excellent</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end อังกฤษ-->
+											
+											<!--จีน-->
+											<div class="col-12 margin-bottom-10">
+												<div class="row">
+													<div class="col-xl-2 col-lg-3 col-md-3 col-3 colPrint-2">
+														<p><b>ภาษาจีน</b></p>
+													</div>
+															
+													<div class="col-xl-10 col-lg-9 col-md-9 col-9 colPrint-10">
+														<div class="row">
+															<div class="col-xl-3 col-lg-6 col-md-3 col-sm-6 col-6 colPrint-3 paddingPrint">
+																<p><b>การฟัง : </b>Excellent</p>
+															</div>
+															
+															<div class="col-xl-3 col-lg-6 col-md-3 col-sm-6 col-6 colPrint-3 paddingPrint">
+																<p><b>การพูด : </b>Excellent</p>
+															</div>
+															
+															<div class="col-xl-3 col-lg-6 col-md-3 col-sm-6 col-6 colPrint-3 paddingPrint">
+																<p><b>การอ่าน : </b>Excellent</p>
+															</div>
+															
+															<div class="col-xl-3 col-lg-6 col-md-3 col-sm-6 col-6 colPrint-3 paddingPrint">
+																<p><b>การเขียน : </b>Excellent</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end จีน-->
+										</div>
+									</div>
+									<!--end box-ภาษา-->
+									
+									<div class="col-12 margin-bottom-20">
+										<div class="line-line"></div>
+									</div>
+									
+									<!--box-ความสามารถในการขับขี่-->
+									<div class="col-12">
+										<div class="row">
+											<!--ความสามารถในการขับขี่-->
+											<div class="col-12 margin-bottom-10">
+												<div class="row">
+													<div class="col-xl-4 col-lg-12 col-md-4 col-12 colPrint-4">
+														<p><b>ความสามารถในการขับขี่ :</b></p>
+													</div>
+															
+													<div class="col-xl-8 col-lg-12 col-md-8 col-12 colPrint-8">
+														<div class="row">
+															<div class="col-md-4 col-sm-4 col-4 colPrint-4">
+																<p>รถยนต์</p>
+															</div>
+															
+															<div class="col-md-4 col-sm-4 col-4 colPrint-4">
+																<p>รถจักรยานยนต์</p>
+															</div>
+															
+															<div class="col-md-4 col-sm-4 col-4 colPrint-4">
+																<p>รถบรรทุก</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end ความสามารถในการขับขี่-->
+											
+											<!--มียานพาหนะเป็นของตัวเอง-->
+											<div class="col-12 margin-bottom-10">
+												<div class="row">
+													<div class="col-xl-4 col-lg-12 col-md-4 col-12 colPrint-4">
+														<p><b>มียานพาหนะเป็นของตัวเอง :</b></p>
+													</div>
+															
+													<div class="col-xl-8 col-lg-12 col-md-8 col-12 colPrint-8">
+														<div class="row">
+															<div class="col-md-4 col-sm-4 col-4 colPrint-4">
+																<p>รถยนต์</p>
+															</div>
+															
+															<div class="col-md-4 col-sm-4 col-4 colPrint-4">
+																<p>รถจักรยานยนต์</p>
+															</div>
+															
+															<div class="col-md-4 col-sm-4 col-4 colPrint-4">
+																<p>รถบรรทุก</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end มียานพาหนะเป็นของตัวเอง-->
+											
+											<!--มีใบอนุญาติขับขี่-->
+											<div class="col-12 margin-bottom-10">
+												<div class="row">
+													<div class="col-xl-4 col-lg-12 col-md-4 col-12 colPrint-4">
+														<p><b>มีใบอนุญาติขับขี่ :</b></p>
+													</div>
+															
+													<div class="col-xl-8 col-lg-12 col-md-8 col-12 colPrint-8">
+														<div class="row">
+															<div class="col-md-4 col-sm-4 col-4 colPrint-4">
+																<p>รถยนต์</p>
+															</div>
+															
+															<div class="col-md-4 col-sm-4 col-4 colPrint-4">
+																<p>รถจักรยานยนต์</p>
+															</div>
+															
+															<div class="col-md-4 col-sm-4 col-4 colPrint-4">
+																<p>รถบรรทุก</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end มีใบอนุญาติขับขี่-->
+										</div>
+									</div>
+									<!--end box-ความสามารถในการขับขี่-->
+									
+									<div class="col-12 margin-bottom-20">
+										<div class="line-line"></div>
+									</div>
+									
+									<!--box-ความสามารถทางด้านคอมพิวเตอร์-->
+									<div class="col-12">
+										<div class="row">
+											<div class="col-12">
+												<p><b>ความสามารถทางด้านคอมพิวเตอร์</b></p>
+											</div>
+
+											<div class="col-12 skill-com margin-bottom-10">
+												<ul>
+													<li>- Adobe Illustrator</li>
+													<li>- Adobe Photoshop</li>
+													<li>- Adobe Xd</li>
+													<li>- Adobe Lightroom</li>
+													<li>- Adobe Dreamweaver</li>
+													<li>- Html Css</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--end box-ความสามารถทางด้านคอมพิวเตอร์-->
+									
+									<!--box-ทักษะอื่นๆ-->
+									<div class="col-12">
+										<div class="row">
+											<div class="col-12">
+												<p><b>ทักษะอื่นๆ</b></p>
+											</div>
+
+											<div class="col-12 skill-com margin-bottom-10">
+												<ul>
+													<li>- Adobe Illustrator</li>
+													<li>- Adobe Photoshop</li>
+													<li>- Adobe Xd</li>
+													<li>- Adobe Lightroom</li>
+													<li>- Adobe Dreamweaver</li>
+													<li>- Html Css</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--end box-ทักษะอื่นๆ-->
+									
+									<!--box-คุณสมบัติอื่นๆ-->
+									<div class="col-12">
+										<div class="row">
+											<div class="col-12">
+												<p><b>คุณสมบัติอื่นๆ</b></p>
+											</div>
+
+											<div class="col-12 skill-com margin-bottom-10">
+												<ul>
+													<li>- Adobe Illustrator</li>
+													<li>- Adobe Photoshop</li>
+													<li>- Adobe Xd</li>
+													<li>- Adobe Lightroom</li>
+													<li>- Adobe Dreamweaver</li>
+													<li>- Html Css</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--end box-คุณสมบัติอื่นๆ-->
+								</div>	
+							</div>
+							<!--end ความสามารถ ผลงาน และเกียรติประวัติ-->
+						</div>
+					</div>
+					<!--end box ความสามารถ ผลงาน และเกียรติประวัติ-->
+				</div>
+			</div>
+			<!--end ข้อมูลฝั่งขวา-->
+		</article>
+	</section>
+	<!--end dashboard-->
+	
+	<section class="container container-banner margin-bottom-20 colComment">
+		<div class="row">
+			<div class="col-12 print print-center font-size-18 margin-bottom-20">
+				<button type="button" onclick="window.print();return false;"><i class="fas fa-print"></i> พิมพ์</button>
+			</div>
+			
+			<div class="col-12 margin-bottom-20">
+				<div class="line-line"></div>
+			</div>
+			
+			<!--ตาราง admin-->
+			<div class="col-12 font-size-16 table-responsive margin-bottom-10">
+				<table class="table table-bordered table-hover table-striped">
+					<thead>
+						<tr>
+						  	<th scope="col" class="text-align-center">ลำดับ</th>
+						  	<th scope="col" class="text-align-center">ชื่อ</th>
+						  	<th scope="col" class="text-align-center">เข้าครั้งสุดท้าย</th>
+						  	<th scope="col" class="text-align-center">เวลา</th>
+							<th scope="col" class="text-align-center">แก้ไข</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+						  	<th scope="row" class="text-align-center">1</th>
+						  	<td class="text-align-center">Admin skysword</td>
+						  	<td class="text-align-center">23 สิงหาคม 2562</td>
+						  	<td class="text-align-center">13.00 น.</td>
+							<td class="preEdit">
+								<ul>
+									<li><button><i class="far fa-edit"></i> แก้ไข</button></li>
+									<li><button><i class="fas fa-times-circle"></i> ยกเลิก</button></li>
+								</ul>
+							</td>
+						</tr>
+						
+						<tr>
+							<th scope="row" class="text-align-center">2</th>
+						  	<td class="text-align-center">Admin skysword</td>
+						  	<td class="text-align-center">23 สิงหาคม 2562</td>
+						  	<td class="text-align-center">13.00 น.</td>
+							<td class="preEdit">
+								<ul>
+									<li><button><i class="far fa-edit"></i> แก้ไข</button></li>
+									<li><button><i class="fas fa-times-circle"></i> ยกเลิก</button></li>
+								</ul>
+							</td>
+						</tr>
+						
+						<tr>
+							<th scope="row" class="text-align-center">3</th>
+						  	<td class="text-align-center">Admin skysword</td>
+						  	<td class="text-align-center">23 สิงหาคม 2562</td>
+						  	<td class="text-align-center">13.00 น.</td>
+							<td class="preEdit">
+								<ul>
+									<li><button><i class="far fa-edit"></i> แก้ไข</button></li>
+									<li><button><i class="fas fa-times-circle"></i> ยกเลิก</button></li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!--ตาราง admin-->
+			
+			<!--Resume Comment-->
+			<div class="col-12">
+				<div class="row">
+					<div class="col-12 font-size-24 margin-bottom-10">
+						<p><b>Resume Comment</b></p>
+					</div>
+			
+					<div class="col-12 margin-bottom-20">
+						<textarea class="form-control font-size-16" placeholder="Resume Comment" rows="8"></textarea>
+					</div>
+					
+					<div class="col-12 margin-bottom-20 preSave font-size-18">
+						<ul>
+							<li><button>บันทึก</button></li>
+							<li><button>ยกเลิก</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--end Resume Comment-->
+		</div>
+	</section>
+	
+	<!--footer-->
+	<section class="bg-footer">
+		<article class="container container-banner">
+			<div class="row">
+				<div class="col-12 footer-social">
+					<div class="row">
+						<div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 footer">
+							<ul>
+								<li><a href="../index.html"><img src="../asset/images/logo-white.png"></a></li>
+								<li>
+									<h2><b>ORCHIDJOBS Co.,ltd.</b></h2>
+									<h6>เลขที่ 625 อาคารทัศนียา ห้องเลขที่ ยูนิต เอบีซีดี ชั้น 5<br>ซอยรามคำแหง 39 ถนนประชาอุทิศ แขวงวังทองหลาง เขตวังทองหลาง กรุงเทพฯ 10310</h6><br>
+									<h6><span class="service-cus">ฝ่ายบริการลูกค้า</span> <br>0-2514-7474 <br>แฟ็กซ์ 0-2514-7447 <br>อีเมล sales@jobbkk.com, help@jobbkk.com</h6>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 social">
+							<ul>
+								<li><a href="#" target="_blank" class="facebook"></a></li>
+								<li><a href="#" target="_blank" class="line"></a></li>
+								<li><a href="#" target="_blank" class="instragram"></a></li>
+								<li><a href="#" target="_blank" class="google"></a></li>
+								<li><a href="#" target="_blank" class="skype"></a></li>
+								<li><a href="#" target="_blank" class="youtube"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+	<!--end footer-->
+
+	<!--copyright-->
+	<section class="bg-copyright">
+		<article class="container container-banner">
+			<div class="row">
+				<div class="col-12 copyright">
+					<h6>JOBBKK.COM © สงวนลิขสิทธิ์ 2018 All Right Reserved including text, graphics, interfaces and design thereof are all rights reserved.</h6>
+				</div>
+			</div>
+		</article>
+	</section>
+	<!--end copyright-->
+
+	<!--backtotop-->
+    <a href="#" class="cd-top">Top</a>
+</body>
+
+<script type="text/javascript" src="../asset/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../asset/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="../asset/js/wow.min.js"></script>
+<script type="text/javascript" src="js/jquery.dotdotdot.min.js"></script>
+	
+<!--tooltip-->
+<script>
+	$(function () {
+  		$('[data-toggle="tooltip"]').tooltip();
+	})
+</script>
+
+<!--https://codepen.io/sazzad/pen/pqlgy-->
+<!--register login-->
+<script>
+	jQuery(document).ready(function (e) {
+    function t(t) {
+        e(t).bind("click", function (t) {
+            t.preventDefault();
+            e(this).parent().fadeOut()
+        })
+    }
+    e(".dropdown-toggle").click(function () {
+        var t = e(this).parents(".button-dropdown").children(".dropdown-menu").is(":hidden");
+        e(".button-dropdown .dropdown-menu").hide();
+        e(".button-dropdown .dropdown-toggle").removeClass("active");
+        if (t) {
+            e(this).parents(".button-dropdown").children(".dropdown-menu").toggle().parents(".button-dropdown").children(".dropdown-toggle").addClass("active")
+        }
+    });
+    e(document).bind("click", function (t) {
+        var n = e(t.target);
+        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-menu").hide();
+    });
+    e(document).bind("click", function (t) {
+        var n = e(t.target);
+        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-toggle").removeClass("active");
+    })
+});
+</script>
+
+<!--back-to-top-->
+<script>
+	jQuery(document).ready(function($){
+	// browser window scroll (in pixels) after which the "back to top" link is shown
+	var offset = 300,
+		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+		offset_opacity = 1200,
+		//duration of the top scrolling animation (in ms)
+		scroll_top_duration = 700,
+		//grab the "back to top" link
+		$back_to_top = $('.cd-top');
+
+	//hide or show the "back to top" link
+	$(window).scroll(function(){
+		( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+		if( $(this).scrollTop() > offset_opacity ) {
+			$back_to_top.addClass('cd-fade-out');
+		}
+	});
+
+	//smooth scroll to top
+	$back_to_top.on('click', function(event){
+		event.preventDefault();
+		$('body,html').animate({
+			scrollTop: 0 ,
+		 	}, scroll_top_duration
+		);
+	});
+
+});
+</script>
+
+<!--https://codepen.io/romanll/pen/jhuqw-->
+<!--เมนู orchidjobs-->
+<script>
+	$("#showmenu").click(function(e){
+			$("#menu").toggleClass("show");
+
+		});
+		$("#menu a").click(function(event){
+			if($(this).next('ul').length){
+        event.preventDefault();
+				$(this).next().toggle('fast');
+				$(this).children('i:last-child').toggleClass('fa-caret-down fa-caret-left');
+			}
+		});
+</script>
+
+<!--https://codepen.io/scverano/pen/vugei-->
+<!--ดรอปดาวเปลี่ยนภาษา-->
+<script>
+	function DropDown(el) {
+		this.dd = el;
+		this.initEvents();
+	}
+	DropDown.prototype = {
+		initEvents : function() {
+			var obj = this;
+
+			obj.dd.on('click', function(event){
+				$(this).toggleClass('active');
+				event.stopPropagation();
+			});
+		}
+	}
+
+	$(function() {
+		var dd = new DropDown( $('#dd') );
+		$(document).click(function() {
+		// all dropdowns
+		$('.wrapper-dropdown-5').removeClass('active');
+		});
+	});
+</script>
+	
+<!--ตัดคำ-->
+<script>
+	$(document).ready(function() {
+		$(".attachments-ellipsis").dotdotdot({
+		height: 72,
+		fallbackToLetter: true,
+		watch: true,
+	});
+});
+</script>
+
+</html>

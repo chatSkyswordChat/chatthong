@@ -1,0 +1,45 @@
+.bg-how-it-work-main{ background: url(../images/pic.jpg) no-repeat; background-position: 80% 0; background-size: cover; 
+	min-height: 576px; margin-top: 70px;}
+.head-how-it-work h1{ margin-top: 200px; font-size: 8rem; font-weight: bold; text-decoration: underline; 
+	color: #b9467d;}
+.the-all{ margin-top: 40px;}
+.the-five{ margin-bottom: 40px;}
+
+.bg-one{ background: url(../images/1.png) no-repeat; background-position: -20% 0; background-size: 50%; 
+	min-height: 150px;}
+.bg-two{ background: url(../images/2.png) no-repeat; background-position: -20% 0; background-size: 50%; 
+	min-height: 150px;}
+.bg-three{ background: url(../images/3.png) no-repeat; background-position: -20% 0; background-size: 50%; 
+	min-height: 150px;}
+.bg-four{ background: url(../images/4.png) no-repeat; background-position: -20% 0; background-size: 50%; 
+	min-height: 150px;}
+.bg-five{ background: url(../images/5.png) no-repeat; background-position: -20% 0; background-size: 50%; 
+	min-height: 150px;}
+
+.bg-set figcaption{ margin-top: 50px;}
+.bg-set h2{ font-size: 4rem; font-weight: bold;}
+.bg-set h5{ font-size: 1.8rem;}
+.bg-set h6{ font-size: 1.6rem;}
+.the-set img{ max-width: 100%;}
+
+@media (max-width: 1199px){
+	.head-how-it-work h1{ font-size: 6rem;}
+}
+
+@media (max-width: 991px){
+	.bg-one, .bg-two, .bg-three, .bg-four, .bg-five{ background-size: contain; min-height: 250px;}
+}
+
+@media (max-width: 767px){
+	.bg-how-it-work-main{ background-position: 70% 0; min-height: 300px;}
+	.head-how-it-work h1{ margin-top: 80px;}
+}
+
+@media (max-width: 576px){
+	.head-how-it-work h1{ font-size: 4rem;}
+	.bg-one, .bg-two, .bg-three, .bg-four, .bg-five{ background-position: 0;}
+	.bg-set h2{ font-size: 3.5rem;}
+	.bg-set h6{ font-size: 1.4rem;}
+}
+
+.text-indent{ text-indent: 20px;}

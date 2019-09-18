@@ -1,0 +1,130 @@
+/*blog*/
+.bg-blog-main{ background: url(../images/content.jpg) no-repeat; background-position: 80% 0; background-size: cover; 
+	min-height: 576px; margin-top: 70px;}
+.head-blog h2{ margin-top: 200px; font-size: 8rem; font-weight: bold; text-decoration: underline; color: #b9467d;}
+
+.blog-content{ margin: 40px 0 20px;}
+.box-blog{ margin-bottom: 20px; overflow: hidden;}
+.box-blog a{ display: block; text-decoration: none;}
+.box-blog figure{ overflow: hidden;}
+.box-blog .pic-blog img { max-width: 100%; transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; 
+	-ms-transition:all 0.3s ease-in;}
+.box-blog:hover .pic-blog img{ -webkit-transform: scale(1.05); -ms-transform: scale(1.05); transform: scale(1.05);}
+
+.text-bg-blog{ background: #412e6e; padding: 10px; position: relative; transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; 
+	-ms-transition:all 0.3s ease-in;}
+.box-blog .text-bg-blog:hover{ background: #2a1b4e;}
+.box-blog .text-bg-blog:hover .triangle-4 { border-bottom: solid 15px rgb(42,27,78);}
+.text-blog{ margin-bottom: 10px;}
+.text-blog h2{ font-size: 2.5rem; color: #fff; margin-bottom: 0;}
+.text-blog h6{ font-size: 1.6rem; color: #fff; margin-top: 10px;}
+
+.blog-date h6{ font-size: 1.6rem; margin-top: 0; color: #b9467d;}
+
+.triangle { display: inline-block; margin: 0 5px; vertical-align: middle; position: absolute; top: -30px; left: 0; right: 0; margin: 0 auto; transition: all 0.3s ease-in; 
+	-webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.triangle-4 { width: 20px; height: 20px; border-bottom: solid 15px rgb(65,46,110); border-left: solid 15px transparent; border-right: solid 15px transparent;}
+
+.read-blog{ margin-bottom: 10px; text-align: right;}
+.read-blog h6{ background: #b9467d; color: #fff; display: inline-block; padding: 3px 5px; border-radius: 4px; text-decoration: none; font-size: 1.6rem;
+	transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.read-blog h6:hover{ -webkit-transform: scale(1.05); -ms-transform: scale(1.05); transform: scale(1.05);}
+
+@media (max-width: 1199px){
+	.head-blog h2{ font-size: 6rem;}
+}
+
+@media (max-width: 991px){
+	.bg-blog-main{ background-position: 55% 100%;}
+}
+
+@media (max-width: 767px){
+	.bg-blog-main{ background-position: 60% 90%; min-height: 300px;}
+	.head-blog h2{ margin-top: 0;}
+}
+
+@media (max-width: 576px){
+	.bg-blog-main{ background-position: 50% 60%;}
+	.head-blog h2{ font-size: 4rem;}
+	.text-blog h2{ font-size: 2.5rem;}
+	.text-blog h6, .blog-date h6{ font-size: 1.4rem;}
+}
+
+.orchid-pagination{ text-align: center; font-size: 1.8rem; margin-bottom: 20px;}
+.orchid-navigation{ display: inline-block; text-align: center;}
+.page-link{ color: #412e6e;}
+.page-link:hover { color: #fff; background-color: #412e6e; border-color: #412e6e;}
+.page-item .active{ color: #fff; background-color: #412e6e; border-color: #412e6e;}
+
+@media (max-width: 576px){
+	.orchid-pagination{ font-size: 1.2rem;}
+}
+
+/*หน้าเนื้อหา content*/
+.head-content{ text-align: center; margin-bottom: 20px;}
+.head-content h1{ font-size: 4rem; color: #412e6e;}
+
+.content-date{ text-align: center; margin-bottom: 20px;}
+.content-date h6{ font-size: 1.6rem; color: #b9467d;}
+
+.pic-head, .pic-sub{ text-align: center; margin-bottom: 20px;}
+.pic-sub img{ width: auto;}
+
+.text-content{ margin-bottom: 20px;}
+.text-content h6{ font-size: 1.6rem;}
+
+@media (max-width: 576px){
+	.content-date h6, .text-content h6{ font-size: 1.4rem;}
+}
+
+.box-name-share{ margin-bottom: 20px;}
+
+.user-name{ margin-bottom: 20px;}
+.user-name a{ display: inline-block; text-decoration: none; color: #555; font-size: 1.4rem;}
+.user-name a:hover ul{ -moz-transform: scale(1.05); -webkit-transform: scale(1.05); transform: scale(1.05);}
+.user-name ul{ margin: 0; padding: 0; list-style: none; transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; 
+	-moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.user-name ul li{ float: left; padding: 0 10px; display: contents; font-weight: bold; font-size: 1.6rem;}
+.user-name ul li img{ max-width: 50px; border-radius: 50%;}
+
+@media (max-width: 767px){
+	.user-name{ text-align: center;}
+	.user-name ul li{ float: none; display: inherit;}
+}
+
+.share{ text-align: right;}
+.share ul{ margin: 0; padding: 0; list-style: none; display: inline-block;}
+.share ul li{ float: left; padding: 0; font-size: 1.4rem;  font-weight: bold; font-size: 1.6rem;}
+.share ul li:first-child{ margin-top: 15px; margin-right: 10px;}
+.share ul li a.facebook{ background: url(../images/social-1.png) no-repeat; background-size: cover; width: 50px; height: 50px; display: block;}
+.share ul li a.line{ background: url(../images/social-2.png) no-repeat; background-size: cover; width: 50px; height: 50px; display: block;}
+.share ul li a.instragram{ background: url(../images/social-3.png) no-repeat; background-size: cover; width: 50px; height: 50px; display: block;}
+.share ul li a.google{ background: url(../images/social-4.png) no-repeat; background-size: cover; width: 50px; height: 50px; display: block;}
+.share ul li a.skype{ background: url(../images/social-5.png) no-repeat; background-size: cover; width: 50px; height: 50px; display: block;}
+.share ul li a.youtube{ background: url(../images/social-6.png) no-repeat; background-size: cover; width: 50px; height: 50px; display: block;}
+
+.share ul li a.facebook:hover{ background: url(../images/social-1-1.png) no-repeat; background-size: cover; width: 50px; height: 50px; display: block;}
+.share ul li a.line:hover{ background: url(../images/social-2-1.png) no-repeat; background-size: cover; width: 50px; height: 50px; display: block;}
+.share ul li a.instragram:hover{ background: url(../images/social-3-1.png) no-repeat; background-size: cover; width: 50px; height: 50px; display: block;}
+.share ul li a.google:hover{ background: url(../images/social-4-1.png) no-repeat; background-size: cover; width: 50px; height: 50px; display: block;}
+.share ul li a.skype:hover{ background: url(../images/social-5-1.png) no-repeat; background-size: cover; width: 50px; height: 50px; display: block;}
+.share ul li a.youtube:hover{ background: url(../images/social-6-1.png) no-repeat; background-size: cover; width: 50px; height: 50px; display: block;}
+
+.share ul li a.facebook.active{ background: url(../images/social-1-1.png) no-repeat; background-size: cover; width: 50px; height: 50px; display: block;}
+.share ul li a.line.active{ background: url(../images/social-2-1.png) no-repeat; background-size: cover; width: 50px; height: 50px; display: block;}
+.share ul li a.instragram.active{ background: url(../images/social-3-1.png) no-repeat; background-size: cover; width: 50px; height: 50px; display: block;}
+.share ul li a.google.active{ background: url(../images/social-4-1.png) no-repeat; background-size: cover; width: 50px; height: 50px; display: block;}
+.share ul li a.skype.active{ background: url(../images/social-5-1.png) no-repeat; background-size: cover; width: 50px; height: 50px; display: block;}
+.share ul li a.youtube.active{ background: url(../images/social-6-1.png) no-repeat; background-size: cover; width: 50px; height: 50px; display: block;}
+
+@media (max-width: 767px){
+	.share{ text-align: center;}
+	.share ul{ display: inline-block;}
+}
+
+.bg-blog{ background: #ebebeb;}
+.box-blog{ margin-bottom: 40px;}
+.relate{ text-align: center; margin: 20px 0}
+.relate h2{ font-size: 6rem; color: #412e6e;}
+
+.orchid-line{ border-bottom: 1px solid #bfbfbf; margin-bottom: 20px;}

@@ -1,0 +1,102 @@
+.bg-regis-login{ background: url(../images/bg-purple.jpg) no-repeat top center; background-size: cover; margin-bottom: 20px;
+	min-height: 200px; margin-top: 70px;}
+.head-regis-login{ text-align: center;}
+.head-regis-login h1{ margin-top: 50px; font-size: 6rem; font-weight: bold; text-decoration: underline; color: #fff; vertical-align: middle;}
+
+@media (max-width: 576px){
+	.head-regis-login h1{ font-size: 4rem;}
+}
+
+@media (max-width: 365px){
+	.bg-regis-login{ margin-top: 105px;}
+}
+
+.container-contact{ width: 640px; margin: 0 auto;}
+
+.head-register-social{ text-align: center; margin-bottom: 20px;}
+.head-register-social h2{ font-size: 2.5rem; text-transform: uppercase; color: #412e6e;}
+.head-register-social h6{ font-size: 1.6rem;}
+
+@media (max-width: 576px){
+	.head-register-social h6{ font-size: 1.4rem;}
+}
+
+.regis-social{ margin-bottom: 20px;}
+.regis-social ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.regis-social ul li{ float: left; padding: 0 10px; width: 33.3333333%; text-align: center;}
+.regis-social ul li a{ border-radius: 4px; text-decoration: none; color: #fff; padding: 5px 10px; display: block;}
+.regis-social ul li a.facebook{ background: #4267b2;}
+.regis-social ul li a.google{ background: #d93025;}
+.regis-social ul li a.linkedin{ background: #337ab7;}
+.regis-social ul li a:hover{ background: #412e6e;}
+
+.box-form-contact{ margin-bottom: 20px;}
+.sub-form{ margin-bottom: 20px;}
+label.label-contact{ font-size: 1.6rem; color: #555; text-transform: uppercase;}
+.form-control-contact{ padding: 6px 12px; font-size: 1.6rem; color: #555; height: 34px;}
+
+@media (max-width: 576px){
+	label.label-contact{ font-size: 1.4rem;}
+	.form-control-contact{ font-size: 1.4rem;}
+}
+
+@media (max-width: 380px){
+	.regis-social ul li{ width: 100%; margin-bottom: 15px;}
+}
+
+.register-now, .login-now{ text-align: center; margin-bottom: 20px;}
+.register-now a, .login-now a{ display: block; background: #412e6e; color: #fff; padding: 15px; border-radius: 4px; text-decoration: none; font-size: 2rem;}
+.register-now a:hover, .login-now a:hover{ background: #b9467d; -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1);}
+
+.login-account, .register-account{ text-align: center; margin-bottom: 20px;}
+.login-account a, .register-account a{ color: #b9467d;}
+
+.remember-forgot{ margin-bottom: 20px;}
+.remember-forgot ul{ margin: 0 -10px; padding: 0; list-style: none; overflow: hidden;}
+.remember-forgot ul li{ padding: 0 10px; float: left;}
+.remember-forgot ul li a{ color: #b9467d;}
+.remember-forgot ul li:last-child{ float: right;}
+
+.please-lang{ text-align: center; margin: 40px 0;}
+.please-lang h2{ font-size: 3rem; font-weight: 900;}
+
+.select-lang{ margin-bottom: 40px;}
+.select-lang ul{ margin: 0 -15px; padding: 0; list-style: none; display: flow-root;}
+.select-lang ul li{ float: left; padding: 0 15px; width: 50%; text-align: center;}
+.select-lang ul li a{ display: block; background: #412e6e; color: #fff; border-radius: 10px; padding: 15px; font-size: 2.5rem; text-decoration: none;}
+.select-lang ul li:first-child a{ background: #fff; color: #412e6e; border: 1px solid #412e6e;}
+.select-lang ul li a:hover{ background: #b9467d; -webkit-transform: scale(1.05); -ms-transform: scale(1.05); transform: scale(1.05); color: #fff; border: 1px solid #b9467d;}
+
+@media (max-width: 576px){
+	.please-lang{ margin: 20px 0;}
+	.please-lang h2{ font-size: 2rem;}
+	.select-lang ul li a{ padding: 10px 15px; font-size: 1.8rem; text-decoration: none;}
+}
+
+.send-email-succes{ background: #b9467d; padding: 15px; text-align: center; margin-bottom: 20px;}
+.send-email-succes h2{ font-size: 2.5rem; color: #fff;}
+
+.confirm-mail{ text-align: center; margin-bottom: 40px;}
+.confirm-mail h6{ font-size: 1.6rem;}
+
+.send-again a{ color: #b9467d;}
+
+.return-home{ text-align: center;}
+.return-home a{ font-size: 1.6rem; background: #412e6e; padding: 10px; color: #fff; border-radius: 4px; display: inline-block; text-decoration: none;}
+.return-home a:hover{ background: #b9467d; -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1);}
+
+.send-data{ text-align: center;}
+.send-data ul{ margin: 0 -10px; padding: 0; list-style: none; display: inline-block;}
+.send-data ul li{ float: left; padding: 0 10px;}
+.send-data ul li button{ background: #412e6e; color: #fff; border-radius: 4px; border: 1px solid #412e6e; padding: 5px 10px; cursor: pointer;}
+.send-data ul li a{ border: 1px solid #412e6e; color: #412e6e; padding: 5px 10px; border-radius: 4px; text-decoration: none;}
+.send-data ul li:last-child{ margin-top: 5px;}
+.send-data ul li.for-cancel{ margin-top: 0;}
+.send-data ul li.for-cancel button{ background: #fff; border: 1px solid #412e6e; color: #412e6e; padding: 5px 10px; border-radius: 4px;}
+.send-data ul li.for-cancel button:hover{ background: #ebebeb; border: 1px solid #ebebeb;}
+.send-data ul li button:hover{ background: #b9467d; border: 1px solid #b9467d;}
+.send-data ul li a:hover{ background: #ebebeb; border: 1px solid #ebebeb;}
+
+
+
+

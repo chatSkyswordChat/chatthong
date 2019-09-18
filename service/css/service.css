@@ -1,0 +1,77 @@
+.bg-servicies-main{ background: url(../images/service.jpg) no-repeat top center; background-size: cover; min-height: 576px; margin-top: 70px;}
+.head-servicies h1{ margin-top: 200px; font-size: 8rem; font-weight: bold; text-decoration: underline; color: #b9467d;}
+
+.service-orchid{ margin: 40px 0;}
+.head-orchid-service{ margin-bottom: 20px; text-align: center;}
+.head-orchid-service h2{ font-size: 4rem; color: #412e6e;}
+
+.text-orchid-service{ margin-bottom: 20px;}
+.text-orchid-service p{ font-size: 2.4rem; text-decoration: underline;}
+.text-orchid-service h5{ font-size: 1.8rem;}
+.text-orchid-service h6{ font-size: 1.6rem;}
+
+@media (max-width: 1199px){
+	.head-servicies h1{ font-size: 6rem;}
+}
+
+@media (max-width: 767px){
+	.bg-servicies-main{ background-position: 70% 0; min-height: 300px;}
+	.head-servicies h1{ margin-top: 80px; font-size: 4.5rem;}
+}
+
+@media (max-width: 576px){
+	.bg-servicies-main{ background-position: 45% 0;}
+	.head-servicies h1{ font-size: 4rem;}
+	.head-orchid-service h2{ font-size: 3.5rem;}
+	.text-orchid-service h6{ font-size: 1.4rem;}
+}
+
+@media (max-width: 365px){
+	.bg-servicies-main{ background-position: 55% 0; margin-top: 105px;}
+}
+
+.bg-recruitment-main{ background: url(../images/recruitment-sub.jpg) no-repeat top center; background-size: cover; min-height: 576px; margin-top: 70px;}
+
+@media (max-width: 767px){
+	.bg-recruitment-main{ background-position: 70% 0; min-height: 300px;}
+}
+
+@media (max-width: 576px){
+	.bg-recruitment-main{ background-position: 45% 0;}
+}
+
+@media (max-width: 365px){
+	.bg-recruitment-main{ background-position: 55% 0; margin-top: 105px;}
+}
+
+.bg-training-main{ background: url(../images/training-sub.jpg) no-repeat top center; background-size: cover; min-height: 576px; margin-top: 70px;}
+
+@media (max-width: 767px){
+	.bg-training-main{ background-position: 70% 0; min-height: 300px;}
+}
+
+@media (max-width: 576px){
+	.bg-training-main{ background-position: 40% 0;}
+}
+
+@media (max-width: 365px){
+	.bg-training-main{ background-position: 55% 0; margin-top: 105px;}
+}
+
+.bg-channel-main{ background: url(../images/channel-sub.jpg) no-repeat top center; background-size: cover; min-height: 576px; margin-top: 70px;}
+
+@media (max-width: 767px){
+	.bg-channel-main{ background-position: 70% 0; min-height: 300px;}
+}
+
+@media (max-width: 576px){
+	.bg-channel-main{ background-position: 45% 0;}
+}
+
+@media (max-width: 365px){
+	.bg-channel-main{ background-position: 55% 0; margin-top: 105px;}
+}
+
+.text-indent{ text-indent: 50px;}
+.text-orchid-service-40{ margin-bottom: 40px;}
+
