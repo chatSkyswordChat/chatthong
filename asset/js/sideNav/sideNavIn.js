@@ -46,18 +46,14 @@ $(() => {
     // end show on mobile
 
     // เมนูด้านข้าง
-    var url = $(location).attr('href');
-    var parts = url.split("/");
-    var last_part = parts[parts.length - 1];
-
     var ActivePart = [
-        { name: 'index.html' },
-        { name: 'about-us.html' },
-        { name: 'allService.html' },
-        { name: 'javascript:void(0)' },
-        { name: 'jobSearch.html' },
-        { name: 'blog.html' },
-        { name: 'contact.html' },
+        { name: '../index.html' },
+        { name: '../about-us.html' },
+        { name: '../allService.html' },
+        { name: '../javascript:void(0)' },
+        { name: '../jobSearch.html' },
+        { name: '../blog.html' },
+        { name: '../contact.html' },
     ]
 
     for (let navMenu = 0; navMenu < 7; navMenu++) {
