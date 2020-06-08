@@ -85,9 +85,10 @@ $(()=>{
 
     if(path.length == 6){
         var logo = '<img src="asset/images/logo.png">'
-    }else{
-        var logo = '<img src="../asset/images/logo.png">'
     }
+    // else{
+    //     var logo = '<img src="../asset/images/logo.png">'
+    // }
     // โลโก้ footer
 
     // เมนู คลิกไปหน้าต่าง footer
