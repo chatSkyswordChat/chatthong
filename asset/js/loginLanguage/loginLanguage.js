@@ -65,11 +65,11 @@ $(()=>{
 
         // language
 		loginLang += '<div id="dd" class="wrapper-dropdown-5" tabindex="1">'
-            loginLang += `<img src="asset/images/thai-flag.png" class="flag-lang"> English`
+            loginLang += `<img src="asset/images/eng-flag.png" class="flag-lang"> English`
 			loginLang += '<ul class="dropdown">'
 				loginLang += '<li>'
                     loginLang += '<a href="javascript:void(0)">'
-                        loginLang += `<img src="asset/images/thai-flag.png" class="flag-lang"> English`
+                        loginLang += `<img src="asset/images/eng-flag.png" class="flag-lang"> English`
                     loginLang += '</a>'
 				loginLang += '</li>'
 				loginLang += '<li>'
