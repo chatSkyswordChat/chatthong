@@ -46,12 +46,14 @@ $(() => {
     // end show on mobile
 
     // เมนูด้านข้าง
+    var last_part = '';
+
     var ActivePart = [
         { name: '../index.html' },
         { name: '../about-us.html' },
         { name: '../allService.html' },
-        { name: '../javascript:void(0)' },
-        { name: '../jobSearch.html' },
+        { name: 'javascript:void(0)' },
+        { name: 'jobSearch.html' },
         { name: '../blog.html' },
         { name: '../contact.html' },
     ]
