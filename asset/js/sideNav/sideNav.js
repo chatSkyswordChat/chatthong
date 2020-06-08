@@ -47,7 +47,7 @@ $(() => {
 
     // เมนูด้านข้าง
     var last_part = '';
-    
+
     var ActivePart = [
         { name: 'index.html' },
         { name: 'about-us.html' },
@@ -61,7 +61,7 @@ $(() => {
     for (let navMenu = 0; navMenu < 7; navMenu++) {
         // ใส่ class active ใน tag A
         var classActive = ''
-        if (last_part == ActivePart[navMenu]['name']) {
+        if (last_part === ActivePart[navMenu]['name']) {
             classActive = 'active'
         }
 
