@@ -12,17 +12,6 @@ $(()=>{
         'งานขอนแก่น', 'งานระยอง', 'งานชลบุรี', 'งานพระนครศรีอยุธยา', 'งานสุราษฎร์ธานี', 'งานภูเก็ต'
     ]
 
-    var xx = $(location).attr('href')
-    var yy = xx
-    var zz = yy.split('/')
-    var zzz = ''
-
-    if(zz.length == 6 && 4){
-        var zzz = 'job-search/jobSearch.html'
-    }else{
-        var zzz = '../job-search/jobSearch.html'
-    }
-
     keyWord +='<article class="container">'
 		keyWord +='<div class="row">'
 			keyWord +='<div class="col-12">'
@@ -33,7 +22,7 @@ $(()=>{
 						keyWord +='<div class="keyWord">'
                             for (let workType = 0; workType < 16; workType++) {
 							    keyWord +='<p>'
-                                    keyWord +='<a href="'+zzz+'" target="_blank">' + typeWork[workType] + ''
+                                    keyWord +=`<a href="job-search/jobSearch.html" target="_blank"> ${typeWork[workType]}`
                                     keyWord +='</a>'
                                 keyWord +='</p>'
                             }
@@ -77,62 +66,6 @@ $(()=>{
         'เว็บไซต์หางาน', 'บริษัทจัดหางาน', 'หางาน สมัครงาน', 'หาคนทำงาน', 'รับสมัครพนักงาน', 
     ]
 
-    // โลโก้ footer
-    var link = location.href
-    var url = link
-    var path = url.split('/')
-    var logo = ''
-
-    if(path.length == 6){
-        var logo = '<img src="asset/images/logo.png">'
-    }else{
-        var logo = '<img src="../asset/images/logo.png">'
-    }
-    // โลโก้ footer
-
-    // เมนู คลิกไปหน้าต่าง footer
-    var aa = $(location).attr('href')
-    var bb = aa
-    var cc = bb.split('/')
-    
-    if( cc.length == 6 && 4){
-        var linked =[
-            { name :'index.html'}, 
-            { name :'about-us/about-us.html'}, 
-            { name :'service/allService.html'}, 
-            { name :'javascript:void(0)'}, 
-            { name :'job-search/jobSearch.html'}, 
-            { name :'javascript:void(0)'},
-            { name :'contact/contact.html'},
-            { name :'javascript:void(0)'}, 
-        ]
-    }else{
-        var linked =[
-            { name :'../index.html'}, 
-            { name :'../about-us/about-us.html'}, 
-            { name :'../service/allService.html'}, 
-            { name :'../javascript:void(0)'}, 
-            { name :'../job-search/jobSearch.html'}, 
-            { name :'../javascript:void(0)'},
-            { name :'../contact/contact.html'},
-            { name :'../javascript:void(0)'}, 
-        ]
-    }
-    // end เมนู คลิกไปหน้าต่าง footer
-
-    // โลโก้ คลิกไปหน้า home
-    var dd = $(location).attr('href')
-	var ee = dd
-	var ff = ee.split('/')
-	var gg = ''
-
-	if( ff.length == 6 && 4){
-		var gg = 'index.html'
-	}else{
-		var gg = '../index.html'
-    }
-    // end โลโก้ คลิกไปหน้า home
-
     aboutUs += '<article class="container">'
 		aboutUs += '<div class="row">'
 			aboutUs += '<div class="col-12">'
@@ -169,8 +102,8 @@ $(()=>{
 
 					aboutUs += '<section class="flexAddress">'
 						aboutUs += '<div class="footer">'
-							aboutUs += `<a href="${gg}">`
-                                aboutUs += `${logo}`
+							aboutUs += `<a href="index.html">`
+                                aboutUs += `<img src="asset/images/logo.png">`
                             aboutUs += '</a>'
 							aboutUs += '<h6>เลขที่ 625 อาคารทัศนียา ห้องเลขที่ ยูนิต เอบีซีดี ชั้น 5'
                                 aboutUs += '<br>'
