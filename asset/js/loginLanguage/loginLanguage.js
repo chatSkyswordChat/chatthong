@@ -13,11 +13,12 @@ $(()=>{
 		var logo = '<img src="asset/images/logo.png">';
 		var flagThai = '<img src="asset/images/thai-flag.png" class="flag-lang">';
 		var flagEng = '<img src="asset/images/eng-flag.png" class="flag-lang">';
-	}else{
-		var logo = '<img src="../asset/images/logo.png">';
-		var flagThai = '<img src="../asset/images/thai-flag.png" class="flag-lang">';
-		var flagEng = '<img src="../asset/images/eng-flag.png" class="flag-lang">';
 	}
+	// else{
+	// 	var logo = '<img src="../asset/images/logo.png">';
+	// 	var flagThai = '<img src="../asset/images/thai-flag.png" class="flag-lang">';
+	// 	var flagEng = '<img src="../asset/images/eng-flag.png" class="flag-lang">';
+	// }
 	// end โลโก้เมนู เปลี่ยนภาษา
 
 	// โลโก้ คลิกไปหน้า home ตรงเมนู top
