@@ -1,42 +1,10 @@
 $(()=>{
 	var loginLang = ''
-	
-	// โลโก้เมนู เปลี่ยนภาษา
-	var link = location.href;
-	var url = link;
-    var path = url.split("/");
-	var logo = '';
-	var flagThai = '';
-	var flagEng = '';	
-
-	if(path.length == 6){
-		var logo = '<img src="asset/images/logo.png">';
-		var flagThai = '<img src="asset/images/thai-flag.png" class="flag-lang">';
-		var flagEng = '<img src="asset/images/eng-flag.png" class="flag-lang">';
-	}else{
-		var logo = '<img src="../asset/images/logo.png">';
-		var flagThai = '<img src="../asset/images/thai-flag.png" class="flag-lang">';
-		var flagEng = '<img src="../asset/images/eng-flag.png" class="flag-lang">';
-	}
-	// end โลโก้เมนู เปลี่ยนภาษา
-
-	// โลโก้ คลิกไปหน้า home ตรงเมนู top
-	var aa = $(location).attr('href')
-	var bb = aa
-	var cc = bb.split('/')
-	var dd = ''
-
-	if( cc.length == 6 && 4){
-		var dd = 'index.html'
-	}else{
-		var dd = '../index.html'
-	}
-	// end โลโก้ คลิกไปหน้า home ตรงเมนู top
 
     // โลโก้ orchid
 	loginLang += '<div class="logo-orchid">'
-		loginLang += `<a href="${dd}">`
-            loginLang += `${logo}`
+		loginLang += `<a href="index.html">`
+            loginLang += `<img src="asset/images/logo.png">`
         loginLang += '</a>'
 	loginLang += '</div>'
     // end โลโก้ orchid
@@ -97,16 +65,16 @@ $(()=>{
 
         // language
 		loginLang += '<div id="dd" class="wrapper-dropdown-5" tabindex="1">'
-            loginLang += `${flagEng} English`
+            loginLang += `<img src="asset/images/thai-flag.png" class="flag-lang"> English`
 			loginLang += '<ul class="dropdown">'
 				loginLang += '<li>'
                     loginLang += '<a href="javascript:void(0)">'
-                        loginLang += `${flagEng} English`
+                        loginLang += `<img src="asset/images/thai-flag.png" class="flag-lang"> English`
                     loginLang += '</a>'
 				loginLang += '</li>'
 				loginLang += '<li>'
                     loginLang += '<a href="javascript:void(0)">'
-                        loginLang += `${flagThai} Thailand`
+                        loginLang += `<img src="asset/images/thai-flag.png" class="flag-lang"> Thailand`
                     loginLang += '</a>'
 				loginLang += '</li>'
 			loginLang += '</ul>'
