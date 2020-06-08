@@ -11,13 +11,13 @@ $(() => {
     ]
 
     var linked = [
-        { name: 'index.html' },
-        { name: 'about-us/about-us.html' },
-        { name: 'service/allService.html' },
-        { name: 'javascript:void(0)' },
-        { name: 'job-search/jobSearch.html' },
-        { name: 'blog/blog.html' },
-        { name: 'contact/contact.html' },
+        { name: '../index.html' },
+        { name: '../about-us/about-us.html' },
+        { name: '../service/allService.html' },
+        { name: '../javascript:void(0)' },
+        { name: '../job-search/jobSearch.html' },
+        { name: '../blog/blog.html' },
+        { name: '../contact/contact.html' },
     ]
 
     // sideNav
@@ -33,12 +33,12 @@ $(() => {
     sideNav += '<ul>'
     sideNav += '<li>'
     sideNav += '<a href="javascript:void(0)">'
-    sideNav += `<img src="asset/images/eng-flag.png" class="flag-lang"> English`
+    sideNav += `<img src="../asset/images/eng-flag.png" class="flag-lang"> English`
     sideNav += '</a>'
     sideNav += '</li>'
     sideNav += '<li>'
     sideNav += '<a href="javascript:void(0)">'
-    sideNav += `<img src="asset/images/thai-flag.png" class="flag-lang"> Thailand`
+    sideNav += `<img src="../asset/images/thai-flag.png" class="flag-lang"> Thailand`
     sideNav += '</a>'
     sideNav += '</li>'
     sideNav += '</ul>'
@@ -51,13 +51,13 @@ $(() => {
     var last_part = parts[parts.length - 1];
 
     var ActivePart = [
-        { name: 'index.html' },
-        { name: 'about-us.html' },
-        { name: 'allService.html' },
-        { name: 'javascript:void(0)' },
-        { name: 'jobSearch.html' },
-        { name: 'blog.html' },
-        { name: 'contact.html' },
+        { name: '../index.html' },
+        { name: '../about-us.html' },
+        { name: '../allService.html' },
+        { name: '../javascript:void(0)' },
+        { name: '../jobSearch.html' },
+        { name: '../blog.html' },
+        { name: '../contact.html' },
     ]
 
     for (let navMenu = 0; navMenu < 7; navMenu++) {

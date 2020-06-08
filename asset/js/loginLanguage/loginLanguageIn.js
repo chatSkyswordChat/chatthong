@@ -3,8 +3,8 @@ $(()=>{
 
     // โลโก้ orchid
 	loginLang += '<div class="logo-orchid">'
-		loginLang += `<a href="index.html">`
-            loginLang += `<img src="asset/images/logo.png">`
+		loginLang += `<a href="../index.html">`
+            loginLang += `<img src="../asset/images/logo.png">`
         loginLang += '</a>'
 	loginLang += '</div>'
     // end โลโก้ orchid
@@ -25,15 +25,15 @@ $(()=>{
                     loginLang += '</a>'
 					loginLang += '<ul class="dropdown-menu dropdown-menu-left">'
 						loginLang += '<li>'
-						loginLang += '<a href="create-register-login/operatorRegister.html">ผู้ประกอบการลงทะเบียน'
-						loginLang += '</a>'
-					loginLang += '</li>'
-					loginLang += '<li>'
-						loginLang += '<a href="create-register-login/jobSeekerRegister.html">ผู้สมัครงานลงทะเบียน'
-						loginLang += '</a>'
-					loginLang += '</li>'
-					loginLang += '<li>'
-						loginLang += '<a href="create-register-login/agencyRegister.html">เอเจนซี่ลงทะเบียน'
+                            loginLang += '<a href="../create-register-login/operatorRegister.html">ผู้ประกอบการลงทะเบียน'
+                            loginLang += '</a>'
+						loginLang += '</li>'
+						loginLang += '<li>'
+                            loginLang += '<a href="../create-register-login/jobSeekerRegister.html">ผู้สมัครงานลงทะเบียน'
+                            loginLang += '</a>'
+						loginLang += '</li>'
+						loginLang += '<li>'
+                            loginLang += '<a href="../create-register-login/agencyRegister.html">เอเจนซี่ลงทะเบียน'
                             loginLang += '</a>'
 						loginLang += '</li>'
 					loginLang += '</ul>'
@@ -46,15 +46,15 @@ $(()=>{
                     loginLang += '</a>'
 					loginLang += '<ul class="dropdown-menu">'
 						loginLang += '<li>'
-						loginLang += '<a href="create-register-login/operatorEnterSystem.html">ผู้ประกอบการเข้าสู่ระบบ'
-						loginLang += '</a>'
-					loginLang += '</li>'
-					loginLang += '<li>'
-						loginLang += '<a href="create-register-login/jobSeekerEnterSystem.html">ผู้สมัครงานเข้าสู่ระบบ'
-						loginLang += '</a>'
-					loginLang += '</li>'
-					loginLang += '<li>'
-						loginLang += '<a href="create-register-login/agencyEnterSystem.html">เอเจนซี่เข้าสู่ระบบ'
+                            loginLang += '<a href="../create-register-login/operatorEnterSystem.html">ผู้ประกอบการเข้าสู่ระบบ'
+                            loginLang += '</a>'
+						loginLang += '</li>'
+						loginLang += '<li>'
+                            loginLang += '<a href="../create-register-login/jobSeekerEnterSystem.html">ผู้สมัครงานเข้าสู่ระบบ'
+                            loginLang += '</a>'
+						loginLang += '</li>'
+						loginLang += '<li>'
+                            loginLang += '<a href="../create-register-login/agencyEnterSystem.html">เอเจนซี่เข้าสู่ระบบ'
                             loginLang += '</a>'
 						loginLang += '</li>'
 					loginLang += '</ul>'
@@ -65,16 +65,16 @@ $(()=>{
 
         // language
 		loginLang += '<div id="dd" class="wrapper-dropdown-5" tabindex="1">'
-            loginLang += `<img src="asset/images/thai-flag.png" class="flag-lang"> English`
+            loginLang += `<img src="../asset/images/thai-flag.png" class="flag-lang"> English`
 			loginLang += '<ul class="dropdown">'
 				loginLang += '<li>'
                     loginLang += '<a href="javascript:void(0)">'
-                        loginLang += `<img src="asset/images/thai-flag.png" class="flag-lang"> English`
+                        loginLang += `<img src="../asset/images/thai-flag.png" class="flag-lang"> English`
                     loginLang += '</a>'
 				loginLang += '</li>'
 				loginLang += '<li>'
                     loginLang += '<a href="javascript:void(0)">'
-                        loginLang += `<img src="asset/images/thai-flag.png" class="flag-lang"> Thailand`
+                        loginLang += `<img src="../asset/images/thai-flag.png" class="flag-lang"> Thailand`
                     loginLang += '</a>'
 				loginLang += '</li>'
 			loginLang += '</ul>'
