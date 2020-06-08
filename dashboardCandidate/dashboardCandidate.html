@@ -1,0 +1,4495 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>dashboard ผู้สมัครงาน</title>
+
+	<link rel="stylesheet" type="text/css" href="../asset/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/sweetalert2.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/variable.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css">
+</head>
+
+<body>
+	<!--แถบเมนู ล็อคอิน ภาษา-->
+	<header class="bg-menu fixed-top">
+		<section class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<nav id="menu" class="left">
+						<!-- asset/js/sideNav/sideNav.js -->
+					</nav>
+
+					<section class="flexLogoLang">
+						<!-- asset/js/loginLanguage/loginLanguage.js -->
+					</section>
+				</div>
+			</div>
+		</section>
+	</header>
+	<!--end แถบเมนู ล็อคอิน ภาษา-->
+
+	<!--dashboard-->
+	<section class="container container-top">
+		<article class="row">
+			<div class="col-12">
+				<!--เมนู-->
+				<div id="dashBoardMenu">
+					<!-- js/dashBoard.js -->
+				</div>
+				<!--end เมนู-->
+
+				<section class="gridDashboard">
+					<!--ข้อมูลโปรไฟล์-->
+					<div class="accordion" id="accordionExample">
+						<!--ชื่อนามสกุล-->
+						<div class="borderDashboard">
+							<!--bg ม่วง-->
+							<figure class="headBg">
+								<img src="images/bg-purple.jpg">
+							</figure>
+							<!--end bg ม่วง-->
+
+							<!--รูปภาพ แก้ไข-->
+							<section class="flexDash">
+								<figure class="selectPic">
+									<img src="images/0N8A1583.jpg">
+								</figure>
+
+								<div class="card orchidCard">
+									<div class="card-header orchidCardHeader" id="headingOne">
+										<div data-toggle="tooltip" id="title" data-placement="bottom"
+											title="แก้ไขข้อมูล">
+											<button class="orchidEdit" type="button" data-toggle="collapse"
+												data-target="#collapseOne" aria-expanded="true"
+												aria-controls="collapseOne">
+												<img src="images/edit.png">
+											</button>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!--end รูปภาพ แก้ไข-->
+
+							<!--แก้ไข ข้อมูลส่วนตัว-->
+							<div id="collapseOne" class="collapse collapseTop" aria-labelledby="headingOne"
+								data-parent="#accordionExample">
+								<div class="card-body orchidCardBody">
+									<h2><b>รายละเอียดส่วนตัว</b></h2>
+
+									<!--รูปภาพบน Resume-->
+									<section class="flexPic">
+										<h6 class="markRed"><b>รูปภาพบน Resume</b>*</h6>
+										<figure><img src="images/status-man.jpg"></figure>
+
+										<p>กรุณาใช้รูปถ่ายหน้าตรงขนาดประมาณ 110 X 140
+											pixels<br> โดยเลือกไฟล์รูปภาพเท่านั้น เช่น
+											.jpg/ .png/ .gif และมีขนาดไม่เกิน 1 MB
+										</p>
+
+										<label class="attachments"><i class="fas fa-edit"></i>
+											เลือกรูปภาพ
+											<input type="file" size="60">
+										</label>
+									</section>
+									<!--end รูปภาพบน Resume-->
+
+									<form action="">
+										<section class="gridForm">
+											<!-- เลขบัตรประจำตัวประชาชน -->
+											<div>
+												<h6>เลขบัตรประจำตัวประชาชน <span class="markRed">*</span></h6>
+												<label>
+													<input type="text" class="form-control orchidFormControl"
+														placeholder="เลขบัตรประจำตัวประชาชน">
+												</label>
+												<p class="markRed">กรุณาระบุเลขบัตรประจำตัวประชาชน</p>
+											</div>
+											<!-- end เลขบัตรประจำตัวประชาชน -->
+
+											<!-- คำนำหน้า -->
+											<div>
+												<h6>คำนำหน้า <span class="markRed">*</span></h6>
+												<label>
+													<select class="form-control orchidFormControl">
+														<option>กรุณาเลือกคำนำหน้าชื่อ</option>
+														<option>นาย</option>
+														<option>นาง</option>
+														<option>นางสาว</option>
+													</select>
+												</label>
+												<p class="markRed">กรุณาระบุคำนำหน้าชื่อ</p>
+											</div>
+											<!--end คำนำหน้า -->
+
+											<!-- ชื่อ -->
+											<div>
+												<h6>ชื่อ <span class="markRed">*</span></h6>
+												<label>
+													<input type="text" class="form-control orchidFormControl"
+														placeholder="ชื่อ">
+												</label>
+												<p class="markRed">กรุณาระบุชื่อ</p>
+											</div>
+											<!-- end ชื่อ -->
+
+											<!-- นามสกุล -->
+											<div>
+												<h6>นามสกุล <span class="markRed">*</span></h6>
+												<label>
+													<input type="text" class="form-control orchidFormControl"
+														placeholder="นามสกุล">
+												</label>
+												<p class="markRed">กรุณาระบุนามสกุล</p>
+											</div>
+											<!-- end นามสกุล -->
+
+											<!-- ชื่อเล่น -->
+											<div>
+												<h6>ชื่อเล่น</h6>
+												<label>
+													<input type="text" class="form-control orchidFormControl"
+														placeholder="ชื่อเล่น">
+												</label>
+											</div>
+											<!-- end ชื่อเล่น -->
+
+											<!-- นามสกุล -->
+											<div>
+												<h6>เบอร์ติดต่อ <span class="markRed">*</span></h6>
+												<label>
+													<input type="tel" class="form-control orchidFormControl"
+														placeholder="เบอร์ติดต่อ">
+												</label>
+												<p class="markRed">กรุณาระบุเบอร์ติดต่อ</p>
+											</div>
+											<!-- end นามสกุล -->
+
+											<!-- อีเมล์ -->
+											<div>
+												<h6>อีเมล์ <span class="markRed">*</span></h6>
+												<label>
+													<input type="email" class="form-control orchidFormControl"
+														placeholder="อีเมล์">
+												</label>
+												<p class="markRed">กรุณาระบุอีเมล์</p>
+											</div>
+											<!-- end อีเมล์ -->
+
+											<!-- ไลน์ -->
+											<div>
+												<h6>ไลน์</h6>
+												<label>
+													<input type="text" class="form-control orchidFormControl"
+														placeholder="ไลน์">
+												</label>
+											</div>
+											<!-- end ไลน์ -->
+
+											<!-- เฟสบุ๊ค -->
+											<div>
+												<h6>เฟสบุ๊ค</h6>
+												<label>
+													<input type="text" class="form-control orchidFormControl"
+														placeholder="เฟสบุ๊ค">
+												</label>
+											</div>
+											<!-- end เฟสบุ๊ค -->
+
+											<!-- วันเกิด -->
+											<div>
+												<h6>วันเกิด <span class="markRed">*</span></h6>
+												<label>
+													<div class="form-group">
+														<div class="input-group">
+															<input type="text" class="form-control orchidFormControl"
+																id="datetimepicker4">
+															<div class="input-group-append">
+																<div class="input-group-text inputGroupText">
+																	<i class="far fa-calendar-alt"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+												</label>
+												<p class="markRed">กรุณาระบุวันเกิด</p>
+											</div>
+											<!-- end วันเกิด -->
+
+											<!-- เพศ ส่วนสูง / ซม. -->
+											<div class="gridForm">
+												<article>
+													<h6>เพศ <span class="markRed">*</span></h6>
+													<label>
+														<select class="form-control orchidFormControl">
+															<option>กรุณาเลือกเพศ</option>
+															<option>ชาย</option>
+															<option>หญิง</option>
+														</select>
+													</label>
+													<p class="markRed">กรุณาระบุเพศ</p>
+												</article>
+
+												<article>
+													<h6>ส่วนสูง / ซม. <span class="markRed">*</span></h6>
+													<label>
+														<input type="text" class="form-control orchidFormControl"
+															placeholder="ส่วนสูง / ซม.">
+													</label>
+													<p class="markRed">กรุณาระบุส่วนสูง / ซม.</p>
+												</article>
+											</div>
+											<!-- end เพศ ส่วนสูง / ซม. -->
+
+											<!-- น้ำหนัก -->
+											<div>
+												<h6>น้ำหนัก / กก. <span class="markRed">*</span></h6>
+												<label>
+													<input type="text" class="form-control orchidFormControl"
+														placeholder="น้ำหนัก / กก.">
+												</label>
+												<p class="markRed">กรุณาระบุน้ำหนัก</p>
+											</div>
+											<!-- end น้ำหนัก -->
+
+											<!-- สัญชาติ -->
+											<div>
+												<h6>สัญชาติ <span class="markRed">*</span></h6>
+												<label>
+													<select class="form-control orchidFormControl">
+														<option>กรุณาเลือกสัญชาติ</option>
+														<option>ไทย</option>
+														<option>จีน</option>
+														<option>ไต้หวัน</option>
+														<option>ญี่ปุ่น</option>
+													</select>
+												</label>
+												<p class="markRed">กรุณาระบุสัญชาติ</p>
+											</div>
+											<!-- end สัญชาติ -->
+
+											<!-- ศาสนา -->
+											<div>
+												<h6>ศาสนา <span class="markRed">*</span></h6>
+												<label>
+													<select class="form-control orchidFormControl">
+														<option>กรุณาเลือกศาสนา</option>
+														<option>พุทธ</option>
+														<option>อิสลาม</option>
+														<option>คริสต์</option>
+													</select>
+												</label>
+												<p class="markRed">กรุณาระบุศาสนา</p>
+											</div>
+											<!-- end ศาสนา -->
+
+											<!-- สถานภาพสมรส -->
+											<div>
+												<h6>สถานภาพสมรส <span class="markRed">*</span></h6>
+												<label>
+													<select class="form-control orchidFormControl">
+														<option>กรุณาเลือกสถานภาพสมรส</option>
+														<option>โสด</option>
+														<option>แต่งงาน</option>
+														<option>อย่าร้าง</option>
+													</select>
+												</label>
+												<p class="markRed">กรุณาระบุสถานภาพสมรส</p>
+											</div>
+											<!-- end สถานภาพสมรส -->
+
+											<!-- สถานภาพทางทหาร -->
+											<div>
+												<h6>สถานภาพทางทหาร <span class="markRed">*</span></h6>
+												<label>
+													<select class="form-control orchidFormControl">
+														<option>กรุณาเลือกสถานภาพทางทหาร</option>
+														<option>รอเกณฑ์</option>
+														<option>ได้รับการยกเว้น
+														</option>
+														<option>ผ่านการเกณฑ์
+														</option>
+													</select>
+												</label>
+												<p class="markRed">กรุณาระบุสถานภาพทางทหาร</p>
+											</div>
+											<!-- end สถานภาพทางทหาร -->
+										</section>
+
+										<div class="lineLine"></div>
+
+										<!-- ที่อยู่ปัจจุบัน -->
+										<section class="gridForm">
+											<h2 class="colspan1go3"><b>รายละเอียดที่อยู่ปัจจุบัน</b></h2>
+
+											<!-- รายละเอียดที่อยู่ปัจจุบัน -->
+											<div class="colspan1go3">
+												<h6>รายละเอียดที่อยู่ปัจจุบัน <span class="markRed">*</span></h6>
+												<label>
+													<textarea class="form-control orchidFormControl" rows="4"
+														placeholder="ที่อยู่"></textarea>
+												</label>
+												<p class="markRed">กรุณาระบุรายละเอียดที่อยู่ปัจจุบัน</p>
+											</div>
+											<!-- end รายละเอียดที่อยู่ปัจจุบัน -->
+
+											<!-- จังหวัด -->
+											<div class="colspan1go2">
+												<h6>จังหวัด <span class="markRed">*</span></h6>
+												<label>
+													<select class="form-control orchidFormControl">
+														<option>กรุณาเลือกจังหวัด</option>
+														<option>กรุงเทพมหานคร</option>
+														<option>ตาก</option>
+														<option>พะเยา</option>
+														<option>เชียงใหม่</option>
+													</select>
+												</label>
+												<p class="markRed">กรุณาระบุจังหวัด</p>
+											</div>
+											<!-- end จังหวัด -->
+
+											<!-- อำเภอ/เขต -->
+											<div class="colspan2go2">
+												<h6>อำเภอ/เขต <span class="markRed">*</span></h6>
+												<label>
+													<select class="form-control orchidFormControl">
+														<option>กรุณาเลือกอำเภอ/เขต</option>
+														<option>บางกะปิ</option>
+														<option>วังทองหลาง</option>
+														<option>บางแค</option>
+														<option>เชียงใหม่</option>
+													</select>
+												</label>
+												<p class="markRed">กรุณาระบุอำเภอ/เขต</p>
+											</div>
+											<!-- end อำเภอ/เขต -->
+
+											<!-- ตำบล/แขวง -->
+											<div class="colspan1go2">
+												<h6>ตำบล/แขวง <span class="markRed">*</span></h6>
+												<label>
+													<select class="form-control orchidFormControl">
+														<option>กรุณาเลือกตำบล/แขวง</option>
+														<option>คลองจั่น</option>
+														<option>บางบอน</option>
+														<option>ลาดกระบัง</option>
+														<option>คลองตัน</option>
+													</select>
+												</label>
+												<p class="markRed">กรุณาระบุตำบล/แขวง</p>
+											</div>
+											<!-- end ตำบล/แขวง -->
+
+											<!-- รหัสไปรษณีย์ -->
+											<div class="colspan2go2">
+												<h6>รหัสไปรษณีย์ <span class="markRed">*</span></h6>
+												<label>
+													<input type="text" class="form-control orchidFormControl"
+														placeholder="รหัสไปรษณีย์">
+												</label>
+												<p class="markRed">กรุณาระบุรหัสไปรษณีย์</p>
+											</div>
+											<!-- end รหัสไปรษณีย์ -->
+										</section>
+										<!-- end ที่อยู่ปัจจุบัน -->
+
+										<div class="lineLine"></div>
+
+										<!-- ที่อยู่ตามทะเบียนบ้าน -->
+										<section class="gridForm">
+											<h2 class="colspan1go3"><b>รายละเอียดที่อยู่ตามทะเบียนบ้าน</b></h2>
+											<label>
+												<input type="checkbox" class="checkCheck">
+												ที่อยู่เดียวกับที่อยู่ปัจจุบัน
+											</label>
+
+											<!-- รายละเอียดที่อยู่ตามทะเบียนบ้าน -->
+											<div class="colspan1go3">
+												<h6>รายละเอียดที่อยู่ตามทะเบียนบ้าน <span class="markRed">*</span></h6>
+												<label>
+													<textarea class="form-control orchidFormControl" rows="4"
+														placeholder="ที่อยู่"></textarea>
+												</label>
+												<p class="markRed">กรุณาระบุรายละเอียดที่อยู่ตามทะเบียนบ้าน</p>
+											</div>
+											<!-- end รายละเอียดที่อยู่ตามทะเบียนบ้าน -->
+
+											<!-- จังหวัด -->
+											<div class="colspan1go2">
+												<h6>จังหวัด <span class="markRed">*</span></h6>
+												<label>
+													<select class="form-control orchidFormControl">
+														<option>กรุณาเลือกจังหวัด</option>
+														<option>กรุงเทพมหานคร</option>
+														<option>ตาก</option>
+														<option>พะเยา</option>
+														<option>เชียงใหม่</option>
+													</select>
+												</label>
+												<p class="markRed">กรุณาระบุจังหวัด</p>
+											</div>
+											<!-- end จังหวัด -->
+
+											<!-- อำเภอ/เขต -->
+											<div class="colspan2go2">
+												<h6>อำเภอ/เขต <span class="markRed">*</span></h6>
+												<label>
+													<select class="form-control orchidFormControl">
+														<option>กรุณาเลือกอำเภอ/เขต</option>
+														<option>บางกะปิ</option>
+														<option>วังทองหลาง</option>
+														<option>บางแค</option>
+														<option>เชียงใหม่</option>
+													</select>
+												</label>
+												<p class="markRed">กรุณาระบุอำเภอ/เขต</p>
+											</div>
+											<!-- end อำเภอ/เขต -->
+
+											<!-- ตำบล/แขวง -->
+											<div class="colspan1go2">
+												<h6>ตำบล/แขวง <span class="markRed">*</span></h6>
+												<label>
+													<select class="form-control orchidFormControl">
+														<option>กรุณาเลือกตำบล/แขวง</option>
+														<option>คลองจั่น</option>
+														<option>บางบอน</option>
+														<option>ลาดกระบัง</option>
+														<option>คลองตัน</option>
+													</select>
+												</label>
+												<p class="markRed">กรุณาระบุตำบล/แขวง</p>
+											</div>
+											<!-- end ตำบล/แขวง -->
+
+											<!-- รหัสไปรษณีย์ -->
+											<div class="colspan2go2">
+												<h6>รหัสไปรษณีย์ <span class="markRed">*</span></h6>
+												<label>
+													<input type="text" class="form-control orchidFormControl"
+														placeholder="รหัสไปรษณีย์">
+												</label>
+												<p class="markRed">กรุณาระบุรหัสไปรษณีย์</p>
+											</div>
+											<!-- end รหัสไปรษณีย์ -->
+										</section>
+										<!-- end ที่อยู่ตามทะเบียนบ้าน -->
+
+										<div class="confirmSave">
+											<button>บันทึก</button>
+										</div>
+
+										<div class="lineLine"></div>
+									</form>
+								</div>
+							</div>
+							<!--end แก้ไข ข้อมูลส่วนตัว-->
+
+							<!--แสดงผลโปรไฟล์-->
+							<div class="flexProfile">
+								<ul class="profileName">
+									<li>ฉัตรทอง หงส์วิสุทธิกุล</li>
+									<li>Web Designer ที่ JOBBKK.COM</li>
+									<li>กรุงเทพมหานครและปริมณฑล, ประเทศไทย</li>
+								</ul>
+
+								<ul class="addressName">
+									<li><img src="images/company.png"> JOBBKK.COM</li>
+									<li><img src="images/university.png"> มหาวิทยาลัยราชภัฏสวนสุนันทา
+									</li>
+									<li><a href="javascript:void(0)" data-toggle="modal" data-target="#contact"><img
+												src="images/address.png">ดูข้อมูลติดต่อ คลิก</a></li>
+								</ul>
+
+								<!--modal ดูข้อมูลติดต่อ-->
+								<div class="modal fade" id="contact" tabindex="-1" role="dialog"
+									aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog dialogOrchid" role="document">
+										<div class="modal-content">
+											<!--head modal-->
+											<div class="modal-header">
+												<div class="col-12 flexModal">
+													<p class="modal-title" id="exampleModalLabel">ฉัตรทอง หงส์วิสุทธิกุล
+													</p>
+
+													<button type="button" class="close" data-dismiss="modal"
+														aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+											</div>
+											<!--end head modal-->
+
+											<!--body-modal-->
+											<div class="modal-body">
+												<section class="col-12 flexBody">
+													<h2>ข้อมูลติดต่อ</h2>
+
+													<article class="flexTract">
+														<div>
+															<figure><img src="images/phone.png"></figure>
+
+															<div>
+																<p><b>โทรศัพท์ :</b></p>
+																<p>0897620645 (มือถือ)</p>
+															</div>
+														</div>
+
+														<div>
+															<figure><img src="images/address.png"></figure>
+
+															<div>
+																<p><b>ที่อยู่ :</b></p>
+																<p>447 ถ.ลาดพร้าว 10 ต.คลองจั่น ข.บางกะปิ กทม.10240</p>
+															</div>
+														</div>
+
+														<div>
+															<figure><img src="images/mail.png"></figure>
+
+															<section class="flexTractBB">
+																<div>
+																	<p><b>อีเมล :</b></p>
+																	<p>dynastystrike@gmail.com</p>
+																</div>
+
+																<div>
+																	<p><b>ไลน์ :</b></p>
+																	<p>dynastystrike@gmail.com</p>
+																</div>
+
+																<div>
+																	<p><b>เฟสบุ๊ค :</b></p>
+																	<p>dynastystrike@gmail.com</p>
+																</div>
+															</section>
+														</div>
+
+														<div>
+															<figure><img src="images/gift.png"></figure>
+															<div>
+																<p><b>วันเกิด :</b></p>
+																<p>30 มกราคม 1987</p>
+															</div>
+														</div>
+													</article>
+
+												</section>
+											</div>
+											<!--end body-modal-->
+
+											<!-- <div class="modal-footer">
+												<button type="button" class="btn btn-secondary"
+													data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Save changes</button>
+											</div> -->
+										</div>
+									</div>
+								</div>
+								<!--end modal ดูข้อมูลติดต่อ-->
+							</div>
+							<!--end แสดงผลโปรไฟล์-->
+
+							<!--resume port-->
+							<div class="gridReport">
+								<div class="picBorder">
+									<a href="javascript:void(0)" class="flexPortfolio">
+										<figure>
+											<img src="images/pic-pic.png">
+										</figure>
+										<p>ข้อมูลส่วนตัว.docx</p>
+									</a>
+								</div>
+
+								<div class="picBorder">
+									<a href="javascript:void(0)" class="flexPortfolio">
+										<figure>
+											<img src="images/pic-pic.png">
+										</figure>
+										<p>Portfolio Designer.pdf</p>
+									</a>
+								</div>
+							</div>
+							<!--end resume port-->
+
+							<p class="font-size-22"><span class="color-black">ความสมบูรณ์ของโปรไฟล์
+								:</span><b class="color-pink"> ระดับดีมาก</b></p>
+						</div>
+						<!--end ชื่อนามสกุล-->
+
+						<!--ความสมบูรณ์ของโปรไฟล์-->
+						<div class="margin-bottom-20">
+							<div class="row">
+								<div class="borderDashboard padding-15">
+									<div class="margin-bottom-20">
+										
+									</div>
+
+									<div class="margin-bottom-20">
+										<div class="progress">
+											<div class="progress-bar progress-bar-animated" role="progressbar"
+												style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+												aria-valuemax="100">75%</div>
+										</div>
+									</div>
+
+									<div class="margin-bottom-20">
+										<div class="row margin-bottom-10">
+											<div class="siema bg-icon">
+												<div class="">
+
+													<div class="icon-technique">
+														<img src="images/trophy.png">
+													</div>
+
+													<div class="text-technique font-size-16">
+														<ul>
+															<li>ถ้าคุณระบุเป้าหมายในการทำงานจะทำให้ผู้ว่าจ้างมั่นใจ
+																ถึงแรงขับที่จะประสบความสำเร็จในสายอาชีพของคุณ
+															</li>
+															<li><a href="#">ทำเลย</a></li>
+														</ul>
+													</div>
+
+												</div>
+
+												<div class="">
+
+													<div class="icon-technique margin-bottom-20">
+														<img src="images/star.png">
+													</div>
+
+													<div class="text-technique font-size-16">
+														<ul>
+															<li>ถ้าคุณอธิบายจุดแข็งที่คุณเลือกไว้ 5 ข้อเพิ่มเติม
+																เช่น
+																เก่งในการวางแผน</li>
+															<li><a href="#">ทำเลย</a></li>
+														</ul>
+													</div>
+
+												</div>
+											</div>
+										</div>
+
+										<button class="prev click-click font-size-16">prev</button>
+										<button class="next click-click font-size-16">next</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--end ความสมบูรณ์ของโปรไฟล์-->
+
+						<!--หัวเรื่อง การศึกษาและการทำงาน-->
+						<div class="col-12 margin-bottom-20">
+							<div class="row">
+								<div class="borderDashboard padding-15">
+									<!--การศึกษาและการทำงาน-->
+									<div class="col-12 margin-bottom-20">
+										<div class="row">
+											<div class="col-sm-10 col-6">
+												<p class="font-size-22 color-black">การศึกษาและการทำงาน</p>
+											</div>
+
+											<div class="col-sm-2 col-6 edit-small">
+												<div class="card orchid-card">
+													<div class="card-header orchid-card-header" id="headingTwo">
+														<div data-toggle="tooltip" id="title" data-placement="right"
+															title="แก้ไขข้อมูล">
+															<button class="orchid-edit" type="button"
+																data-toggle="collapse" data-target="#collapseTwo"
+																aria-expanded="true" aria-controls="collapseTwo">
+																<img src="images/edit.png">
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!--แก้ไข การศึกษาและการทำงาน-->
+											<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+												data-parent="#accordionExample">
+												<div class="card-body orchid-card-body">
+													<div class="row">
+														<div class="col-12 margin-bottom-20">
+															<div class="line-line"></div>
+														</div>
+
+														<!--แก้ไขลักษณะงานที่ต้องการ-->
+														<div class="col-12 margin-bottom-20">
+															<div class="row">
+																<div class="col-12 margin-bottom-10">
+																	<p class="font-size-20 color-black">
+																		<b>ลักษณะงานที่ต้องการ</b></p>
+																</div>
+
+																<!--แก้ไขตำแหน่งงานที่ต้องการสมัคร-->
+																<div class="col-12 margin-bottom-20">
+																	<div class="row">
+																		<div class="col-12 margin-bottom-5">
+																			<p class="font-size-16 color-violet">
+																				<b>ตำแหน่งงานที่ต้องการสมัคร</b>
+																				<span class="color-red">*</span></p>
+																		</div>
+
+																		<div class="col-12">
+																			<div class="row">
+																				<div
+																					class="col-sm-1 col-2 font-size-16 number-list">
+																					<p>1.</p>
+																				</div>
+
+																				<div class="col-sm-11 col-10">
+																					<div class="row">
+																						<div class="col-md-6 col-sm-12">
+																							<label>
+																								<select
+																									class="form-control orchid-form-control font-size-14">
+																									<option>
+																										กรุณาเลือกตำแหน่ง
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																								</select>
+																							</label>
+																						</div>
+
+																						<div class="col-md-6 col-sm-12">
+																							<label>
+																								<select
+																									class="form-control orchid-form-control font-size-14">
+																									<option>
+																										กรุณาเลือกสาขา
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																								</select>
+																							</label>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+
+																		<div class="col-12">
+																			<div class="row">
+																				<div
+																					class="col-sm-1 col-2 font-size-16 number-list">
+																					<p>2.</p>
+																				</div>
+
+																				<div class="col-sm-11 col-10">
+																					<div class="row">
+																						<div class="col-md-6 col-sm-12">
+																							<label>
+																								<select
+																									class="form-control orchid-form-control font-size-14">
+																									<option>
+																										กรุณาเลือกตำแหน่ง
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																								</select>
+																							</label>
+																						</div>
+
+																						<div class="col-md-6 col-sm-12">
+																							<label>
+																								<select
+																									class="form-control orchid-form-control font-size-14">
+																									<option>
+																										กรุณาเลือกสาขา
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																								</select>
+																							</label>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+
+																		<div class="col-12">
+																			<div class="row">
+																				<div
+																					class="col-sm-1 col-2 font-size-16 number-list">
+																					<p>3.</p>
+																				</div>
+
+																				<div class="col-sm-11 col-10">
+																					<div class="row">
+																						<div class="col-md-6 col-sm-12">
+																							<label>
+																								<select
+																									class="form-control orchid-form-control font-size-14">
+																									<option>
+																										กรุณาเลือกตำแหน่ง
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																								</select>
+																							</label>
+																						</div>
+
+																						<div class="col-md-6 col-sm-12">
+																							<label>
+																								<select
+																									class="form-control orchid-form-control font-size-14">
+																									<option>
+																										กรุณาเลือกสาขา
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																									<option>Web
+																										Designer
+																									</option>
+																								</select>
+																							</label>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+
+																		<div class="col-12">
+																			<p class="font-size-14 color-red">
+																				กรุณาเลือกตำแหน่งงานที่ต้องการสมัคร
+																				*
+																			</p>
+																		</div>
+																	</div>
+																</div>
+																<!--end แก้ไขตำแหน่งงานที่ต้องการสมัคร-->
+
+																<!--แก้ไขเงินเดือนที่ต้องการ-->
+																<div class="col-12 margin-bottom-20">
+																	<div class="row">
+																		<div class="col-12 margin-bottom-10">
+																			<p class="font-size-16 color-violet">
+																				<b>เงินเดือนที่ต้องการ</b> <span
+																					class="color-red">*</span></p>
+																		</div>
+
+																		<div class="col-12">
+																			<div class="row">
+																				<div class="col-md-6 col-sm-12">
+																					<div class="row">
+																						<div
+																							class="col-md-3 col-sm-12 font-size-16">
+																							<p>เริ่มต้น</p>
+																						</div>
+
+																						<div class="col-md-7 col-sm-12">
+																							<label>
+																								<select
+																									class="form-control orchid-form-control font-size-14">
+																									<option disabled>
+																										เงินเดือนเริ่มต้น
+																									</option>
+																									<option>100000
+																									</option>
+																									<option>100000
+																									</option>
+																									<option>100000
+																									</option>
+																									<option>100000
+																									</option>
+																								</select>
+																							</label>
+																						</div>
+
+																						<div
+																							class="col-md-2 col-sm-12 font-size-16">
+																							<p>ถึง</p>
+																						</div>
+																					</div>
+																				</div>
+
+																				<div class="col-md-6 col-sm-12">
+																					<div class="row">
+																						<div class="col-md-7 col-sm-12">
+																							<label>
+																								<select
+																									class="form-control orchid-form-control font-size-14">
+																									<option disabled>
+																										เงินเดือนเริ่มต้น
+																									</option>
+																									<option>100000
+																									</option>
+																									<option>100000
+																									</option>
+																									<option>100000
+																									</option>
+																									<option>100000
+																									</option>
+																								</select>
+																							</label>
+																						</div>
+
+																						<div
+																							class="col-md-5 col-sm-12 font-size-16">
+																							<p>บาท</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+
+																		<div class="col-12">
+																			<p class="font-size-14 color-red">
+																				กรุณาเลือกเงินเดือน *</p>
+																		</div>
+																	</div>
+																</div>
+																<!--end แก้ไขเงินเดือนที่ต้องการ-->
+
+																<!--แก้ไขตำแหน่งงานที่ต้องการสมัคร-->
+																<div class="col-12 margin-bottom-20">
+																	<div class="row">
+																		<div class="col-12 margin-bottom-5">
+																			<p class="font-size-16 color-violet">
+																				<b>สถานที่ทำงานที่ต้องการ</b> <span
+																					class="color-red">*</span></p>
+																		</div>
+
+																		<div class="col-12">
+																			<div class="row">
+																				<div class="col-md-6 col-sm-12">
+																					<div class="row">
+																						<div class="col-12">
+																							<label>
+																								<select
+																									class="form-control orchid-form-control font-size-14">
+																									<option disabled>
+																										กรุณาเลือกจังหวัด
+																									</option>
+																									<option>
+																										กรุงเทพมหานคร
+																									</option>
+																									<option>
+																										กรุงเทพมหานคร
+																									</option>
+																									<option>
+																										กรุงเทพมหานคร
+																									</option>
+																									<option>
+																										กรุงเทพมหานคร
+																									</option>
+																								</select>
+																							</label>
+																						</div>
+
+																						<div class="col-12">
+																							<p
+																								class="font-size-14 color-red">
+																								กรุณาเลือกจังหวัด *
+																							</p>
+																						</div>
+																					</div>
+																				</div>
+
+																				<div class="col-md-6 col-sm-12">
+																					<div class="row">
+																						<div class="col-12">
+																							<label>
+																								<select
+																									class="form-control orchid-form-control select2District font-size-14"
+																									multiple="multiple">
+																									<option disabled>
+																										กรุณาเลือกเขต
+																									</option>
+																									<option>บางกะปิ
+																									</option>
+																									<option>บึงกุ่ม
+																									</option>
+																									<option>บางบอน
+																									</option>
+																									<option>
+																										วังทองหลาง
+																									</option>
+																									<option>ลาดพร้าว
+																									</option>
+																									<option>บางปะอิน
+																									</option>
+																								</select>
+																							</label>
+																						</div>
+
+																						<div class="col-12">
+																							<p class="font-size-14">
+																								สามารถเลือกอำเภอได้ไม่เกิน
+																								5
+																								อำเภอ</p>
+																						</div>
+
+																						<div class="col-12">
+																							<p
+																								class="font-size-14 color-red">
+																								กรุณาเลือกอำเภอ *
+																							</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!--end แก้ไขตำแหน่งงานที่ต้องการสมัคร-->
+
+																<!--แก้ไขประเภทงานที่ต้องการ ระยะเวลาที่สามารถเริ่มงาน-->
+																<div class="col-12">
+																	<div class="row">
+																		<!--ประเภทงานที่ต้องการ-->
+																		<div
+																			class="col-md-4 col-sm-12 margin-bottom-20">
+																			<div class="row">
+																				<div class="col-12 margin-bottom-5">
+																					<p
+																						class="font-size-16 color-violet">
+																						<b>ประเภทงานที่ต้องการ</b>
+																						<span class="color-red">*</span>
+																					</p>
+																				</div>
+
+																				<div class="col-12">
+																					<label>
+																						<select
+																							class="form-control orchid-form-control font-size-14">
+																							<option disabled>
+																								กรุณาเลือกประเภทงานที่ต้องการ
+																							</option>
+																							<option>งานประจำ
+																							</option>
+																							<option>งานประจำ
+																							</option>
+																							<option>งานประจำ
+																							</option>
+																							<option>งานประจำ
+																							</option>
+																						</select>
+																					</label>
+																				</div>
+
+																				<div class="col-12">
+																					<p class="font-size-14 color-red">
+																						กรุณาเลือกประเภทงานที่ต้องการ
+																						*
+																					</p>
+																				</div>
+																			</div>
+																		</div>
+																		<!--end ประเภทงานที่ต้องการ-->
+
+																		<!--ระยะเวลาที่สามารถเริ่มงาน-->
+																		<div
+																			class="col-md-4 col-sm-12 margin-bottom-20">
+																			<div class="row">
+																				<div class="col-12 margin-bottom-5">
+																					<p
+																						class="font-size-16 color-violet">
+																						<b>ระยะเวลาที่สามารถเริ่มงาน</b>
+																						<span class="color-red">*</span>
+																					</p>
+																				</div>
+
+																				<div class="col-12">
+																					<label>
+																						<select
+																							class="form-control orchid-form-control font-size-14">
+																							<option disabled>
+																								กรุณาเลือกระยะเวลาที่สามารถเริ่มงาน
+																							</option>
+																							<option>มากกว่า 1 เดือน
+																							</option>
+																							<option>มากกว่า 1 เดือน
+																							</option>
+																							<option>มากกว่า 1 เดือน
+																							</option>
+																							<option>มากกว่า 1 เดือน
+																							</option>
+																						</select>
+																					</label>
+																				</div>
+
+																				<div class="col-12">
+																					<p class="font-size-14 color-red">
+																						กรุณาเลือกระยะเวลาที่สามารถเริ่มงาน
+																						*</p>
+																				</div>
+																			</div>
+																		</div>
+																		<!--end ระยะเวลาที่สามารถเริ่มงาน-->
+
+																		<!--ประสบการณ์การทำงานทั้งหมด-->
+																		<div
+																			class="col-md-4 col-sm-12 margin-bottom-20">
+																			<div class="row">
+																				<div class="col-12 margin-bottom-5">
+																					<p
+																						class="font-size-16 color-violet">
+																						<b>ประสบการณ์การทำงานทั้งหมด/ปี</b>
+																						<span class="color-red">*</span>
+																					</p>
+																				</div>
+
+																				<div class="col-12">
+																					<label>
+																						<select
+																							class="form-control orchid-form-control font-size-14">
+																							<option disabled>
+																								กรุณาเลือกประสบการณ์การทำงานทั้งหมด
+																							</option>
+																							<option>0</option>
+																							<option>1</option>
+																							<option>2</option>
+																							<option>3</option>
+																						</select>
+																					</label>
+																				</div>
+
+																				<div class="col-12">
+																					<p class="font-size-14 color-red">
+																						กรุณาเลือกประสบการณ์การทำงานทั้งหมด
+																						*</p>
+																				</div>
+																			</div>
+																		</div>
+																		<!--end ระยะเวลาที่สามารถเริ่มงาน-->
+																	</div>
+																</div>
+																<!--end แก้ไขตำแหน่งงานที่ต้องการสมัคร ระยะเวลาที่สามารถเริ่มงาน-->
+
+																<div class="col-12 margin-bottom-20">
+																	<div class="line-line"></div>
+																</div>
+
+																<!--แก้ไขประวัติการศึกษา-->
+																<div class="col-12">
+																	<div class="row">
+																		<div class="col-12 margin-bottom-5">
+																			<p class="font-size-20 color-black">
+																				<b>ประวัติการศึกษา</b></p>
+																		</div>
+
+																		<!--group ประวัติการศึกษา-->
+																		<div class="col-12">
+																			<div class="row">
+																				<!--ระดับการศึกษา ชื่อสถานศึกษา-->
+																				<div class="col-12">
+																					<div class="row">
+																						<!--ระดับการศึกษา-->
+																						<div
+																							class="col-md-6 col-sm-12 margin-bottom-20">
+																							<div class="row">
+																								<div
+																									class="col-12 margin-bottom-5">
+																									<p
+																										class="font-size-16 color-violet">
+																										<b>ระดับการศึกษา</b>
+																										<span
+																											class="color-red">*</span>
+																									</p>
+																								</div>
+
+																								<div class="col-12">
+																									<label>
+																										<select
+																											class="form-control orchid-form-control font-size-14">
+																											<option
+																												disabled>
+																												กรุณาเลือกระดับการศึกษา
+																											</option>
+																											<option>
+																												ปริญญาตรี
+																											</option>
+																											<option>
+																												ปริญญาตรี
+																											</option>
+																											<option>
+																												ปริญญาตรี
+																											</option>
+																											<option>
+																												ปริญญาตรี
+																											</option>
+																										</select>
+																									</label>
+																								</div>
+
+																								<div class="col-12">
+																									<p
+																										class="font-size-14 color-red">
+																										กรุณาเลือกระดับการศึกษา
+																										*</p>
+																								</div>
+																							</div>
+																						</div>
+																						<!--end ระดับการศึกษา-->
+
+																						<!--ชื่อสถานศึกษา-->
+																						<div
+																							class="col-md-6 col-sm-12 margin-bottom-20">
+																							<div class="row">
+																								<div
+																									class="col-12 margin-bottom-5">
+																									<p
+																										class="font-size-16 color-violet">
+																										<b>ชื่อสถานศึกษา</b>
+																										<span
+																											class="color-red">*</span>
+																									</p>
+																								</div>
+
+																								<div class="col-12">
+																									<label>
+																										<select
+																											class="form-control orchid-form-control font-size-14">
+																											<option
+																												disabled>
+																												กรุณาเลือกสถานศึกษา
+																											</option>
+																											<option>
+																												มหาวิทยาลัยราชภัฏสวนสุนันทา
+																											</option>
+																											<option>
+																												มหาวิทยาลัยราชภัฏสวนสุนันทา
+																											</option>
+																											<option>
+																												มหาวิทยาลัยราชภัฏสวนสุนันทา
+																											</option>
+																											<option>
+																												มหาวิทยาลัยราชภัฏสวนสุนันทา
+																											</option>
+																										</select>
+																									</label>
+																								</div>
+
+																								<div class="col-12">
+																									<p
+																										class="font-size-14 color-red">
+																										กรุณาเลือกสถานศึกษา
+																										*</p>
+																								</div>
+																							</div>
+																						</div>
+																						<!--end ชื่อสถานศึกษา-->
+																					</div>
+																				</div>
+																				<!--end ระดับการศึกษา ชื่อสถานศึกษา-->
+
+																				<!--คณะ สาขา-->
+																				<div class="col-12">
+																					<div class="row">
+																						<!--คณะ-->
+																						<div
+																							class="col-md-6 col-sm-12 margin-bottom-20">
+																							<div class="row">
+																								<div
+																									class="col-12 margin-bottom-5">
+																									<p
+																										class="font-size-16 color-violet">
+																										<b>คณะ</b>
+																									</p>
+																								</div>
+
+																								<div class="col-12">
+																									<label>
+																										<select
+																											class="form-control orchid-form-control font-size-14">
+																											<option
+																												disabled>
+																												กรุณาเลือกคณะ
+																											</option>
+																											<option>
+																												ศิลปกรรมศาสตร์
+																											</option>
+																											<option>
+																												ศิลปกรรมศาสตร์
+																											</option>
+																											<option>
+																												ศิลปกรรมศาสตร์
+																											</option>
+																											<option>
+																												ศิลปกรรมศาสตร์
+																											</option>
+																										</select>
+																									</label>
+																								</div>
+
+																								<div class="col-12">
+																									<p
+																										class="font-size-14 color-red">
+																										กรุณาเลือกคณะ
+																										*
+																									</p>
+																								</div>
+																							</div>
+																						</div>
+																						<!--end คณะ-->
+
+																						<!--สาขา-->
+																						<div
+																							class="col-md-6 col-sm-12 margin-bottom-20">
+																							<div class="row">
+																								<div
+																									class="col-12 margin-bottom-5">
+																									<p
+																										class="font-size-16 color-violet">
+																										<b>สาขา</b>
+																									</p>
+																								</div>
+
+																								<div class="col-12">
+																									<label>
+																										<select
+																											class="form-control orchid-form-control font-size-14">
+																											<option
+																												disabled>
+																												กรุณาเลือกสาขา
+																											</option>
+																											<option>
+																												ออกแบบนิเทศศิลป์
+																											</option>
+																											<option>
+																												ออกแบบนิเทศศิลป์
+																											</option>
+																											<option>
+																												ออกแบบนิเทศศิลป์
+																											</option>
+																											<option>
+																												ออกแบบนิเทศศิลป์
+																											</option>
+																										</select>
+																									</label>
+																								</div>
+
+																								<div class="col-12">
+																									<p
+																										class="font-size-14 color-red">
+																										กรุณาเลือกสาขา
+																										*
+																									</p>
+																								</div>
+																							</div>
+																						</div>
+																						<!--end ชื่อสถานศึกษา-->
+																					</div>
+																				</div>
+																				<!--end คณะ สาขา-->
+
+																				<!--เกรดเฉลี่ย ปีการศึกษา-->
+																				<div class="col-12">
+																					<div class="row">
+																						<!--เกรดเฉลี่ย-->
+																						<div
+																							class="col-md-6 col-sm-12 margin-bottom-20">
+																							<div class="row">
+																								<div
+																									class="col-12 margin-bottom-5">
+																									<p
+																										class="font-size-16 color-violet">
+																										<b>เกรดเฉลี่ย</b>
+																										<span
+																											class="color-red">*</span>
+																									</p>
+																								</div>
+
+																								<div class="col-12">
+																									<label>
+																										<input
+																											type="text"
+																											class="form-control orchid-form-control font-size-14"
+																											placeholder="เกรดเฉลี่ย">
+																									</label>
+																								</div>
+
+																								<div class="col-12">
+																									<p
+																										class="font-size-14 color-red">
+																										กรุณาระบุเกรดเฉลี่ย
+																										*</p>
+																								</div>
+																							</div>
+																						</div>
+																						<!--end เกรดเฉลี่ย-->
+
+																						<!--ปีการศึกษา-->
+																						<div
+																							class="col-md-6 col-sm-12 margin-bottom-20">
+																							<div class="row">
+																								<div
+																									class="col-12 margin-bottom-5">
+																									<p
+																										class="font-size-16 color-violet">
+																										<b>ปีการศึกษา</b>
+																										<span
+																											class="color-red">*</span>
+																									</p>
+																								</div>
+
+																								<div class="col-12">
+																									<label>
+																										<select
+																											class="form-control orchid-form-control font-size-14">
+																											<option
+																												disabled>
+																												กรุณาเลือกปีการศึกษา
+																											</option>
+																											<option>
+																												2019
+																											</option>
+																											<option>
+																												2019
+																											</option>
+																											<option>
+																												2019
+																											</option>
+																											<option>
+																												2019
+																											</option>
+																										</select>
+																									</label>
+																								</div>
+
+																								<div class="col-12">
+																									<p
+																										class="font-size-14 color-red">
+																										กรุณาเลือกปีการศึกษา
+																										*</p>
+																								</div>
+																							</div>
+																						</div>
+																						<!--end ปีการศึกษา-->
+																					</div>
+																				</div>
+																				<!--end เกรดเฉลี่ย ปีการศึกษา-->
+
+																				<div
+																					class="col-12 text-align-center confirm-del margin-bottom-20">
+																					<button class="delete-data"><span><i
+																								class="fas fa-trash-alt"></i></span>
+																						ลบ</button>
+																				</div>
+
+																				<div class="col-12 margin-bottom-20">
+																					<div class="line-line"></div>
+																				</div>
+																			</div>
+																		</div>
+																		<!--end group ประวัติการศึกษา-->
+
+																		<div
+																			class="col-12 text-align-center margin-bottom-20">
+																			<button class="add-data"><span><i
+																						class="fas fa-plus-circle"></i></span>
+																				เพิ่มข้อมูลประวัติการศึกษา</button>
+																		</div>
+																	</div>
+																</div>
+																<!--end แก้ไขประวัติการศึกษา-->
+
+																<!--แก้ไขประวัติการทำงาน/ฝึกงาน-->
+																<div class="col-12">
+																	<div class="row">
+																		<div class="col-12 margin-bottom-5">
+																			<p class="font-size-20 color-black">
+																				<b>ประวัติการทำงาน/ฝึกงาน</b></p>
+																		</div>
+
+																		<!--group ประวัติการทำงาน/ฝึกงาน-->
+																		<div class="col-12">
+																			<div class="row">
+																				<!--ชื่อบริษัท-->
+																				<div class="col-12 margin-bottom-20">
+																					<div class="row">
+																						<div class="col-12">
+																							<p
+																								class="font-size-16 color-violet">
+																								<b>ชื่อบริษัท</b>
+																								<span
+																									class="color-red">*</span>
+																							</p>
+																						</div>
+
+																						<div class="col-12">
+																							<label>
+																								<input type="text"
+																									class="form-control orchid-form-control font-size-14"
+																									placeholder="ชื่อบริษัท">
+																							</label>
+																						</div>
+
+																						<div class="col-12">
+																							<p
+																								class="font-size-14 color-red">
+																								กรุณาระบุชื่อบริษัท
+																								*
+																							</p>
+																						</div>
+																					</div>
+																				</div>
+																				<!--end ชื่อบริษัท-->
+
+																				<!--ที่อยู่บริษัท-->
+																				<div class="col-12 margin-bottom-20">
+																					<div class="row">
+																						<div class="col-12">
+																							<p
+																								class="font-size-16 color-violet">
+																								<b>ที่อยู่บริษัท
+																									<span
+																										class="color-red">*</span></b>
+																							</p>
+																						</div>
+
+																						<div class="col-12">
+																							<label>
+																								<textarea
+																									class="form-control orchid-form-control orchid-area font-size-14"
+																									placeholder="ที่อยู่บริษัท">
+																							</textarea>
+																							</label>
+																						</div>
+
+																						<div class="col-12">
+																							<p
+																								class="font-size-14 color-red">
+																								กรุณาระบุที่อยู่บริษัท
+																								*
+																							</p>
+																						</div>
+																					</div>
+																				</div>
+																				<!--end ที่อยู่บริษัท-->
+
+																				<!--เริ่มการทำงาน สิ้นสุดการทำงาน-->
+																				<div class="col-12">
+																					<div class="row">
+																						<!--เริ่มการทำงาน-->
+																						<div
+																							class="col-md-6 col-sm-12 margin-bottom-20">
+																							<div class="row">
+																								<div class="col-12">
+																									<p
+																										class="font-size-16 color-violet">
+																										<b>เริ่มการทำงาน
+																											<span
+																												class="color-red">*</span></b>
+																									</p>
+																								</div>
+
+																								<div class="col-12">
+																									<div class="row">
+																										<div
+																											class="col-sm-6 col-12">
+																											<label>
+																												<select
+																													class="form-control orchid-form-control font-size-14">
+																													<option
+																														disabled>
+																														กรุณาเลือกเดือน
+																													</option>
+																													<option>
+																														มกราคม
+																													</option>
+																													<option>
+																														มกราคม
+																													</option>
+																													<option>
+																														มกราคม
+																													</option>
+																													<option>
+																														มกราคม
+																													</option>
+																												</select>
+																											</label>
+																										</div>
+
+																										<div
+																											class="col-sm-6 col-12">
+																											<label>
+																												<select
+																													class="form-control orchid-form-control font-size-14">
+																													<option
+																														disabled>
+																														กรุณาเลือกปี
+																													</option>
+																													<option>
+																														2019
+																													</option>
+																													<option>
+																														2019
+																													</option>
+																													<option>
+																														2019
+																													</option>
+																													<option>
+																														2019
+																													</option>
+																												</select>
+																											</label>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<!--end เริ่มการทำงาน-->
+
+																						<!--สิ้นสุดการทำงาน-->
+																						<div
+																							class="col-md-6 col-sm-12 margin-bottom-20">
+																							<div class="row">
+																								<div class="col-12">
+																									<p
+																										class="font-size-16 color-violet">
+																										<b>สิ้นสุดการทำงาน
+																											<span
+																												class="color-red">*</span></b>
+																									</p>
+																								</div>
+
+																								<div class="col-12">
+																									<div class="row">
+																										<div
+																											class="col-sm-6 col-12">
+																											<label>
+																												<select
+																													class="form-control orchid-form-control font-size-14">
+																													<option
+																														disabled>
+																														กรุณาเลือกเดือน
+																													</option>
+																													<option>
+																														มกราคม
+																													</option>
+																													<option>
+																														มกราคม
+																													</option>
+																													<option>
+																														มกราคม
+																													</option>
+																													<option>
+																														มกราคม
+																													</option>
+																												</select>
+																											</label>
+																										</div>
+
+																										<div
+																											class="col-sm-6 col-12">
+																											<label>
+																												<select
+																													class="form-control orchid-form-control font-size-14">
+																													<option
+																														disabled>
+																														กรุณาเลือกปี
+																													</option>
+																													<option>
+																														2019
+																													</option>
+																													<option>
+																														2019
+																													</option>
+																													<option>
+																														2019
+																													</option>
+																													<option>
+																														2019
+																													</option>
+																												</select>
+																											</label>
+																										</div>
+																									</div>
+																								</div>
+
+																								<div
+																									class="col-12 font-size-16">
+																									<input
+																										type="checkbox">
+																									ปัจจุบัน
+																								</div>
+																							</div>
+																						</div>
+																						<!--end สิ้นสุดการทำงาน-->
+																					</div>
+																				</div>
+																				<!--เริ่มการทำงาน สิ้นสุดการทำงาน-->
+
+																				<!--ตำแหน่งงาน ระดับ-->
+																				<div class="col-12">
+																					<div class="row">
+																						<!--ตำแหน่งงาน-->
+																						<div
+																							class="col-md-6 col-sm-12 margin-bottom-20">
+																							<div class="row">
+																								<div class="col-12">
+																									<p
+																										class="font-size-16 color-violet">
+																										<b>ตำแหน่งงาน
+																											<span
+																												class="color-red">*</span></b>
+																									</p>
+																								</div>
+
+																								<div class="col-12">
+																									<label>
+																										<input
+																											type="text"
+																											class="form-control orchid-form-control font-size-14"
+																											placeholder="ตำแหน่งงาน">
+																									</label>
+																								</div>
+																							</div>
+																						</div>
+																						<!--ตำแหน่งงาน-->
+
+																						<!--ระดับ-->
+																						<div
+																							class="col-md-6 col-sm-12 margin-bottom-20">
+																							<div class="row">
+																								<div class="col-12">
+																									<p
+																										class="font-size-16 color-violet">
+																										<b>ระดับ
+																											<span
+																												class="color-red">*</span></b>
+																									</p>
+																								</div>
+
+																								<div class="col-12">
+																									<label>
+																										<select
+																											class="form-control orchid-form-control font-size-14">
+																											<option
+																												disabled>
+																												กรุณาเลือกระดับ
+																											</option>
+																											<option>
+																												อาวุโส
+																											</option>
+																											<option>
+																												อาวุโส
+																											</option>
+																											<option>
+																												อาวุโส
+																											</option>
+																											<option>
+																												อาวุโส
+																											</option>
+																										</select>
+																									</label>
+																								</div>
+																							</div>
+																						</div>
+																						<!--end ระดับ-->
+																					</div>
+																				</div>
+																				<!--ตำแหน่งงาน ระดับ-->
+
+																				<!--เงินเดือน-->
+																				<div class="col-12">
+																					<div class="row">
+																						<!--เริ่มงาน-->
+																						<div
+																							class="col-md-6 col-sm-12 margin-bottom-20">
+																							<div class="row">
+																								<div class="col-12">
+																									<p
+																										class="font-size-16 color-violet">
+																										<b>เริ่มงาน
+																											<span
+																												class="color-red">*</span></b>
+																									</p>
+																								</div>
+
+																								<div class="col-12">
+																									<label>
+																										<input
+																											type="text"
+																											class="form-control orchid-form-control font-size-14"
+																											placeholder="ระบุเงินเดือน">
+																									</label>
+																								</div>
+																							</div>
+																						</div>
+																						<!--เริ่มงาน-->
+
+																						<!--สิ้นสุดงาน-->
+																						<div
+																							class="col-md-6 col-sm-12 margin-bottom-20">
+																							<div class="row">
+																								<div class="col-12">
+																									<p
+																										class="font-size-16 color-violet">
+																										<b>สิ้นสุดงาน
+																											<span
+																												class="color-red">*</span></b>
+																									</p>
+																								</div>
+
+																								<div class="col-12">
+																									<label>
+																										<input
+																											type="text"
+																											class="form-control orchid-form-control font-size-14"
+																											placeholder="ระบุเงินเดือน">
+																									</label>
+																								</div>
+
+																								<div class="col-12">
+																									<p
+																										class="font-size-16 color-violet">
+																										บาท</p>
+																								</div>
+																							</div>
+																						</div>
+																						<!--สิ้นสุดงาน-->
+																					</div>
+																				</div>
+																				<!--เงินเดือน-->
+
+																				<!--หน้าที่รับผิดชอบ-->
+																				<div class="col-12 margin-bottom-20">
+																					<div class="row">
+																						<div class="col-12">
+																							<p
+																								class="font-size-16 color-violet">
+																								<b>หน้าที่รับผิดชอบ
+																									<span
+																										class="color-red">*</span></b>
+																							</p>
+																						</div>
+
+																						<div class="col-12">
+																							<label>
+																								<textarea
+																									class="form-control orchid-form-control orchid-area font-size-14"
+																									placeholder="หน้าที่รับผิดชอบ">
+																							</textarea>
+																							</label>
+																						</div>
+
+																						<div class="col-12">
+																							<p
+																								class="font-size-14 color-red">
+																								กรุณาระบุหน้าที่รับผิดชอบ
+																								*
+																							</p>
+																						</div>
+																					</div>
+																				</div>
+																				<!--end หน้าที่รับผิดชอบ-->
+
+																				<div
+																					class="col-12 text-align-center confirm-del margin-bottom-20">
+																					<button class="delete-data"><span><i
+																								class="fas fa-trash-alt"></i></span>
+																						ลบ</button>
+																				</div>
+
+																				<div class="col-12 margin-bottom-20">
+																					<div class="line-line"></div>
+																				</div>
+																			</div>
+																		</div>
+																		<!--end group ประวัติการทำงาน/ฝึกงาน-->
+
+																		<div class="col-12 text-align-center">
+																			<button class="add-data"><span><i
+																						class="fas fa-plus-circle"></i></span>
+																				เพิ่มประวัติการทำงาน
+																			</button>
+																		</div>
+																	</div>
+																</div>
+																<!--end แก้ไขประวัติการทำงาน/ฝึกงาน-->
+															</div>
+														</div>
+														<!--end แก้ไขลักษณะงานที่ต้องการ-->
+
+														<div class="col-12 text-align-center">
+															<button class="orchid-save font-size-16">บันทึก</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end แก้ไข การศึกษาและการทำงาน-->
+										</div>
+									</div>
+									<!--end การศึกษาและการทำงาน-->
+
+									<div class="col-12 margin-bottom-20">
+										<div class="line-line"></div>
+									</div>
+
+									<!--แสดงผล การศึกษาและการทำงาน-->
+									<div class="col-12">
+										<div class="row">
+											<!--ลักษณะงานที่ต้องการ-->
+											<div class="col-12 margin-bottom-20">
+												<div class="row">
+													<div class="col-12 margin-bottom-10">
+														<p class="font-size-20 color-black">
+															<b>ลักษณะงานที่ต้องการ</b>
+														</p>
+													</div>
+
+													<div class="col-12">
+														<div class="row">
+															<div class="col-12 margin-bottom-5">
+																<p class="font-size-16 color-violet">
+																	<b>ตำแหน่งงานที่ต้องการสมัคร</b></p>
+															</div>
+
+															<div class="col-12 font-size-16 work-work">
+																<ul>
+																	<li class="number">1.</li>
+																	<li><b>สาขาอาชีพ :</b></li>
+																	<li>Web Designer</li>
+																	<li><b>ตำแหน่ง :</b></li>
+																	<li>Web Designer</li>
+																</ul>
+															</div>
+
+															<div class="col-12 font-size-16 work-work">
+																<ul>
+																	<li class="number">2.</li>
+																	<li><b>สาขาอาชีพ :</b></li>
+																	<li>Web Designer</li>
+																	<li><b>ตำแหน่ง :</b></li>
+																	<li>Web Designer</li>
+																</ul>
+															</div>
+
+															<div class="col-12 font-size-16 work-work">
+																<ul>
+																	<li class="number">3.</li>
+																	<li><b>สาขาอาชีพ :</b></li>
+																	<li>Web Designer</li>
+																	<li><b>ตำแหน่ง :</b></li>
+																	<li>Web Designer</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end ลักษณะงานที่ต้องการ-->
+
+											<!--เงินเดือนที่ต้องการ-->
+											<div class="col-12 margin-bottom-20">
+												<div class="row">
+													<div class="col-12">
+														<p class="font-size-16 color-violet">
+															<b>เงินเดือนที่ต้องการ</b>
+														</p>
+													</div>
+
+													<div class="col-12">
+														<div class="row">
+															<div class="col-12 font-size-16 work-work">
+																<ul>
+																	<li>เริ่มต้น</li>
+																	<li>20000</li>
+																	<li>ถึง</li>
+																	<li>40000</li>
+																	<li>บาท</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end เงินเดือนที่ต้องการ-->
+
+											<!--สถานที่ทำงานที่ต้องการ-->
+											<div class="col-12 margin-bottom-20">
+												<div class="row">
+													<div class="col-12">
+														<p class="font-size-16 color-violet">
+															<b>สถานที่ทำงานที่ต้องการ</b>
+														</p>
+													</div>
+
+													<div class="col-12">
+														<div class="row">
+															<div class="col-md-3 col-sm-12 font-size-16 work-work">
+																<p><b>กรุงเทพมหานคร</b></p>
+															</div>
+
+															<div class="col-md-9 col-sm-12 font-size-16 work-work">
+																<ul>
+																	<li>เขตบางกะปิ,</li>
+																	<li>เขตวังทองหลาง,</li>
+																	<li>เขตบึงกุ่ม,</li>
+																	<li>เขตเทเวศ,</li>
+																	<li>เขตลาดพร้าว</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end สถานที่ทำงานที่ต้องการ-->
+
+											<!--ประเภทงานที่ต้องการ-->
+											<div class="col-12">
+												<div class="row">
+													<div class="col-sm-4 col-12 margin-bottom-20">
+														<div class="row">
+															<div class="col-12">
+																<p class="font-size-16 color-violet">
+																	<b>ประเภทงานที่ต้องการ</b></p>
+															</div>
+
+															<div class="col-12 font-size-16">
+																<p>งานประจำ</p>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-sm-4 col-12 margin-bottom-20">
+														<div class="row">
+															<div class="col-12">
+																<p class="font-size-16 color-violet">
+																	<b>ระยะเวลาที่สามารถเริ่มงาน</b></p>
+															</div>
+
+															<div class="col-12 font-size-16">
+																<p>มากกว่า 1 เดือน</p>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-sm-4 col-12 margin-bottom-20">
+														<div class="row">
+															<div class="col-12">
+																<p class="font-size-16 color-violet">
+																	<b>ประสบการณ์การทำงานทั้งหมด</b></p>
+															</div>
+
+															<div class="col-12 font-size-16">
+																<p>10 ปี</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end ประเภทงานที่ต้องการ-->
+
+											<div class="col-12 margin-bottom-20">
+												<div class="line-line"></div>
+											</div>
+
+											<!--ประวัติการศึกษา-->
+											<div class="col-12 margin-bottom-10">
+												<div class="row">
+													<div class="col-12 margin-bottom-10">
+														<p class="font-size-20 color-black"><b>ประวัติการศึกษา</b>
+														</p>
+													</div>
+
+													<div class="col-12">
+														<div class="row">
+															<div class="col-sm-5 col-12 font-size-16 margin-bottom-10">
+																<p class="color-violet"><b>ระดับการศึกษา</b></p>
+																<p>ปริญญาตรี</p>
+															</div>
+
+															<div class="col-sm-7 col-12 font-size-16 margin-bottom-10">
+																<p class="color-violet"><b>ชื่อสถานศึกษา</b></p>
+																<p>มหาวิทยาลัยราชภัฏสวนสุนันทา</p>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-12">
+														<div class="row">
+															<div class="col-sm-5 col-12 font-size-16 margin-bottom-10">
+																<p class="color-violet"><b>คณะ</b></p>
+																<p>ศิลปกรรมศาสตร์</p>
+															</div>
+
+															<div class="col-sm-7 col-12 font-size-16 margin-bottom-10">
+																<p class="color-violet"><b>สาขา</b></p>
+																<p>ออกแบบนิเทศศิลป์</p>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-12">
+														<div class="row">
+															<div class="col-sm-5 col-12 font-size-16 margin-bottom-10">
+																<p class="color-violet"><b>เกรดเฉลี่ย</b></p>
+																<p>3.07</p>
+															</div>
+
+															<div class="col-sm-7 col-12 font-size-16 margin-bottom-10">
+																<p class="color-violet"><b>ปีการศึกษา</b></p>
+																<p>2552</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end ประวัติการศึกษา-->
+
+											<div class="col-12 margin-bottom-20">
+												<div class="line-line"></div>
+											</div>
+
+											<!--ประวัติการทำงาน/ฝึกงาน-->
+											<div class="col-12">
+												<div class="row">
+													<div class="col-12 margin-bottom-20">
+														<p class="font-size-20 color-black">
+															<b>ประวัติการทำงาน/ฝึกงาน</b>
+														</p>
+													</div>
+
+													<div class="col-12 margin-bottom-10">
+														<div class="row">
+															<div class="col-sm-2 col-3 default-company">
+																<img src="images/logo-default.jpg">
+															</div>
+
+															<div class="col-sm-10 col-9">
+																<div class="row">
+																	<div
+																		class="col-12 name-company font-size-16 margin-bottom-10">
+																		<ul>
+																			<li><b>ชื่อบริษัท :</b></li>
+																			<li>JOBBKK.COM</li>
+																		</ul>
+																	</div>
+
+																	<div
+																		class="col-12 name-company font-size-16 margin-bottom-10">
+																		<ul>
+																			<li><b>ที่อยู่บริษัท :</b></li>
+																			<li>เลขที่ 625 อาคารทัศนียา ห้องเลขที่
+																				ยูนิต
+																				เอบีซีดี ชั้น 5 ซอยรามคำแหง 39
+																				ถนนประชาอุทิศ
+																				แขวงวังทองหลาง เขตวังทองหลาง
+																				กรุงเทพฯ
+																				10310
+																			</li>
+																		</ul>
+																	</div>
+
+																	<div
+																		class="col-12 name-company font-size-16 margin-bottom-10">
+																		<ul>
+																			<li><b>เริ่มการทำงาน :</b></li>
+																			<li>มกราคม 2019</li>
+																		</ul>
+																	</div>
+
+																	<div
+																		class="col-12 name-company font-size-16 margin-bottom-10">
+																		<ul>
+																			<li><b>สิ้นสุดการทำงาน :</b></li>
+																			<li>มกราคม 2019</li>
+																		</ul>
+																	</div>
+
+																	<div
+																		class="col-12 name-company font-size-16 margin-bottom-10">
+																		<ul>
+																			<li><b>ตำแหน่งงาน :</b></li>
+																			<li>Web Designer</li>
+																		</ul>
+																	</div>
+
+																	<div
+																		class="col-12 name-company font-size-16 margin-bottom-10">
+																		<ul>
+																			<li><b>ระดับ :</b></li>
+																			<li>เจ้าหน้าที่</li>
+																		</ul>
+																	</div>
+
+																	<div
+																		class="col-12 name-company font-size-16 margin-bottom-10">
+																		<ul>
+																			<li><b>เงินเดือน :</b></li>
+																			<li>
+																				<ul class="ul-list">
+																					<li class="list-salary">
+																						<b>เริ่มงาน</b>
+																					</li>
+																					<li class="list-salary">18000
+																					</li>
+																					<li class="list-salary">
+																						<b><b>สิ้นสุดงาน</b></b>
+																					</li>
+																					<li class="list-salary">30000
+																					</li>
+																					<li class="list-salary">บาท</li>
+																				</ul>
+																			</li>
+																		</ul>
+																	</div>
+
+																	<div
+																		class="col-12 name-company font-size-16 margin-bottom-10">
+																		<ul>
+																			<li><b>หน้าที่ความรับผิดชอบ</b></li>
+																			<li>
+																				<ul class="ul-list">
+																					<li class="list-list">- ออกแบบ
+																						banner
+																						โฆษณา บนเว็บไซต์</li>
+																					<li class="list-list">- ออกแบบ
+																						banner
+																						โฆษณา บนเว็บไซต์</li>
+																					<li class="list-list">- ออกแบบ
+																						banner
+																						โฆษณา บนเว็บไซต์</li>
+																					<li class="list-list">- ออกแบบ
+																						banner
+																						โฆษณา บนเว็บไซต์</li>
+																				</ul>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-12 margin-bottom-20">
+														<div class="line-line"></div>
+													</div>
+
+													<div class="col-12 margin-bottom-10">
+														<div class="row">
+															<div class="col-sm-2 col-3 default-company">
+																<img src="images/logo-default.jpg">
+															</div>
+
+															<div class="col-sm-10 col-9">
+																<div class="row">
+																	<div
+																		class="col-12 name-company font-size-16 margin-bottom-10">
+																		<ul>
+																			<li><b>ชื่อบริษัท :</b></li>
+																			<li>JOBBKK.COM</li>
+																		</ul>
+																	</div>
+
+																	<div
+																		class="col-12 name-company font-size-16 margin-bottom-10">
+																		<ul>
+																			<li><b>ที่อยู่บริษัท :</b></li>
+																			<li>เลขที่ 625 อาคารทัศนียา ห้องเลขที่
+																				ยูนิต
+																				เอบีซีดี ชั้น 5 ซอยรามคำแหง 39
+																				ถนนประชาอุทิศ
+																				แขวงวังทองหลาง เขตวังทองหลาง
+																				กรุงเทพฯ
+																				10310
+																			</li>
+																		</ul>
+																	</div>
+
+																	<div
+																		class="col-12 name-company font-size-16 margin-bottom-10">
+																		<ul>
+																			<li><b>เริ่มการทำงาน :</b></li>
+																			<li>มกราคม 2019</li>
+																		</ul>
+																	</div>
+
+																	<div
+																		class="col-12 name-company font-size-16 margin-bottom-10">
+																		<ul>
+																			<li><b>สิ้นสุดการทำงาน :</b></li>
+																			<li>มกราคม 2019</li>
+																		</ul>
+																	</div>
+
+																	<div
+																		class="col-12 name-company font-size-16 margin-bottom-10">
+																		<ul>
+																			<li><b>ตำแหน่งงาน :</b></li>
+																			<li>Web Designer</li>
+																		</ul>
+																	</div>
+
+																	<div
+																		class="col-12 name-company font-size-16 margin-bottom-10">
+																		<ul>
+																			<li><b>ระดับ :</b></li>
+																			<li>เจ้าหน้าที่</li>
+																		</ul>
+																	</div>
+
+																	<div
+																		class="col-12 name-company font-size-16 margin-bottom-10">
+																		<ul>
+																			<li><b>เงินเดือน :</b></li>
+																			<li>
+																				<ul class="ul-list">
+																					<li class="list-salary">
+																						<b>เริ่มงาน</b>
+																					</li>
+																					<li class="list-salary">18000
+																					</li>
+																					<li class="list-salary">
+																						<b><b>สิ้นสุดงาน</b></b>
+																					</li>
+																					<li class="list-salary">30000
+																					</li>
+																					<li class="list-salary">บาท</li>
+																				</ul>
+																			</li>
+																		</ul>
+																	</div>
+
+																	<div
+																		class="col-12 name-company font-size-16 margin-bottom-10">
+																		<ul>
+																			<li><b>หน้าที่ความรับผิดชอบ</b></li>
+																			<li>
+																				<ul class="ul-list">
+																					<li class="list-list">- ออกแบบ
+																						banner
+																						โฆษณา บนเว็บไซต์</li>
+																					<li class="list-list">- ออกแบบ
+																						banner
+																						โฆษณา บนเว็บไซต์</li>
+																					<li class="list-list">- ออกแบบ
+																						banner
+																						โฆษณา บนเว็บไซต์</li>
+																					<li class="list-list">- ออกแบบ
+																						banner
+																						โฆษณา บนเว็บไซต์</li>
+																				</ul>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end ประวัติการทำงาน/ฝึกงาน-->
+										</div>
+									</div>
+									<!--end แสดงผล การศึกษาและการทำงาน-->
+								</div>
+							</div>
+						</div>
+						<!--end ประสบการณ์-->
+
+						<!--หัวเรื่อง ความสามารถและผลงาน-->
+						<div class="col-12 margin-bottom-20">
+							<div class="row">
+								<div class="borderDashboard padding-15">
+									<!--ความสามารถและผลงาน-->
+									<div class="col-12 margin-bottom-20">
+										<div class="row">
+											<div class="col-sm-10 col-6">
+												<p class="font-size-22 color-black">ความสามารถและผลงาน</p>
+											</div>
+
+											<div class="col-sm-2 col-6 edit-small">
+												<div class="card orchid-card">
+													<div class="card-header orchid-card-header" id="headingThree">
+														<div data-toggle="tooltip" id="title" data-placement="right"
+															title="แก้ไขข้อมูล">
+															<button class="orchid-edit" type="button"
+																data-toggle="collapse" data-target="#collapseThree"
+																aria-expanded="true" aria-controls="collapseThree">
+																<img src="images/edit.png">
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!--แก้ไข ความสามารถและผลงาน-->
+											<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+												data-parent="#accordionExample">
+												<div class="card-body orchid-card-body">
+													<div class="row">
+														<div class="col-12 margin-bottom-20">
+															<div class="line-line"></div>
+														</div>
+
+														<!--แก้ไข ประวัติการฝึกอบรม/ประกาศนียบัตร-->
+														<div class="col-12 margin-bottom-20">
+															<div class="row">
+																<div class="col-12 margin-bottom-10">
+																	<p class="font-size-20 color-black">
+																		<b>ประวัติการฝึกอบรม/ประกาศนียบัตร</b></p>
+																</div>
+
+																<!--group ประวัติการฝึกอบรม/ประกาศนียบัตร-->
+																<div class="col-12">
+																	<div class="row">
+																		<!--แก้ไข ชื่อบริษัท ชื่อหลักสูตร-->
+																		<div class="col-12">
+																			<div class="row">
+																				<!--ชื่อบริษัท-->
+																				<div
+																					class="col-sm-6 col-12 margin-bottom-20">
+																					<div class="row">
+																						<div class="col-12">
+																							<p
+																								class="font-size-16 color-violet">
+																								<b>ชื่อบริษัท</b>
+																								<span
+																									class="color-red">*</span>
+																							</p>
+																						</div>
+
+																						<div class="col-12">
+																							<label>
+																								<input type="text"
+																									class="form-control orchid-form-control font-size-14"
+																									placeholder="ชื่อบริษัท">
+																							</label>
+																						</div>
+
+																						<div class="col-12">
+																							<p
+																								class="font-size-14 color-red">
+																								กรุณาระบุชื่อบริษัท
+																								*
+																							</p>
+																						</div>
+																					</div>
+																				</div>
+																				<!--end ชื่อบริษัท-->
+
+																				<!--ชื่อหลักสูตร-->
+																				<div
+																					class="col-sm-6 col-12 margin-bottom-20">
+																					<div class="row">
+																						<div class="col-12">
+																							<p
+																								class="font-size-16 color-violet">
+																								<b>ชื่อหลักสูตร</b>
+																								<span
+																									class="color-red">*</span>
+																							</p>
+																						</div>
+
+																						<div class="col-12">
+																							<label>
+																								<input type="text"
+																									class="form-control orchid-form-control font-size-14"
+																									placeholder="ชื่อหลักสูตร">
+																							</label>
+																						</div>
+																					</div>
+																				</div>
+																				<!--end ชื่อหลักสูตร-->
+																			</div>
+																		</div>
+																		<!--end แก้ไข ชื่อบริษัท ชื่อหลักสูตร-->
+
+																		<!--เริ่มการอบรม สิ้นสุดการอบรม-->
+																		<div class="col-12">
+																			<div class="row">
+																				<!--เริ่มการอบรม-->
+																				<div
+																					class="col-md-6 col-sm-12 margin-bottom-20">
+																					<div class="row">
+																						<div class="col-12">
+																							<p
+																								class="font-size-16 color-violet">
+																								<b>เริ่มการอบรม
+																									<span
+																										class="color-red">*</span></b>
+																							</p>
+																						</div>
+
+																						<div class="col-12">
+																							<div class="row">
+																								<div
+																									class="col-sm-6 col-12">
+																									<label>
+																										<select
+																											class="form-control orchid-form-control font-size-14">
+																											<option
+																												disabled>
+																												กรุณาเลือกเดือน
+																											</option>
+																											<option>
+																												มกราคม
+																											</option>
+																											<option>
+																												มกราคม
+																											</option>
+																											<option>
+																												มกราคม
+																											</option>
+																											<option>
+																												มกราคม
+																											</option>
+																										</select>
+																									</label>
+																								</div>
+
+																								<div
+																									class="col-sm-6 col-12">
+																									<label>
+																										<select
+																											class="form-control orchid-form-control font-size-14">
+																											<option
+																												disabled>
+																												กรุณาเลือกปี
+																											</option>
+																											<option>
+																												2019
+																											</option>
+																											<option>
+																												2019
+																											</option>
+																											<option>
+																												2019
+																											</option>
+																											<option>
+																												2019
+																											</option>
+																										</select>
+																									</label>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<!--end เริ่มการอบรม-->
+
+																				<!--สิ้นสุดการอบรม-->
+																				<div
+																					class="col-md-6 col-sm-12 margin-bottom-20">
+																					<div class="row">
+																						<div class="col-12">
+																							<p
+																								class="font-size-16 color-violet">
+																								<b>สิ้นสุดการอบรม
+																									<span
+																										class="color-red">*</span></b>
+																							</p>
+																						</div>
+
+																						<div class="col-12">
+																							<div class="row">
+																								<div
+																									class="col-sm-6 col-12">
+																									<label>
+																										<select
+																											class="form-control orchid-form-control font-size-14">
+																											<option
+																												disabled>
+																												กรุณาเลือกเดือน
+																											</option>
+																											<option>
+																												มกราคม
+																											</option>
+																											<option>
+																												มกราคม
+																											</option>
+																											<option>
+																												มกราคม
+																											</option>
+																											<option>
+																												มกราคม
+																											</option>
+																										</select>
+																									</label>
+																								</div>
+
+																								<div
+																									class="col-sm-6 col-12">
+																									<label>
+																										<select
+																											class="form-control orchid-form-control font-size-14">
+																											<option
+																												disabled>
+																												กรุณาเลือกปี
+																											</option>
+																											<option>
+																												2019
+																											</option>
+																											<option>
+																												2019
+																											</option>
+																											<option>
+																												2019
+																											</option>
+																											<option>
+																												2019
+																											</option>
+																										</select>
+																									</label>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<!--end สิ้นสุดการอบรม-->
+																			</div>
+																		</div>
+																		<!--end เริ่มการอบรม สิ้นสุดการอบรม-->
+
+																		<div
+																			class="col-12 text-align-center confirm-del margin-bottom-20">
+																			<button class="delete-data"><span><i
+																						class="fas fa-trash-alt"></i></span>
+																				ลบ</button>
+																		</div>
+
+																		<div class="col-12 margin-bottom-20">
+																			<div class="line-line"></div>
+																		</div>
+																	</div>
+																</div>
+																<!--end group ประวัติการฝึกอบรม/ประกาศนียบัตร-->
+
+																<div class="col-12 text-align-center">
+																	<button class="add-data"><span><i
+																				class="fas fa-plus-circle"></i></span>
+																		เพิ่มข้อมูลประวัติการฝึกอบรม
+																	</button>
+																</div>
+															</div>
+														</div>
+														<!--end แก้ไข ประวัติการฝึกอบรม/ประกาศนียบัตร-->
+
+														<!--แก้ไข ความสามารถ ผลงาน และเกียรติประวัติ-->
+														<div class="col-12 margin-bottom-20">
+															<div class="row">
+																<div class="col-12 margin-bottom-10">
+																	<p class="font-size-20 color-black">
+																		<b>ความสามารถทางภาษา</b></p>
+																</div>
+
+																<!--group ภาษาทั้งหมด-->
+																<div class="col-12 margin-bottom-20">
+																	<div class="row">
+																		<!--group ภาษาไทย-->
+																		<div class="col-12">
+																			<div class="row">
+																				<!--แก้ไข ภาษาไทย-->
+																				<div class="col-12">
+																					<div class="row">
+																						<!--ภาษา-->
+																						<div
+																							class="col-sm-4 col-12 margin-bottom-20">
+																							<div class="row">
+																								<div class="col-12">
+																									<p
+																										class="font-size-16 color-violet">
+																										<b>ภาษา</b>
+																									</p>
+																								</div>
+
+																								<div class="col-12">
+																									<label>
+																										<select
+																											class="form-control orchid-form-control font-size-14">
+																											<option
+																												disabled>
+																												กรุณาเลือกภาษา
+																											</option>
+																											<option>
+																												ไทย
+																											</option>
+																											<option>
+																												อังกฤษ
+																											</option>
+																											<option>
+																												ไทย
+																											</option>
+																											<option>
+																												อังกฤษ
+																											</option>
+																										</select>
+																									</label>
+																								</div>
+
+																								<div class="col-12">
+																									<p
+																										class="font-size-14 color-red">
+																										กรุณาเลือกภาษา
+																										*
+																									</p>
+																								</div>
+																							</div>
+																						</div>
+																						<!--end ภาษา-->
+
+																						<!--ฟัง พูด อ่าน เขียน-->
+																						<div
+																							class="col-sm-8 col-12 margin-bottom-20">
+																							<div class="row">
+																								<!--การฟัง-->
+																								<div
+																									class="col-sm-6 col-12 margin-10">
+																									<div class="row">
+																										<div
+																											class="col-12">
+																											<p
+																												class="font-size-16 color-violet">
+																												<b>การฟัง</b>
+																												<span
+																													class="color-red">*</span>
+																											</p>
+																										</div>
+
+																										<div
+																											class="col-12">
+																											<div
+																												class="row">
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														ดีมาก
+																													</label>
+																												</div>
+
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														ดี
+																													</label>
+																												</div>
+
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														พอใช้
+																													</label>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																								<!--end การฟัง-->
+
+																								<!--การพูด-->
+																								<div
+																									class="col-sm-6 col-12 margin-10">
+																									<div class="row">
+																										<div
+																											class="col-12">
+																											<p
+																												class="font-size-16 color-violet">
+																												<b>การพูด</b>
+																												<span
+																													class="color-red">*</span>
+																											</p>
+																										</div>
+
+																										<div
+																											class="col-12">
+																											<div
+																												class="row">
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														ดีมาก
+																													</label>
+																												</div>
+
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														ดี
+																													</label>
+																												</div>
+
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														พอใช้
+																													</label>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																								<!--end การพูด-->
+
+																								<!--การอ่าน-->
+																								<div
+																									class="col-sm-6 col-12 margin-10">
+																									<div class="row">
+																										<div
+																											class="col-12">
+																											<p
+																												class="font-size-16 color-violet">
+																												<b>การอ่าน</b>
+																												<span
+																													class="color-red">*</span>
+																											</p>
+																										</div>
+
+																										<div
+																											class="col-12">
+																											<div
+																												class="row">
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														ดีมาก
+																													</label>
+																												</div>
+
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														ดี
+																													</label>
+																												</div>
+
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														พอใช้
+																													</label>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																								<!--end การอ่าน-->
+
+																								<!--การเขียน-->
+																								<div
+																									class="col-sm-6 col-12 margin-10">
+																									<div class="row">
+																										<div
+																											class="col-12">
+																											<p
+																												class="font-size-16 color-violet">
+																												<b>การเขียน</b>
+																												<span
+																													class="color-red">*</span>
+																											</p>
+																										</div>
+
+																										<div
+																											class="col-12">
+																											<div
+																												class="row">
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														ดีมาก
+																													</label>
+																												</div>
+
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														ดี
+																													</label>
+																												</div>
+
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														พอใช้
+																													</label>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																								<!--end การเขียน-->
+																							</div>
+																						</div>
+																						<!--end ฟัง พูด อ่าน เขียน-->
+																					</div>
+																				</div>
+																				<!--end แก้ไข ภาษาไทย-->
+
+																				<div
+																					class="col-12 text-align-center confirm-del margin-bottom-20">
+																					<button class="delete-data"><span><i
+																								class="fas fa-trash-alt"></i></span>
+																						ลบ</button>
+																				</div>
+
+																				<div class="col-12 margin-bottom-20">
+																					<div class="line-line"></div>
+																				</div>
+																			</div>
+																		</div>
+																		<!--end group ภาษาไทย-->
+
+																		<!--group ภาษาอังกฤษ-->
+																		<div class="col-12">
+																			<div class="row">
+																				<!--แก้ไข ภาษาอังกฤษ-->
+																				<div class="col-12">
+																					<div class="row">
+																						<!--ภาษา-->
+																						<div
+																							class="col-sm-4 col-12 margin-bottom-20">
+																							<div class="row">
+																								<div class="col-12">
+																									<p
+																										class="font-size-16 color-violet">
+																										<b>ภาษา</b>
+																									</p>
+																								</div>
+
+																								<div class="col-12">
+																									<label>
+																										<select
+																											class="form-control orchid-form-control font-size-14">
+																											<option
+																												disabled>
+																												กรุณาเลือกภาษา
+																											</option>
+																											<option>
+																												ไทย
+																											</option>
+																											<option>
+																												อังกฤษ
+																											</option>
+																											<option>
+																												ไทย
+																											</option>
+																											<option>
+																												อังกฤษ
+																											</option>
+																										</select>
+																									</label>
+																								</div>
+
+																								<div class="col-12">
+																									<p
+																										class="font-size-14 color-red">
+																										กรุณาเลือกภาษา
+																										*
+																									</p>
+																								</div>
+																							</div>
+																						</div>
+																						<!--end ภาษา-->
+
+																						<!--ฟัง พูด อ่าน เขียน-->
+																						<div
+																							class="col-sm-8 col-12 margin-bottom-20">
+																							<div class="row">
+																								<!--การฟัง-->
+																								<div
+																									class="col-sm-6 col-12 margin-10">
+																									<div class="row">
+																										<div
+																											class="col-12">
+																											<p
+																												class="font-size-16 color-violet">
+																												<b>การฟัง</b>
+																												<span
+																													class="color-red">*</span>
+																											</p>
+																										</div>
+
+																										<div
+																											class="col-12">
+																											<div
+																												class="row">
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														ดีมาก
+																													</label>
+																												</div>
+
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														ดี
+																													</label>
+																												</div>
+
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														พอใช้
+																													</label>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																								<!--end การฟัง-->
+
+																								<!--การพูด-->
+																								<div
+																									class="col-sm-6 col-12 margin-10">
+																									<div class="row">
+																										<div
+																											class="col-12">
+																											<p
+																												class="font-size-16 color-violet">
+																												<b>การพูด</b>
+																												<span
+																													class="color-red">*</span>
+																											</p>
+																										</div>
+
+																										<div
+																											class="col-12">
+																											<div
+																												class="row">
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														ดีมาก
+																													</label>
+																												</div>
+
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														ดี
+																													</label>
+																												</div>
+
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														พอใช้
+																													</label>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																								<!--end การพูด-->
+
+																								<!--การอ่าน-->
+																								<div
+																									class="col-sm-6 col-12 margin-10">
+																									<div class="row">
+																										<div
+																											class="col-12">
+																											<p
+																												class="font-size-16 color-violet">
+																												<b>การอ่าน</b>
+																												<span
+																													class="color-red">*</span>
+																											</p>
+																										</div>
+
+																										<div
+																											class="col-12">
+																											<div
+																												class="row">
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														ดีมาก
+																													</label>
+																												</div>
+
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														ดี
+																													</label>
+																												</div>
+
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														พอใช้
+																													</label>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																								<!--end การอ่าน-->
+
+																								<!--การเขียน-->
+																								<div
+																									class="col-sm-6 col-12 margin-10">
+																									<div class="row">
+																										<div
+																											class="col-12">
+																											<p
+																												class="font-size-16 color-violet">
+																												<b>การเขียน</b>
+																												<span
+																													class="color-red">*</span>
+																											</p>
+																										</div>
+
+																										<div
+																											class="col-12">
+																											<div
+																												class="row">
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														ดีมาก
+																													</label>
+																												</div>
+
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														ดี
+																													</label>
+																												</div>
+
+																												<div
+																													class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-4">
+																													<label>
+																														<input
+																															type="radio"
+																															name="1">
+																														พอใช้
+																													</label>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																								<!--end การเขียน-->
+																							</div>
+																						</div>
+																						<!--end ฟัง พูด อ่าน เขียน-->
+																					</div>
+																				</div>
+																				<!--end แก้ไข ภาษาอังกฤษ-->
+
+																				<div
+																					class="col-12 text-align-center confirm-del margin-bottom-20">
+																					<button class="delete-data"><span><i
+																								class="fas fa-trash-alt"></i></span>
+																						ลบ</button>
+																				</div>
+
+																				<div class="col-12 margin-bottom-20">
+																					<div class="line-line"></div>
+																				</div>
+																			</div>
+																		</div>
+																		<!--end group ภาษาอังกฤษ-->
+
+																		<div
+																			class="col-12 text-align-center margin-bottom-20">
+																			<button class="add-data"><i
+																					class="fas fa-plus-circle"></i>
+																				เพิ่มความสามารถทางภาษา
+																			</button>
+																		</div>
+																	</div>
+																</div>
+																<!--end group ภาษาทั้งหมด-->
+
+																<!--พิมพ์ดีดไทย พิมพ์ดีดอังกฤษ-->
+																<div class="col-12">
+																	<div class="row">
+																		<!--พิมพ์ดีดไทย-->
+																		<div
+																			class="col-md-6 col-sm-6 col-12 margin-bottom-20">
+																			<div class="row">
+																				<div
+																					class="col-md-5 col-sm-12 typewriter">
+																					<p
+																						class="font-size-16 color-violet">
+																						<b>พิมพ์ดีดไทย</b> </p>
+																				</div>
+
+																				<div class="col-md-3 col-sm-6 col-6">
+																					<label>
+																						<input type="text"
+																							class="form-control orchid-form-control font-size-14"
+																							placeholder="พิมพ์ดีดไทย">
+																					</label>
+																				</div>
+
+																				<div class="col-md-4 col-sm-6 col-6">
+																					<p
+																						class="font-size-16 color-violet">
+																						<b>คำ/นาที</b> </p>
+																				</div>
+																			</div>
+																		</div>
+																		<!--end พิมพ์ดีดไทย-->
+
+																		<!--พิมพ์ดีดอังกฤษ-->
+																		<div
+																			class="col-md-6 col-sm-6 col-12 margin-bottom-20">
+																			<div class="row">
+																				<div
+																					class="col-md-5 col-sm-12 typewriter">
+																					<p
+																						class="font-size-16 color-violet">
+																						<b>พิมพ์ดีดอังกฤษ</b> </p>
+																				</div>
+
+																				<div class="col-md-3 col-sm-6 col-6">
+																					<label>
+																						<input type="text"
+																							class="form-control orchid-form-control font-size-14"
+																							placeholder="พิมพ์ดีดอังกฤษ">
+																					</label>
+																				</div>
+
+																				<div class="col-md-4 col-sm-6 col-6">
+																					<p
+																						class="font-size-16 color-violet">
+																						<b>คำ/นาที</b> </p>
+																				</div>
+																			</div>
+																		</div>
+																		<!--end พิมพ์ดีดอังกฤษ-->
+																	</div>
+																</div>
+																<!--end พิมพ์ดีดไทย พิมพ์ดีดอังกฤษ-->
+
+																<!--การขับขี่ ใบอนุญาต-->
+																<div class="col-12">
+																	<div class="row">
+																		<!--ความสามารถในการขับขี่-->
+																		<div
+																			class="col-md-4 col-sm-12 margin-bottom-20">
+																			<div class="row">
+																				<div class="col-12">
+																					<p
+																						class="font-size-16 color-violet">
+																						<b>ความสามารถในการขับขี่</b>
+																					</p>
+																				</div>
+
+																				<div class="col-12">
+																					<label>
+																						<select
+																							class="form-control orchid-form-control select2District font-size-14"
+																							multiple="multiple">
+																							<option disabled>
+																								ความสามารถในการขับขี่
+																							</option>
+																							<option>รถยนต์</option>
+																							<option>รถยนต์</option>
+																							<option>รถยนต์</option>
+																						</select>
+																					</label>
+																				</div>
+																			</div>
+																		</div>
+																		<!--end ความสามารถในการขับขี่-->
+
+																		<!--มียานพาหนะเป็นของตัวเอง-->
+																		<div
+																			class="col-md-4 col-sm-12 margin-bottom-20">
+																			<div class="row">
+																				<div class="col-12">
+																					<p
+																						class="font-size-16 color-violet">
+																						<b>มียานพาหนะเป็นของตัวเอง</b>
+																						<span class="color-red">*</span>
+																					</p>
+																				</div>
+
+																				<div class="col-4 skill-drive">
+																					<ul>
+																						<li>
+																							<label><input type="radio"
+																									name="6">
+																								มี</label>
+																						</li>
+																						<li>
+																							<label><input type="radio"
+																									name="6">
+																								ไม่มี</label>
+																						</li>
+																					</ul>
+																				</div>
+
+																				<div class="col-8">
+																					<label>
+																						<select
+																							class="form-control orchid-form-control select2District font-size-14"
+																							multiple="multiple">
+																							<option disabled>
+																								ความสามารถในการขับขี่
+																							</option>
+																							<option>รถยนต์</option>
+																							<option>รถยนต์</option>
+																							<option>รถยนต์</option>
+																						</select>
+																					</label>
+																				</div>
+																			</div>
+																		</div>
+																		<!--end มียานพาหนะเป็นของตัวเอง-->
+
+																		<!--มีใบอนุญาติขับขี่-->
+																		<div
+																			class="col-md-4 col-sm-12 margin-bottom-20">
+																			<div class="row">
+																				<div class="col-12">
+																					<p
+																						class="font-size-16 color-violet">
+																						<b>มีใบอนุญาติขับขี่</b>
+																						<span class="color-red">*</span>
+																					</p>
+																				</div>
+
+																				<div class="col-4 skill-drive">
+																					<ul>
+																						<li>
+																							<label><input type="radio"
+																									name="6">
+																								มี</label>
+																						</li>
+																						<li>
+																							<label><input type="radio"
+																									name="6">
+																								ไม่มี</label>
+																						</li>
+																					</ul>
+																				</div>
+
+																				<div class="col-8">
+																					<label>
+																						<select
+																							class="form-control orchid-form-control select2District font-size-14"
+																							multiple="multiple">
+																							<option disabled>
+																								ความสามารถในการขับขี่
+																							</option>
+																							<option>รถยนต์</option>
+																							<option>รถยนต์</option>
+																							<option>รถยนต์</option>
+																						</select>
+																					</label>
+																				</div>
+																			</div>
+																		</div>
+																		<!--end มีใบอนุญาติขับขี่-->
+																	</div>
+																</div>
+																<!--end การขับขี่ ใบอนุญาต-->
+															</div>
+														</div>
+														<!--end แก้ไข ความสามารถ ผลงาน และเกียรติประวัติ-->
+
+														<div class="col-12 margin-bottom-20">
+															<div class="line-line"></div>
+														</div>
+
+														<!--group ความสามารถทางด้านคอมพิวเตอร์-->
+														<div class="col-12">
+															<div class="row">
+																<!--ความสามารถทางด้านคอมพิวเตอร์-->
+																<div class="col-12 margin-bottom-20">
+																	<div class="row">
+																		<div class="col-12">
+																			<p class="font-size-16 color-violet">
+																				<b>ความสามารถทางด้านคอมพิวเตอร์</b>
+																			</p>
+																		</div>
+
+																		<div class="col-12">
+																			<label>
+																				<select
+																					class="form-control orchid-form-control select2District font-size-14"
+																					multiple="multiple"
+																					data-role="select2">
+																					<option disabled>
+																						กรุณาเลือกความสามารถทางด้านคอมพิวเตอร์
+																					</option>
+																					<option>Adobe Photoshop</option>
+																					<option>Adobe Photoshop</option>
+																					<option>Adobe Photoshop</option>
+																					<option>Adobe Photoshop</option>
+																					<option>Adobe Photoshop</option>
+																					<option>Adobe Photoshop Adobe
+																						Photoshop
+																						Adobe Photoshop</option>
+																				</select>
+																			</label>
+																		</div>
+																	</div>
+																</div>
+																<!--end ความสามารถทางด้านคอมพิวเตอร์-->
+
+																<!--ทักษะอื่นๆ-->
+																<div class="col-12 margin-bottom-20">
+																	<div class="row">
+																		<div class="col-12">
+																			<p class="font-size-16 color-violet">
+																				<b>ทักษะอื่นๆ</b> </p>
+																		</div>
+
+																		<div class="col-12">
+																			<label>
+																				<select
+																					class="form-control orchid-form-control select2District font-size-14"
+																					multiple="multiple">
+																					<option disabled>
+																						กรุณาเลือกทักษะอื่นๆ
+																					</option>
+																					<option>Adobe Photoshop</option>
+																					<option>Adobe Photoshop</option>
+																					<option>Adobe Photoshop</option>
+																					<option>Adobe Photoshop</option>
+																				</select>
+																			</label>
+																		</div>
+																	</div>
+																</div>
+																<!--end ทักษะอื่นๆ-->
+
+																<!--คุณสมบัติอื่นๆ-->
+																<div class="col-12 margin-bottom-20">
+																	<div class="row">
+																		<div class="col-12">
+																			<p class="font-size-16 color-violet">
+																				<b>คุณสมบัติอื่นๆ</b> </p>
+																		</div>
+
+																		<div class="col-12">
+																			<label>
+																				<select
+																					class="form-control orchid-form-control select2District font-size-14"
+																					multiple="multiple">
+																					<option disabled>
+																						กรุณาเลือกคุณสมบัติอื่นๆ
+																					</option>
+																					<option>Adobe Photoshop</option>
+																					<option>Adobe Photoshop</option>
+																					<option>Adobe Photoshop</option>
+																					<option>Adobe Photoshop</option>
+																				</select>
+																			</label>
+																		</div>
+																	</div>
+																</div>
+																<!--end คุณสมบัติอื่นๆ-->
+
+																<!--ความสามารถพิเศษ-->
+																<div class="col-12 margin-bottom-20">
+																	<div class="row">
+																		<div class="col-12">
+																			<p class="font-size-16 color-violet">
+																				<b>ความสามารถพิเศษ</b> </p>
+																		</div>
+
+																		<div class="col-12">
+																			<label>
+																				<textarea
+																					class="form-control orchid-area font-size-14"
+																					placeholder="ความสามารถพิเศษ"></textarea>
+																			</label>
+																		</div>
+																	</div>
+																</div>
+																<!--end ความสามารถพิเศษ-->
+
+																<!--โครงการ ผลงาน เกียรติประวัติ และประสบการณ์อื่น ๆ-->
+																<div class="col-12 margin-bottom-20">
+																	<div class="row">
+																		<div class="col-12">
+																			<p class="font-size-16 color-violet">
+																				<b>โครงการ
+																					ผลงาน เกียรติประวัติ
+																					และประสบการณ์อื่น
+																					ๆ</b> </p>
+																		</div>
+
+																		<div class="col-12">
+																			<label>
+																				<textarea
+																					class="form-control orchid-area font-size-14"
+																					placeholder="โครงการ ผลงาน เกียรติประวัติ และประสบการณ์อื่น ๆ"></textarea>
+																			</label>
+																		</div>
+																	</div>
+																</div>
+																<!--end โครงการ ผลงาน เกียรติประวัติ และประสบการณ์อื่น ๆ-->
+															</div>
+														</div>
+														<!--end groupความสามารถทางด้านคอมพิวเตอร์-->
+
+														<div class="col-12 margin-bottom-20">
+															<div class="line-line"></div>
+														</div>
+
+														<!--บุคคลอ้างอิง-->
+														<div class="col-12 margin-bottom-20">
+															<div class="row">
+																<div class="col-12">
+																	<p class="font-size-16 color-violet">
+																		<b>บุคคลอ้างอิง</b>
+																	</p>
+																</div>
+
+																<div class="col-12">
+																	<label>
+																		<textarea
+																			class="form-control orchid-area font-size-14"
+																			placeholder="บุคคลอ้างอิง"></textarea>
+																	</label>
+																</div>
+															</div>
+														</div>
+														<!--end บุคคลอ้างอิง-->
+
+														<div class="col-12 margin-bottom-20">
+															<div class="line-line"></div>
+														</div>
+
+														<!--แนบไฟล์ (หากมี)-->
+														<div class="col-12 margin-bottom-20">
+															<div class="row">
+																<div class="col-12 margin-bottom-10">
+																	<p class="font-size-20 color-black"><b> แนบไฟล์
+																			(หากมี)</b></p>
+																</div>
+															</div>
+														</div>
+														<!--end แนบไฟล์ (หากมี)-->
+
+														<!--เลือกไฟล์-->
+														<div class="col-12">
+															<div class="row selectFile">
+																<div
+																	class="col-md-2 col-4 listFile font-size-16 color-violet margin-bottom-20">
+																	<p><b>ชื่อไฟล์</b></p>
+																</div>
+
+																<div class="col-md-4 col-8 listFile margin-bottom-20">
+																	<input type="text"
+																		class="form-control orchid-form-control font-size-14">
+																</div>
+
+																<div
+																	class="col-md-2 col-4 listFile listFile3 margin-bottom-20">
+																	<label class="attachments">
+																		<i class="fas fa-edit"></i> เลือกไฟล์<input
+																			type="file" size="60">
+																	</label>
+																</div>
+
+																<div
+																	class="col-md-2 col-4 listFile listFile4 margin-bottom-20">
+																	<button>ยกเลิก</button>
+																</div>
+
+																<div
+																	class="col-md-2 col-4 listFile listFile5 margin-bottom-20">
+																	<button class="delFile">ลบ</button>
+																</div>
+															</div>
+														</div>
+														<!--end เลือกไฟล์-->
+
+														<!--เลือกไฟล์-->
+														<div class="col-12">
+															<div class="row selectFile">
+																<div
+																	class="col-md-2 col-4 listFile font-size-16 color-violet margin-bottom-20">
+																	<p><b>ชื่อไฟล์</b></p>
+																</div>
+
+																<div class="col-md-4 col-8 listFile margin-bottom-20">
+																	<input type="text"
+																		class="form-control orchid-form-control font-size-14">
+																</div>
+
+																<div
+																	class="col-md-2 col-4 listFile listFile3 margin-bottom-20">
+																	<button><i class="fas fa-download"></i>
+																		ดาวน์โหลด</button>
+																</div>
+
+																<div
+																	class="col-md-2 col-4 listFile listFile4 margin-bottom-20">
+																	<button>ยกเลิก</button>
+																</div>
+
+																<div
+																	class="col-md-2 col-4 listFile listFile5 margin-bottom-20">
+																	<button class="delFile">ลบ</button>
+																</div>
+															</div>
+														</div>
+														<!--end เลือกไฟล์-->
+
+														<div class="col-12 text-align-center margin-bottom-20">
+															<button class="add-data"><span><i
+																		class="fas fa-plus-circle"></i></span>
+																เพิ่ม</button>
+														</div>
+
+														<div class="col-12 margin-bottom-20">
+															<div class="line-line"></div>
+														</div>
+
+														<div class="col-12 text-align-center">
+															<button class="orchid-save font-size-16">บันทึก</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end แก้ไข การศึกษาและการทำงาน-->
+										</div>
+									</div>
+									<!--end ความสามารถและผลงาน-->
+
+									<div class="col-12 margin-bottom-20">
+										<div class="line-line"></div>
+									</div>
+
+									<!--ประวัติการฝึกอบรม/ประกาศนียบัตร-->
+									<div class="col-12">
+										<div class="row">
+											<div class="col-12 margin-bottom-10">
+												<p class="font-size-20 color-black">
+													<b>ประวัติการฝึกอบรม/ประกาศนียบัตร</b>
+												</p>
+											</div>
+
+											<!--group ประวัติการฝึกอบรม/ประกาศนียบัตร-->
+											<div class="col-12">
+												<div class="row">
+													<!--ชื่อบริษัท ชื่อหลักสูตร-->
+													<div class="col-12">
+														<div class="row">
+															<!--ชื่อบริษัท-->
+															<div class="col-md-6 col-sm-12 col-12 margin-bottom-20">
+																<div class="row">
+																	<div class="col-12">
+																		<p class="font-size-16 color-violet">
+																			<b>ชื่อบริษัท</b></p>
+																	</div>
+
+																	<div class="col-12">
+																		<p class="font-size-16">บริษัท จัดหางาน
+																			จ๊อบบีเคเค
+																			ดอท คอม จำกัด</p>
+																	</div>
+																</div>
+															</div>
+															<!--end ชื่อบริษัท-->
+
+															<!--ชื่อหลักสูตร-->
+															<div class="col-md-6 col-sm-12 col-12 margin-bottom-20">
+																<div class="row">
+																	<div class="col-12">
+																		<p class="font-size-16 color-violet">
+																			<b>ชื่อหลักสูตร</b></p>
+																	</div>
+
+																	<div class="col-12">
+																		<p class="font-size-16">บริษัท จัดหางาน
+																			จ๊อบบีเคเค
+																			ดอท คอม จำกัด</p>
+																	</div>
+																</div>
+															</div>
+															<!--end ชื่อหลักสูตร-->
+														</div>
+													</div>
+													<!--end ชื่อบริษัท ชื่อหลักสูตร-->
+
+													<!--เริ่มการอบรม สิ้นสุดการอบรม-->
+													<div class="col-12">
+														<div class="row">
+															<!--เริ่มการอบรม-->
+															<div class="col-sm-6 col-6 margin-bottom-20">
+																<div class="row">
+																	<div class="col-12">
+																		<p class="font-size-16 color-violet">
+																			<b>เริ่มการอบรม</b></p>
+																	</div>
+
+																	<div class="col-12">
+																		<p class="font-size-16">January 2019</p>
+																	</div>
+																</div>
+															</div>
+															<!--end เริ่มการอบรม-->
+
+															<!--สิ้นสุดการอบรม-->
+															<div class="col-sm-6 col-6 margin-bottom-20">
+																<div class="row">
+																	<div class="col-12">
+																		<p class="font-size-16 color-violet">
+																			<b>สิ้นสุดการอบรม</b></p>
+																	</div>
+
+																	<div class="col-12">
+																		<p class="font-size-16">December 2019</p>
+																	</div>
+																</div>
+															</div>
+															<!--end สิ้นสุดการอบรม-->
+														</div>
+													</div>
+													<!--end เริ่มการอบรม สิ้นสุดการอบรม-->
+												</div>
+											</div>
+											<!--end group ประวัติการฝึกอบรม/ประกาศนียบัตร-->
+										</div>
+									</div>
+									<!--end ประวัติการฝึกอบรม/ประกาศนียบัตร-->
+
+									<div class="col-12 margin-bottom-20">
+										<div class="line-line"></div>
+									</div>
+
+									<!--ความสามารถ ผลงาน และเกียรติประวัติ-->
+									<div class="col-12">
+										<div class="row">
+											<div class="col-12 margin-bottom-10">
+												<p class="font-size-20 color-black"><b>ความสามารถทางภาษา</b></p>
+											</div>
+
+											<!--group ภาษาทั้งหมด-->
+											<div class="col-12">
+												<div class="row">
+													<!--group ภาษาไทย-->
+													<div class="col-12">
+														<div class="row">
+															<!--ภาษาไทย-->
+															<div class="col-12">
+																<div class="row">
+																	<!--ภาษา-->
+																	<div class="col-sm-3 col-12 margin-bottom-20">
+																		<div class="row">
+																			<div
+																				class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-3 lang-right">
+																				<p class="font-size-16 color-violet">
+																					<b>ภาษา
+																						:</b></p>
+																			</div>
+
+																			<div
+																				class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-9">
+																				<p class="font-size-16"><b>ไทย</b>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																	<!--end ภาษา-->
+
+																	<!--ฟัง พูด อ่าน เขียน-->
+																	<div class="col-sm-9 col-12 margin-bottom-20">
+																		<div class="row">
+																			<!--การฟัง-->
+																			<div class="col-sm-3 col-3 margin-10">
+																				<div class="row">
+																					<div class="col-12">
+																						<p
+																							class="font-size-16 color-violet">
+																							<b>การฟัง :</b></p>
+																					</div>
+
+																					<div class="col-12">
+																						<p class="font-size-16">
+																							Excellent
+																						</p>
+																					</div>
+																				</div>
+																			</div>
+																			<!--end การฟัง-->
+
+																			<!--การพูด-->
+																			<div class="col-sm-3 col-3 margin-10">
+																				<div class="row">
+																					<div class="col-12">
+																						<p
+																							class="font-size-16 color-violet">
+																							<b>การพูด :</b></p>
+																					</div>
+
+																					<div class="col-12">
+																						<p class="font-size-16">
+																							Excellent
+																						</p>
+																					</div>
+																				</div>
+																			</div>
+																			<!--end การพูด-->
+
+																			<!--การอ่าน-->
+																			<div class="col-sm-3 col-3 margin-10">
+																				<div class="row">
+																					<div class="col-12">
+																						<p
+																							class="font-size-16 color-violet">
+																							<b>การอ่าน :</b></p>
+																					</div>
+
+																					<div class="col-12">
+																						<p class="font-size-16">
+																							Excellent
+																						</p>
+																					</div>
+																				</div>
+																			</div>
+																			<!--end การอ่าน-->
+
+																			<!--การเขียน-->
+																			<div class="col-sm-3 col-3 margin-10">
+																				<div class="row">
+																					<div class="col-12">
+																						<p
+																							class="font-size-16 color-violet">
+																							<b>การเขียน :</b></p>
+																					</div>
+
+																					<div class="col-12">
+																						<p class="font-size-16">
+																							Excellent
+																						</p>
+																					</div>
+																				</div>
+																			</div>
+																			<!--end การเขียน-->
+																		</div>
+																	</div>
+																	<!--end ฟัง พูด อ่าน เขียน-->
+																</div>
+															</div>
+															<!--end ภาษาไทย-->
+														</div>
+													</div>
+													<!--end group ภาษาไทย-->
+
+													<div class="col-12 margin-bottom-20">
+														<div class="line-line"></div>
+													</div>
+
+													<!--group ภาษาอังกฤษ-->
+													<div class="col-12">
+														<div class="row">
+															<!--ภาษาอังกฤษ-->
+															<div class="col-12">
+																<div class="row">
+																	<!--ภาษา-->
+																	<div class="col-sm-3 col-12 margin-bottom-20">
+																		<div class="row">
+																			<div
+																				class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-3 lang-right">
+																				<p class="font-size-16 color-violet">
+																					<b>ภาษา
+																						:</b></p>
+																			</div>
+
+																			<div
+																				class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-9">
+																				<p class="font-size-16">
+																					<b>อังกฤษ</b>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																	<!--end ภาษา-->
+
+																	<!--ฟัง พูด อ่าน เขียน-->
+																	<div class="col-sm-9 col-12 margin-bottom-20">
+																		<div class="row">
+																			<!--การฟัง-->
+																			<div class="col-sm-3 col-3 margin-10">
+																				<div class="row">
+																					<div class="col-12">
+																						<p
+																							class="font-size-16 color-violet">
+																							<b>การฟัง :</b></p>
+																					</div>
+
+																					<div class="col-12">
+																						<p class="font-size-16">
+																							Excellent
+																						</p>
+																					</div>
+																				</div>
+																			</div>
+																			<!--end การฟัง-->
+
+																			<!--การพูด-->
+																			<div class="col-sm-3 col-3 margin-10">
+																				<div class="row">
+																					<div class="col-12">
+																						<p
+																							class="font-size-16 color-violet">
+																							<b>การพูด :</b></p>
+																					</div>
+
+																					<div class="col-12">
+																						<p class="font-size-16">
+																							Excellent
+																						</p>
+																					</div>
+																				</div>
+																			</div>
+																			<!--end การพูด-->
+
+																			<!--การอ่าน-->
+																			<div class="col-sm-3 col-3 margin-10">
+																				<div class="row">
+																					<div class="col-12">
+																						<p
+																							class="font-size-16 color-violet">
+																							<b>การอ่าน :</b></p>
+																					</div>
+
+																					<div class="col-12">
+																						<p class="font-size-16">
+																							Excellent
+																						</p>
+																					</div>
+																				</div>
+																			</div>
+																			<!--end การอ่าน-->
+
+																			<!--การเขียน-->
+																			<div class="col-sm-3 col-3 margin-10">
+																				<div class="row">
+																					<div class="col-12">
+																						<p
+																							class="font-size-16 color-violet">
+																							<b>การเขียน :</b></p>
+																					</div>
+
+																					<div class="col-12">
+																						<p class="font-size-16">
+																							Excellent
+																						</p>
+																					</div>
+																				</div>
+																			</div>
+																			<!--end การเขียน-->
+																		</div>
+																	</div>
+																	<!--end ฟัง พูด อ่าน เขียน-->
+																</div>
+															</div>
+															<!--end ภาษาอังกฤษ-->
+														</div>
+													</div>
+													<!--end group ภาษาอังกฤษ-->
+												</div>
+											</div>
+											<!--end group ภาษาทั้งหมด-->
+
+											<div class="col-12 margin-bottom-20">
+												<div class="line-line"></div>
+											</div>
+
+											<!--พิมพ์ดีดไทย พิมพ์ดีดอังกฤษ-->
+											<div class="col-12">
+												<div class="row">
+													<!--พิมพ์ดีดไทย-->
+													<div class="col-md-5 col-sm-5 col-6 margin-bottom-20">
+														<div class="row">
+															<div
+																class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12 typewriter">
+																<p class="font-size-16 color-violet">
+																	<b>พิมพ์ดีดไทย</b>
+																</p>
+															</div>
+
+															<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3">
+																<p class="font-size-16">35</p>
+															</div>
+
+															<div class="col-xl-5 col-lg-4 col-md-4 col-sm-5 col-9">
+																<p class="font-size-16 color-violet"><b>คำ/นาที</b>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end พิมพ์ดีดไทย-->
+
+													<!--พิมพ์ดีดอังกฤษ-->
+													<div class="col-md-5 col-sm-5 col-6 margin-bottom-20">
+														<div class="row">
+															<div
+																class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12 typewriter">
+																<p class="font-size-16 color-violet">
+																	<b>พิมพ์ดีดอังกฤษ</b>
+																</p>
+															</div>
+
+															<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3">
+																<p class="font-size-16">35</p>
+															</div>
+
+															<div class="col-xl-5 col-lg-4 col-md-4 col-sm-5 col-9">
+																<p class="font-size-16 color-violet"><b>คำ/นาที</b>
+																</p>
+															</div>
+														</div>
+													</div>
+													<!--end พิมพ์ดีดอังกฤษ-->
+												</div>
+											</div>
+											<!--end พิมพ์ดีดไทย พิมพ์ดีดอังกฤษ-->
+
+											<!--การขับขี่ ใบอนุญาต-->
+											<div class="col-12">
+												<div class="row">
+													<!--ความสามารถในการขับขี่-->
+													<div class="col-md-4 col-sm-12 margin-bottom-20">
+														<div class="row">
+															<div class="col-12">
+																<p class="font-size-16 color-violet">
+																	<b>ความสามารถในการขับขี่</b></p>
+															</div>
+
+															<div class="col-12 skill-driver">
+																<ul>
+																	<li>รถยนต์</li>
+																	<li>รถยนต์</li>
+																	<li>รถยนต์</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<!--end ความสามารถในการขับขี่-->
+
+													<!--มียานพาหนะเป็นของตัวเอง-->
+													<div class="col-md-4 col-sm-12 margin-bottom-20">
+														<div class="row">
+															<div class="col-12">
+																<p class="font-size-16 color-violet">
+																	<b>มียานพาหนะเป็นของตัวเอง</b></p>
+															</div>
+
+															<div class="col-12">
+																<div class="row">
+																	<div class="col-3">
+																		<p class="font-size-16 color-black">มี</p>
+																	</div>
+
+																	<div class="col-9 skill-driver">
+																		<ul>
+																			<li>รถยนต์</li>
+																			<li>รถยนต์</li>
+																			<li>รถยนต์</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!--end มียานพาหนะเป็นของตัวเอง-->
+
+													<!--มีใบอนุญาติขับขี่-->
+													<div class="col-md-4 col-sm-12 margin-bottom-20">
+														<div class="row">
+															<div class="col-12">
+																<p class="font-size-16 color-violet">
+																	<b>มีใบอนุญาติขับขี่</b></p>
+															</div>
+
+															<div class="col-12">
+																<div class="row">
+																	<div class="col-3">
+																		<p class="font-size-16 color-black">มี</p>
+																	</div>
+
+																	<div class="col-9 skill-driver">
+																		<ul>
+																			<li>รถยนต์</li>
+																			<li>รถยนต์</li>
+																			<li>รถยนต์</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!--end มีใบอนุญาติขับขี่-->
+												</div>
+											</div>
+											<!--end การขับขี่ ใบอนุญาต-->
+
+											<div class="col-12 margin-bottom-20">
+												<div class="line-line"></div>
+											</div>
+
+											<!--group ความสามารถทางด้านคอมพิวเตอร์-->
+											<div class="col-12">
+												<div class="row">
+													<!--ความสามารถทางด้านคอมพิวเตอร์-->
+													<div class="col-12 margin-bottom-20">
+														<div class="row">
+															<div class="col-12">
+																<p class="font-size-16 color-violet">
+																	<b>ความสามารถทางด้านคอมพิวเตอร์</b></p>
+															</div>
+
+															<div class="col-12 skill-com">
+																<ul>
+																	<li>photoshop</li>
+																	<li>photoshop</li>
+																	<li>photoshop</li>
+																	<li>photoshop</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<!--end ความสามารถทางด้านคอมพิวเตอร์-->
+
+													<!--ทักษะอื่นๆ-->
+													<div class="col-12 margin-bottom-20">
+														<div class="row">
+															<div class="col-12">
+																<p class="font-size-16 color-violet">
+																	<b>ทักษะอื่นๆ</b>
+																</p>
+															</div>
+
+															<div class="col-12 skill-com">
+																<ul>
+																	<li>photoshop</li>
+																	<li>photoshop</li>
+																	<li>photoshop</li>
+																	<li>photoshop</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<!--end ทักษะอื่นๆ-->
+
+													<!--คุณสมบัติอื่นๆ-->
+													<div class="col-12 margin-bottom-20">
+														<div class="row">
+															<div class="col-12">
+																<p class="font-size-16 color-violet">
+																	<b>คุณสมบัติอื่นๆ</b>
+																</p>
+															</div>
+
+															<div class="col-12 skill-com">
+																<ul>
+																	<li>photoshop</li>
+																	<li>photoshop</li>
+																	<li>photoshop</li>
+																	<li>photoshop</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<!--end คุณสมบัติอื่นๆ-->
+
+													<!--ความสามารถพิเศษ-->
+													<div class="col-12 margin-bottom-20">
+														<div class="row">
+															<div class="col-12">
+																<p class="font-size-16 color-violet">
+																	<b>ความสามารถพิเศษ</b>
+																</p>
+															</div>
+
+															<div class="col-12 skill-list">
+																<ul>
+																	<li>1. มีความสามารถใช้โปรแกรมคอมพิวเตอร์ต่าง ๆ
+																		ได้
+																		เช่น
+																		Microsoft Office , Power Point ,อื่น ๆ ได้ดี
+																	</li>
+																	<li>1. มีความสามารถใช้โปรแกรมคอมพิวเตอร์ต่าง ๆ
+																		ได้
+																		เช่น
+																		Microsoft Office , Power Point ,อื่น ๆ ได้ดี
+																	</li>
+																	<li>1. มีความสามารถใช้โปรแกรมคอมพิวเตอร์ต่าง ๆ
+																		ได้
+																		เช่น
+																		Microsoft Office , Power Point ,อื่น ๆ ได้ดี
+																	</li>
+																	<li>1. มีความสามารถใช้โปรแกรมคอมพิวเตอร์ต่าง ๆ
+																		ได้
+																		เช่น
+																		Microsoft Office , Power Point ,อื่น ๆ ได้ดี
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<!--end ความสามารถพิเศษ-->
+
+													<!--โครงการ ผลงาน เกียรติประวัติ และประสบการณ์อื่น ๆ-->
+													<div class="col-12 margin-bottom-20">
+														<div class="row">
+															<div class="col-12">
+																<p class="font-size-16 color-violet"><b>โครงการ
+																		ผลงาน
+																		เกียรติประวัติ และประสบการณ์อื่น ๆ</b> </p>
+															</div>
+
+															<div class="col-12 skill-list">
+																<ul>
+																	<li>1. มีความสามารถใช้โปรแกรมคอมพิวเตอร์ต่าง ๆ
+																		ได้
+																		เช่น
+																		Microsoft Office , Power Point ,อื่น ๆ ได้ดี
+																	</li>
+																	<li>1. มีความสามารถใช้โปรแกรมคอมพิวเตอร์ต่าง ๆ
+																		ได้
+																		เช่น
+																		Microsoft Office , Power Point ,อื่น ๆ ได้ดี
+																	</li>
+																	<li>1. มีความสามารถใช้โปรแกรมคอมพิวเตอร์ต่าง ๆ
+																		ได้
+																		เช่น
+																		Microsoft Office , Power Point ,อื่น ๆ ได้ดี
+																	</li>
+																	<li>1. มีความสามารถใช้โปรแกรมคอมพิวเตอร์ต่าง ๆ
+																		ได้
+																		เช่น
+																		Microsoft Office , Power Point ,อื่น ๆ ได้ดี
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<!--end โครงการ ผลงาน เกียรติประวัติ และประสบการณ์อื่น ๆ-->
+												</div>
+											</div>
+											<!--end groupความสามารถทางด้านคอมพิวเตอร์-->
+
+											<div class="col-12 margin-bottom-20">
+												<div class="line-line"></div>
+											</div>
+
+											<!--บุคคลอ้างอิง-->
+											<div class="col-12 margin-bottom-20">
+												<div class="row">
+													<div class="col-12">
+														<p class="font-size-16 color-violet"><b>บุคคลอ้างอิง</b></p>
+													</div>
+
+													<div class="col-12">
+														<p class="font-size-16">เบนเบน</p>
+													</div>
+												</div>
+											</div>
+											<!--end บุคคลอ้างอิง-->
+										</div>
+									</div>
+									<!--end ความสามารถ ผลงาน และเกียรติประวัติ-->
+								</div>
+							</div>
+						</div>
+						<!--end หัวเรื่อง ความสามารถและผลงาน-->
+					</div>
+					<!--end ข้อมูลโปรไฟล์-->
+
+					<!--คอนเท้น-->
+					<div>
+						<div style="background: #ebebeb; height: 250px;"></div>
+					</div>
+					<!--end คอนเท้น-->
+				</section>
+			</div>
+		</article>
+	</section>
+	<!--end dashboard-->
+
+	<!--footer-->
+	<footer>
+		<!-- หางานตามประเภท หางานตามพื้นที่ -->
+		<section class="bgKeyword">
+			<!-- asset/js/footer/footer.js -->
+		</section>
+		<!-- end หางานตามประเภท หางานตามพื้นที่ -->
+
+		<!-- เกี่ยวกับเรา -->
+		<section class="bgAddressOrchidJob">
+			<!-- asset/js/footer/footer.js -->
+		</section>
+		<!-- end เกี่ยวกับเรา -->
+	</footer>
+	<!--end footer-->
+
+	<!--copyright-->
+	<section class="bg-copyright">
+		<article class="container container-banner">
+			<div class="row">
+				<div class="col-12 copyright">
+					<h6>JOBBKK.COM © สงวนลิขสิทธิ์ 2018 All Right Reserved including text, graphics, interfaces and
+						design thereof are all rights reserved.</h6>
+				</div>
+			</div>
+		</article>
+	</section>
+	<!--end copyright-->
+
+	<!--backtotop-->
+	<a href="#" class="cd-top">Top</a>
+</body>
+
+<script type="text/javascript" src="../asset/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../asset/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/nl.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="../asset/js/jquery.dotdotdot.min.js"></script>
+<script type="text/javascript" src="js/siema.min.js"></script>
+<script type="text/javascript" src="js/select2.min.js"></script>
+<script type="text/javascript" src="../asset/js/sweetalert2.all.min.js"></script>
+<script type="text/javascript" src="../asset/js/wow.min.js"></script>
+<script type="text/javascript" src="../asset/js/backToTop/backToTop.js"></script>
+<script type="text/javascript" src="../asset/js/wowAnimate/wowAnimate.js"></script>
+<script type="text/javascript" src="js/dashBoard.js"></script>
+
+<!-- ปุ่มแฮมเบอเกอ และเมนูด้านข้าง -->
+<script type="text/javascript" src="../asset/js/sideNav/sideNav.js"></script>
+<!-- login เปลี่ยนภาษา sweetAlert-->
+<script type="text/javascript" src="../asset/js/loginLanguage/loginLanguage.js"></script>
+
+<!-- footer -->
+<script type="text/javascript" src="../asset/js/footer/footer.js"></script>
+
+</html>

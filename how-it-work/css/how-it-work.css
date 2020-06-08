@@ -1,45 +1,52 @@
-.bg-how-it-work-main{ background: url(../images/pic.jpg) no-repeat; background-position: 80% 0; background-size: cover; 
-	min-height: 576px; margin-top: 70px;}
-.head-how-it-work h1{ margin-top: 200px; font-size: 8rem; font-weight: bold; text-decoration: underline; 
-	color: #b9467d;}
-.the-all{ margin-top: 40px;}
-.the-five{ margin-bottom: 40px;}
+.calC{ margin: 0 calc(-50vw + 50%);}
+.hilight{ color: var(--color-pink);}
 
-.bg-one{ background: url(../images/1.png) no-repeat; background-position: -20% 0; background-size: 50%; 
-	min-height: 150px;}
-.bg-two{ background: url(../images/2.png) no-repeat; background-position: -20% 0; background-size: 50%; 
-	min-height: 150px;}
-.bg-three{ background: url(../images/3.png) no-repeat; background-position: -20% 0; background-size: 50%; 
-	min-height: 150px;}
-.bg-four{ background: url(../images/4.png) no-repeat; background-position: -20% 0; background-size: 50%; 
-	min-height: 150px;}
-.bg-five{ background: url(../images/5.png) no-repeat; background-position: -20% 0; background-size: 50%; 
-	min-height: 150px;}
+.headHowItWork{ margin-bottom: 30px;}
+.headHowItWork h2{ font-size: var(--font40Head); color: var(--color-violet);}
 
-.bg-set figcaption{ margin-top: 50px;}
-.bg-set h2{ font-size: 4rem; font-weight: bold;}
-.bg-set h5{ font-size: 1.8rem;}
-.bg-set h6{ font-size: 1.6rem;}
-.the-set img{ max-width: 100%;}
+.subHowItWork{ margin-bottom: 30px;}
+.subHowItWork h2{ font-size: var(--font40Head); color: var(--color-violet);}
 
-@media (max-width: 1199px){
-	.head-how-it-work h1{ font-size: 6rem;}
+.bgHowItWork::before{ content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(92, 37, 141, 0.5);}
+.bgHowItWork{ background: url(../images/howItWork.jpg) no-repeat top center; background-size: cover; max-height: 100vh; width: 100vw; max-width: 100vw;
+	position: relative; margin-top: 70px;}
+.bgHowItWork h1{ font-size: var(--font60Head); font-weight: 900; color: var(--color-white); margin: 30vh 0; text-align: center; letter-spacing: 20px;}
+
+.bgGray{ background: var(--color-lighten-gray); padding: 30px 0; margin-bottom: 30px;}
+.bgWhite{ background: var(--color-white); padding: 30px 0; overflow: hidden;}
+.gridHowItWork{ display: grid; grid-template-columns: 0.8fr 1fr; grid-gap: 30px; margin-top: 40px;}
+.gridWork{ display: grid; grid-template-columns: 1fr 0.8fr; grid-gap: 30px; margin-top: 40px;}
+
+.gridHowItWork img{ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);}
+.gridHowItWork h6{ font-size: var(--font18); margin-bottom: 30px;}
+.gridHowItWork p{ font-size: var(--font18); font-weight: 900; margin-bottom: 10px;}
+.gridHowItWork ul{ display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; counter-reset: work;}
+.gridHowItWork li{ font-size: var(--font18); position: relative; left: 40px; margin-bottom: 5px;}
+.gridHowItWork li::before{ counter-increment: work; content: counter(work) '.'; position: absolute; top: 0; left: -40px; background: var(--color-violet); border-radius: 50%; 
+	width: 30px; height: 30px; text-align: center; color: var(--color-white);}
+
+.gridWork img{ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);}
+.gridWork h6{ font-size: var(--font18); margin-bottom: 30px;}
+.gridWork p{ font-size: var(--font18); font-weight: 900; margin-bottom: 10px;}
+.gridWork ul{ display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; counter-reset: work;}
+.gridWork li{ font-size: var(--font18); position: relative; left: 40px; margin-bottom: 5px;}
+.gridWork li::before{ counter-increment: work; content: counter(work) '.'; position: absolute; top: 0; left: -40px; background: var(--color-violet); border-radius: 50%; 
+	width: 30px; height: 30px; text-align: center; color: var(--color-white);}
+
+.course{ margin-bottom: 30px;}
+.seek{ margin-top: 30px;}
+
+@media (max-width:991px){
+	.gridHowItWork, .gridWork{ grid-template-columns: 1fr;}
+	.gridHowItWork img, .gridWork img{ margin: 0 auto;}
+	.order1{ order: 1;}
 }
 
-@media (max-width: 991px){
-	.bg-one, .bg-two, .bg-three, .bg-four, .bg-five{ background-size: contain; min-height: 250px;}
+@media (max-width:620px){
+	.gridHowItWork ul, .gridWork ul{ max-width: 95%;}
 }
 
-@media (max-width: 767px){
-	.bg-how-it-work-main{ background-position: 70% 0; min-height: 300px;}
-	.head-how-it-work h1{ margin-top: 80px;}
+@media (max-width:576px){
+	.gridHowItWork li, .gridWork li{ margin-bottom: 10px; left: 30px;}
+	.gridHowItWork li::before, .gridWork li::before{ width: 25px; height: 25px; left: -30px;}
 }
-
-@media (max-width: 576px){
-	.head-how-it-work h1{ font-size: 4rem;}
-	.bg-one, .bg-two, .bg-three, .bg-four, .bg-five{ background-position: 0;}
-	.bg-set h2{ font-size: 3.5rem;}
-	.bg-set h6{ font-size: 1.4rem;}
-}
-
-.text-indent{ text-indent: 20px;}

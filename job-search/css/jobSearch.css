@@ -1,0 +1,81 @@
+.container-top{ margin-top: 120px;}
+button{ cursor: pointer;}
+
+/*แบบปกติ*/
+.bg-border-white{ background: var(--color-white); border: 1px solid var(--color-light-gray); width: 100%; padding: 15px; margin-bottom: 10px;}
+
+/*แบบมี feature*/
+.borderHilight{ background: var(--color-lighten-gray); border: 1px solid var(--color-light-gray); width: 100%; padding: 15px;
+	border-right: 5px solid var(--color-violet); margin-bottom: 10px;}
+
+.gridJobSearch{ display: grid; grid-template-columns: 0.3fr 1fr; grid-gap: 15px; margin-bottom: 30px;}
+
+.flexBanner{ display: flex; flex-direction: column;}
+.borderBanner{ border: 1px solid var(--color-light-gray); margin-bottom: 15px;}
+.gridHilight{ display: grid; grid-template-columns: 0.2fr 1fr; grid-gap: 15px; align-items: flex-start;}
+
+.flexSearch{ display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; flex-wrap: wrap;}
+.flexSearch p{ font-size: var(--font18); color: var(--color-violet);}
+.form-group{ margin-bottom: 0; width: 60%;}
+.form-control{ line-height: 3;}
+
+.orchid-form-control{ height: 34px; font-size: var(--font14);}
+.orchid-search{ cursor: pointer; background: var(--color-violet); border: 1px solid var(--color-violet);}
+.orchid-search:focus{ outline: 0;}
+.orchid-search:hover{ background: var(--color-pink); border: 1px solid var(--color-pink);}
+.input-group-text{ background: transparent; border: 0; color: var(--color-white); font-size: var(--font16);}
+
+.logoCompany{ border: 1px solid var(--color-light-gray); display: flex; align-items: center; justify-content: center; background: var(--color-white);}
+.logoCompany a{ display: block; padding: 15px;}
+.logoCompany img{ min-height: 150px; object-fit: scale-down; max-width: 150px;}
+
+.flexListPosition{ display: flex; flex-direction: column; text-decoration: none;}
+.flexListPosition:hover{ text-decoration: none;}
+
+.orchidPosition{ display: grid; grid-template-columns: 1fr 0.5fr; width: 100%; margin-bottom: 15px;}
+.orchidPosition p{ font-size: var(--font18); color: var(--color-violet); transition: 0.5s ease-in-out;}
+.orchidPosition p:hover{ color: var(--color-pink);}
+.orchidPosition p:last-child{ font-size: var(--font14); text-align: right; color: var(--color-black);}
+.orchidPosition img{ max-width: 30px;}
+.feature{ background: var(--color-violet); border-radius: 4px; padding: 3px 5px; color: var(--color-white); font-size: var(--font14);}
+.readUse{ color: var(--color-red); font-size: var(--font14);}
+
+.flexDetail{ display: flex; flex-direction: column;}
+.flexDetail p{ font-size: var(--font16); color: var(--color-black);}
+.flexDetail p:first-child{ margin-bottom: 15px;}
+.flexDetail img{ max-width: 30px;}
+
+.buttonBB{ display: flex; justify-content: flex-end; align-items: center; margin: 15px 0 0; padding: 0; list-style: none;}
+.buttonBB li{ margin-right: 10px;}
+.buttonBB button{ background: var(--color-gradient-violet); border: 0; border-radius: 4px; padding: 5px 10px; color: var(--color-white);}
+.buttonBB button:focus{ outline: 0;}
+.buttonBB button.oc-save{ background: var(--color-white); border: 1px solid var(--color-light-gray); color: var(--color-black);}
+.buttonBB button:hover{ background: var(--color-gradient-pink);}
+.buttonBB button.oc-save:hover{ color: var(--color-white);}
+
+.oc-breadcrumb{ background: transparent; padding: 0; margin-bottom: 30px; font-size: var(--font18);}
+.orchidPagination{ font-size: var(--font18); margin: 15px 0; display: flex; align-items: center; justify-content: center;}
+.page-link{ color: #412e6e;}
+.page-link:hover, .page-link.active{ background: var(--color-violet); color: var(--color-white);}
+
+@media (max-width: 991px){
+	.gridJobSearch{ grid-template-columns: 1fr;}
+	.orderJob{ order: 1;}
+	.orderBanner{ order: 2;}
+	.flexBanner{ display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); grid-gap: 15px;}
+}
+
+@media (max-width: 768px){
+	.gridHilight{ grid-template-columns: 0.5fr 1fr;}
+	.orchidPosition{ grid-template-columns: 1fr;}
+	.logoCompany img{ min-height: 120px; max-width: 120px;}
+	.orchidPosition p:last-child{ text-align: left;}
+}
+
+@media (max-width: 576px){
+	.flexSearch{ flex-direction: column;}
+	.flexSearch p{ margin-bottom: 15px;}
+	.form-group{ width: 100%;}
+	.gridHilight{ grid-template-columns: 0.3fr 1fr;}
+	.logoCompany img{ min-height: 80px; max-width: 80px;}
+}

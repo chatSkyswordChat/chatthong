@@ -1,0 +1,53 @@
+.container-top{ margin-top: 120px;}
+button{ cursor: pointer; transition: 0.5s ease-in-out;}
+
+/*แบบปกติ*/
+.bg-border-white{ background: var(--color-white); border: 1px solid var(--color-light-gray); width: 100%; padding: 15px; margin-bottom: 5px;}
+
+.flexCareerSearch{ display: grid; grid-template-columns: 0.7fr 1fr 1fr 0.5fr; grid-gap: 15px; align-items: center; margin-bottom: 15px;}
+.flexCareerSearch p{ font-size: var(--font18);}
+.formControlOrchid{ font-size: var(--font16); height: 34px;}
+.form-group{ margin-bottom: 0;}
+.flexCareerSearch button{ padding: 6.5px 10px; border: 0; background: var(--color-gradient-violet); color: var(--color-white); border-radius: 4px;
+	font-size: var(--font16); width: 100%;}
+.flexCareerSearch button:hover{ background: var(--color-gradient-pink);}
+
+@media (max-width:991px){
+	.flexCareerSearch{ grid-template-columns: 1fr;}
+	.flexCareerSearch div:last-child{ text-align: center;}
+	.flexCareerSearch button{ width: 200px;}
+}
+
+.flexList{ display: flex; flex-direction: column;align-items: center;}
+.resultSearch{ border: 1px solid var(--color-light-gray); border-bottom: 0; border-radius: 10px 10px 0 0; padding: 15px; 
+	width: 100%; background: var(--color-lighten-gray);}
+.resultSearch p{ font-size: var(--font18);}
+
+.flexBorder{ width: 100%; border: 1px solid var(--color-light-gray); padding: 15px; margin-bottom: 10px;}
+.flexHead{ display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; background: var(--color-light-gray);
+    border-radius: 10px; padding: 15px;}
+.flexHead p{ font-size: var(--font18); font-weight: 900; transition: 0.5s ease-in-out;}
+.flexHead p:first-child:hover{ padding-left: 15px;}
+.flexHead a{ color: var(--color-pink); text-decoration: none;}
+.flexHead span{ color: var(--color-red);}
+.flexHead p:last-child{ font-size: var(--font14); color: var(--color-black); font-weight: normal;}
+.flexHead img{ max-width: 30px;}
+
+.flexSub{ display: flex; flex-direction: column; margin-bottom: 15px; border-bottom: 1px dashed var(--color-light-gray); padding-bottom: 15px;}
+.flexSub p{ font-size: var(--font16);}
+.flexSub span{ font-weight: 900;}
+
+.gridDetail{ display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 15px;}
+.gridDetail p{ font-size: var(--font16);}
+.gridDetail span{ font-weight: 900;}
+.gridDetail img{ max-width: 30px;}
+
+@media (max-width:768px){
+	.flexHead{ flex-direction: column; align-items: baseline;}
+	.gridDetail{ grid-template-columns: 1fr;}
+}
+
+.oc-breadcrumb{ background: transparent; padding: 0; margin-bottom: 30px; font-size: var(--font18);}
+.orchidPagination{ font-size: var(--font18); margin: 15px 0; display: flex; align-items: center; justify-content: center;}
+.page-link{ color: #412e6e;}
+.page-link:hover, .page-link.active{ background: var(--color-violet); color: var(--color-white);}

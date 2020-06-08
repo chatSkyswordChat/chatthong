@@ -1,0 +1,151 @@
+.container-top{ margin-top: 120px;}
+label{ cursor: pointer;}
+
+.acBreadcrumb{ background: transparent; padding: 0; margin: 30px 0; 
+	border-bottom: 1px solid var(--color-light-gray); padding-bottom: 15px; font-size: var(--font18);}
+
+/*select2*/
+.select2-container{ border-radius: 4px; width: 100% !important;}
+.select2-container--default .select2-selection--multiple{ border: 1px solid #ced4da; border-radius: .25rem;}
+.select2-container .select2-selection--multiple{ min-height: 34px;}
+.select2-container--default.select2-container--focus .select2-selection--multiple{ border: 1px solid #ced4da;}
+.select2-container--default .select2-selection--multiple .select2-selection__clear{ font-size: var(--font16); position: absolute;
+	right: 0;}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered{ display: flex; flex-wrap: wrap;}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li{ margin-bottom: 5px;}
+
+/*menu ICMS*/
+.menuEnd { width: 100%; margin: 0; box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);}
+.menuList { list-style: none; margin: 0; padding: 0; height: 100%; overflow: hidden;}
+.menuList a{ display: block; background: var(--color-lighten-gray); padding: 10px 15px; color: var(--color-gray) !important; 
+	text-decoration: none; transition: 0.2s linear; border-bottom: 1px solid var(--color-light-gray);}
+.menuList a.active{ background: var(--color-violet); color: var(--color-white) !important;}
+.menuList a:hover { background: var(--color-violet); color: var(--color-white) !important;}
+.menuList .fa{ width: 16px; text-align: center; margin-right: 5px;}
+.menuList .badge { display: inline-block; background: var(--color-red); padding: 3px 7px;
+	  color: var(--color-white); font-size: var(--font14); font-weight: 900;}
+.menuList li ul{ margin: 0; padding: 0; list-style: none;}
+.menuList li ul li a { background: var(--color-light-gray); border-left: 4px solid transparent; 
+	padding: 10px 20px; color: var(--color-white); border-bottom: 1px solid var(--color-light-gray);}
+.menuList li ul li a:hover{ background: var(--color-violet); border-left: 4px solid var(--color-pink); color: var(--color-white);}
+.flexICMS{ display: flex !important; align-items: center; justify-content: space-between;}
+
+/*คอนเทนเนอกริด ครอบบอดี้*/
+.gridJobAnnouncement{ display: grid; grid-template-columns: 0.4fr 1fr; grid-gap: 15px;}
+.bgProfile{ border: 1px solid var(--color-dark-gray); border-radius: 4px; margin-bottom: 15px;}
+.bgTab{ background: var(--color-lighten-gray); padding: 15px; border-radius: 4px 4px 0 0; display: flex; 
+	flex-direction: column; justify-content: center; align-items: center; margin-bottom: 15px;}
+.bgTab p{ font-size: var(--font16); font-weight: 900; margin-bottom: 20px;}
+
+@media (max-width:991px){
+	.gridJobAnnouncement{ grid-template-columns: 1fr;}
+}
+
+/*ปุ่มดูโปรไฟล์ และแก้ไข*/
+.profileCorrect{ display: flex; justify-content: center; align-items: center; margin: 0; padding: 0; list-style: none; width: 100%;}
+.profileCorrect>*{ flex: 1 1 100%; max-width: 100%;}
+.profileCorrect li{ margin-right: 10px;}
+.profileCorrect li:last-child{ margin-right: 0;}
+
+.profileCorrect a{ background: var(--color-white); border: 1px solid var(--color-light-gray); 
+	color: var(--color-black); padding: 5px 10px; border-radius: 4px; display: block; text-decoration: none; text-align: center;}
+.profileCorrect li:last-child a{ background: var(--color-gradient-violet); border: 1px solid var(--color-gradient-violet); 
+	color: var(--color-white);}
+.profileCorrect a::before{ border-radius: 4px; background: var(--color-gradient-pink);}	
+.profileCorrect a:hover::before{ opacity: 1;}
+.profileCorrect a:hover{ color: var(--color-white);}
+
+/*รูปโปรไฟล์*/
+.flexProfile{ display: flex; flex-direction: column;}
+.flexProfile figure{ display: flex; justify-content: center;}
+.flexProfile img{ max-width: 200px; height: 100px; border-radius: 50%; border: 3px solid var(--color-white); margin-bottom: 15px;
+	object-fit: cover; box-shadow: 5px 5px 5px 0px rgba(191,191,191,1); object-position: 50% -5%;}
+
+.flexProfile div{ padding: 15px;}
+.flexProfile p{ color: var(--color-pink); font-weight: 900;}
+.flexProfile p:last-child{ color: var(--color-black); font-weight: 100;}
+
+@media (max-width:991px){
+	.flexProfile p{ text-align: center;}
+}
+
+/*เข้าสู่ระบบครั้งสุดท้าย เปลี่ยนภาษา*/
+.lastLogin{ border-bottom: 1px solid var(--color-light-gray); padding-bottom: 15px; margin-bottom: 15px;
+	display: flex; flex-direction: column;}
+.lastLogin h2{ font-size: var(--font24);}
+.lastLogin p{ font-size: var(--font16); color: var(--color-gray);}
+
+.headAnnouncement{ display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;}
+.headAnnouncement h2{ font-size: var(--font24);}
+
+ul.flagLang{ display: flex; align-items: center; margin: 0; padding: 0; list-style: none; justify-content: flex-end;}
+ul.flagLang li{ margin-right: 5px;}
+ul.flagLang button{ background: var(--color-white); border: 1px solid var(--color-dark-gray);
+	 border-radius: 4px; padding: 3px 5px;}
+ul.flagLang button:hover{ color: var(--color-white);}
+ul.flagLang button::before{ border-radius: 4px; background: var(--color-gradient-pink); border: 1px solid var(--color-gradient-pink);}
+ul.flagLang button:hover::before{ opacity: 1;}
+ul.flagLang li.active button{ background: var(--color-gradient-violet); border: 1px solid var(--color-gradient-violet); 
+	color: var(--color-white);}
+
+/* ฟอร์มกรอก */
+.gridFormAnnouncement{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
+.gridTel{ display: grid; grid-template-columns: 1fr 0.4fr; grid-gap: 15px;}
+.flexFormAnnouncement, .flexMethod{ display: flex; flex-direction: column;}
+.flexMethod{ margin-top: 15px;}
+.borderBB{ border-bottom: 1px dashed var(--color-dark-gray); margin: 15px 0; height: 0.2rem;}
+
+.gridFormAnnouncement p{ font-size: var(--font16); color: var(--color-black);}
+.flexFormAnnouncement h2, .flexDetail h2{ font-size: var(--font24); margin-bottom: 15px;}
+.flexFormAnnouncement h6{ color: var(--color-pink); font-size: var(--font16);}
+
+@media (max-width:991px){
+	.gridFormAnnouncement{ grid-template-columns: 1fr;}
+	.gridFormAnnouncementOne{ grid-template-columns: 1fr 1fr;}
+}
+
+@media (max-width:576px){
+	.gridFormAnnouncementOne .ff{ grid-column: span 3 / span 3;}
+}
+
+.mark{ background: transparent; color: var(--color-red) !important; font-size: var(--font14) !important;}
+.orchidControl{ padding: 6px 12px; height: 100%; font-size: var(--font16); border-radius: 4px; color: var(--color-gray);}
+.labelAnnouncement{ width: 100%; margin-bottom: 0;}
+.focusWork{ background: var(--color-light-gray); border: 1px solid var(--color-dark-gray); padding: 5px; 
+	text-align: center; border-radius: 4px; margin-top: 23px;}
+
+@media (max-width:991px){
+	.focusWork{ margin-top: 0;}
+}
+
+ul.dayStop{ display: flex; align-items: center; flex-wrap: wrap; margin: 0; padding: 0; list-style: none;}
+ul.dayStop li{ margin-right: 15px;}
+
+ul.listSalary{ display: flex; align-items: center; flex-wrap: wrap; margin: 0 -10px; padding: 0; list-style: none;}
+ul.listSalary li{ padding: 0 10px;}
+
+.bgWorkCountry{ background: var(--color-light-gray); border-radius: 4px; padding: 15px;}
+.bgWorkCountry section{ margin-bottom: 15px;}
+textarea.adddDetail{ width: 100%; padding: 10px;}
+
+ul.selectSex{ display: flex; align-items: center; flex-wrap: wrap; margin: 0; padding: 0; list-style: none;}
+ul.selectSex li{ margin-right: 15px;}
+
+ul.listApply{ display: flex; align-items: center; flex-wrap: wrap; margin: 0; padding: 0; list-style: none;}
+ul.listApply li{ margin-right: 15px;}
+
+.input-group-text{ font-size: var(--font16);}
+.applicationMethod{ display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none;}
+.saveCancel{ display: flex; align-items: center; justify-content: center; margin: 15px 0 30px; 
+	padding: 0; list-style: none;}
+.saveCancel li{ margin-right: 15px;}
+.saveCancel li button{ background: var(--color-gradient-violet); border: 1px solid var(--color-gradient-violet); 
+	border-radius: 4px; color: var(--color-white); padding: 5px 10px; cursor: pointer;}
+.saveCancel li:last-child button{ background: var(--color-white); border: 1px solid var(--color-dark-gray); color: var(--color-gray);}
+.saveCancel li button::before{ background: var(--color-gradient-pink); 
+	border: 1px solid var(--color-gradient-pink); border-radius: 4px;}
+.saveCancel li button:hover::before{ opacity: 1;}
+.saveCancel li button:hover{ color: var(--color-white);}
+
+
+
