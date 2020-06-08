@@ -46,7 +46,9 @@ $(() => {
     // end show on mobile
 
     // เมนูด้านข้าง
-    var last_part = '';
+    var url = $(location).attr('href');
+    var parts = url.split("/");
+    var last_part = parts[parts.length - 1];
 
     var ActivePart = [
         { name: '../index.html' },
@@ -72,7 +74,7 @@ $(() => {
         }
 
         sideNav += `<li class="${classLink}">`
-        sideNav += `<a href="${linked[navMenu]}" class="${classActive}">`
+        sideNav += `<a href="${linked[navMenu]['name']}" class="${classActive}">`
         sideNav += `<i class="${icon[navMenu]}">`
         sideNav += `</i>${menuOrchidjobs[navMenu]}`
         sideNav += '</a>'
