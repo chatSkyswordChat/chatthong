@@ -61,7 +61,7 @@ $(() => {
     for (let navMenu = 0; navMenu < 7; navMenu++) {
         // ใส่ class active ใน tag A
         var classActive = ''
-        if (last_part === ActivePart[navMenu]['name']) {
+        if (last_part == ActivePart[navMenu]['name']) {
             classActive = 'active'
         }
 
@@ -72,7 +72,7 @@ $(() => {
         }
 
         sideNav += `<li class="${classLink}">`
-        sideNav += `<a href="${linked[navMenu]}" class="${classActive}">`
+        sideNav += `<a href="${linked[navMenu]['name']}" class="${classActive}">`
         sideNav += `<i class="${icon[navMenu]}">`
         sideNav += `</i>${menuOrchidjobs[navMenu]}`
         sideNav += '</a>'
