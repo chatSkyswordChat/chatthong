@@ -2,23 +2,25 @@
 // เมนู orchidjobs
 $(() => {
     var sideNav = ''
-    var icon = [
-        'fa fa-home', 'far fa-address-book', 'fa fa-laptop', 'fas fa-edit', 'fas fa-search',
-        'fas fa-th-large', 'fa fa-phone',
-    ]
-    var menuOrchidjobs = [
-        'Home', 'About us', 'Services', 'Create Resume', 'Jobs Search', 'Blog', 'Contact us',
+
+    let splits = ($(location).attr('href').split('/').length == 6)?'':'../'
+    let menuOrchids = [
+        { menu: 'Home', icon: 'fa fa-home', link: splits+'index.html'},
+        { menu: 'About us', icon: 'far fa-address-book', link: splits+'about-us/about-us.html'},
+        { menu: 'Services', icon: 'fa fa-laptop', link: splits+'service/allService.html'},
+        { menu: 'Create Resume', icon: 'fas fa-edit', link: 'javascript:void(0)', class: 'swal'},
+        { menu: 'Jobs Search', icon: 'fas fa-search', link: splits+'job-search/jobSearch.html'},
+        { menu: 'Blog', icon: 'fas fa-th-large', link: splits+'blog/blog.html'},
+        { menu: 'Contact us', icon: 'fa fa-phone', link: splits+'contact/contact.html'}
     ]
 
-    var linked = [
-        { name: 'index.html' },
-        { name: 'about-us/about-us.html' },
-        { name: 'service/allService.html' },
-        { name: 'javascript:void(0)' },
-        { name: 'job-search/jobSearch.html' },
-        { name: 'blog/blog.html' },
-        { name: 'contact/contact.html' },
-    ]
+    // เมนูด้านข้าง
+    let path = $(location).attr('href').split("/");
+    let last_part = path[path.length - 1];
+
+    // เปลี่ยนภาษาใน mobile
+    let lang = ($(location).attr('href').split('/').length == 6)?'':'../'
+    let flag = { flagEng : lang+'asset/images/eng-flag.png', flagThai: lang+'asset/images/thai-flag.png'}
 
     // sideNav
     sideNav += '<ul>'
@@ -33,54 +35,32 @@ $(() => {
     sideNav += '<ul>'
     sideNav += '<li>'
     sideNav += '<a href="javascript:void(0)">'
-    sideNav += `<img src="asset/images/eng-flag.png" class="flag-lang"> English`
+    sideNav += `<img src="${flag.flagEng}" class="flag-lang"> English`
     sideNav += '</a>'
     sideNav += '</li>'
     sideNav += '<li>'
     sideNav += '<a href="javascript:void(0)">'
-    sideNav += `<img src="asset/images/thai-flag.png" class="flag-lang"> Thailand`
+    sideNav += `<img src="${flag.flagThai}" class="flag-lang"> Thailand`
     sideNav += '</a>'
     sideNav += '</li>'
     sideNav += '</ul>'
     sideNav += '</li>'
     // end show on mobile
 
-    // เมนูด้านข้าง
-    var url = $(location).attr('href');
-    var parts = url.split("/");
-    var last_part = parts[parts.length - 1];
-
-    var ActivePart = [
-        { name: 'index.html' },
-        { name: 'about-us.html' },
-        { name: 'allService.html' },
-        { name: 'javascript:void(0)' },
-        { name: 'jobSearch.html' },
-        { name: 'blog.html' },
-        { name: 'contact.html' },
-    ]
-
-    for (let navMenu = 0; navMenu < 7; navMenu++) {
-        // ใส่ class active ใน tag A
-        var classActive = ''
-        if (last_part == ActivePart[navMenu]['name']) {
+    menuOrchids.forEach((menuOrchid)=>{
+        let classActive = ''
+        if(menuOrchid.link.includes(last_part)){
             classActive = 'active'
         }
 
-        // ใส่ class swal
-        var classLink = ''
-        if (menuOrchidjobs[navMenu] == 'Create Resume') {
-            classLink = 'swal'
-        }
-
-        sideNav += `<li class="${classLink}">`
-        sideNav += `<a href="${linked[navMenu]['name']}" class="${classActive}">`
-        sideNav += `<i class="${icon[navMenu]}">`
-        sideNav += `</i>${menuOrchidjobs[navMenu]}`
+        sideNav += `<li class="${menuOrchid.class}">`
+        sideNav += `<a href="${menuOrchid.link}" class="${classActive}">`
+        sideNav += `<i class="${menuOrchid.icon}">`
+        sideNav += `</i>${menuOrchid.menu}`
         sideNav += '</a>'
         sideNav += '</li>'
-    }
-    // end เมนูด้านข้าง
+    })
+
     sideNav += '</ul>'
     // end sideNav
 

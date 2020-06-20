@@ -1,14 +1,36 @@
-$(()=>{
+$(function(){
 	var loginLang = ''
+	
+	// โลโก้เมนู เปลี่ยนภาษา
+	let flagLogo = ($(location).attr('href').split('/').length == 6) ? '' : '../';
+	let flagLogos = { 
+		logo : flagLogo+'asset/images/logo.png', 
+		flagThai : flagLogo+'asset/images/thai-flag.png', 
+		flagEng : flagLogo+'asset/images/eng-flag.png',
+		linked : flagLogo+'index.html'
+	}
+
+	// user ลงทะเบียน เข้าสู่ระบบ
+	let userAll = ($(location).attr('href').split('/').length == 6)? '':'../'
+	let userRegisters = [
+		{ name: 'ผู้ประกอบการลงทะเบียน', link : userAll+'create-register-login/operatorRegister.html'},
+		{ name: 'ผู้สมัครงานลงทะเบียน', link : userAll+'create-register-login/jobSeekerRegister.html'},
+		{ name: 'เอเจนซี่ลงทะเบียน', link : userAll+'create-register-login/agencyRegister.html'}
+	]
+	let userEnters = [
+		{ name: 'ผู้ประกอบการเข้าสู่ระบบ', link : userAll+'create-register-login/operatorEnterSystem.html'},
+		{ name: 'ผู้สมัครงานเข้าสู่ระบบ', link : userAll+'create-register-login/jobSeekerEnterSystem.html'},
+		{ name: 'เอเจนซี่เข้าสู่ระบบ', link : userAll+'create-register-login/agencyEnterSystem.html'}
+	]
 
     // โลโก้ orchid
 	loginLang += '<div class="logo-orchid">'
-		loginLang += `<a href="index.html">`
-            loginLang += `<img src="asset/images/logo.png">`
+		loginLang += `<a href="${flagLogos.linked}">`
+			loginLang += `<img src="${flagLogos.logo}">`
         loginLang += '</a>'
 	loginLang += '</div>'
     // end โลโก้ orchid
-
+ 
     // login language
     loginLang += '<div class="login-lang">'
         // login
@@ -24,18 +46,12 @@ $(()=>{
                         loginLang += '</i> Register'
                     loginLang += '</a>'
 					loginLang += '<ul class="dropdown-menu dropdown-menu-left">'
+					userRegisters.forEach((userRegister)=>{
 						loginLang += '<li>'
-						loginLang += '<a href="create-register-login/operatorRegister.html">ผู้ประกอบการลงทะเบียน'
-						loginLang += '</a>'
-					loginLang += '</li>'
-					loginLang += '<li>'
-						loginLang += '<a href="create-register-login/jobSeekerRegister.html">ผู้สมัครงานลงทะเบียน'
-						loginLang += '</a>'
-					loginLang += '</li>'
-					loginLang += '<li>'
-						loginLang += '<a href="create-register-login/agencyRegister.html">เอเจนซี่ลงทะเบียน'
-                            loginLang += '</a>'
-						loginLang += '</li>'
+							loginLang += `<a href="${userRegister.link}">${userRegister.name}`
+							loginLang += '</a>'
+						loginLang += '</li>'	
+					})
 					loginLang += '</ul>'
                 loginLang += '</li>'
                 
@@ -45,18 +61,12 @@ $(()=>{
                         loginLang += '</i> เข้าสู่ระบบ'
                     loginLang += '</a>'
 					loginLang += '<ul class="dropdown-menu">'
+					userEnters.forEach((userEnter)=>{
 						loginLang += '<li>'
-						loginLang += '<a href="create-register-login/operatorEnterSystem.html">ผู้ประกอบการเข้าสู่ระบบ'
-						loginLang += '</a>'
-					loginLang += '</li>'
-					loginLang += '<li>'
-						loginLang += '<a href="create-register-login/jobSeekerEnterSystem.html">ผู้สมัครงานเข้าสู่ระบบ'
-						loginLang += '</a>'
-					loginLang += '</li>'
-					loginLang += '<li>'
-						loginLang += '<a href="create-register-login/agencyEnterSystem.html">เอเจนซี่เข้าสู่ระบบ'
-                            loginLang += '</a>'
+							loginLang += `<a href="${userEnter.link}">${userEnter.name}`
+							loginLang += '</a>'
 						loginLang += '</li>'
+					})
 					loginLang += '</ul>'
 				loginLang += '</li>'
 			loginLang += '</ul>'
@@ -65,16 +75,16 @@ $(()=>{
 
         // language
 		loginLang += '<div id="dd" class="wrapper-dropdown-5" tabindex="1">'
-            loginLang += `<img src="asset/images/eng-flag.png" class="flag-lang"> English`
+            loginLang += `<img src="${flagLogos.flagEng}" class="flag-lang"> English`
 			loginLang += '<ul class="dropdown">'
 				loginLang += '<li>'
                     loginLang += '<a href="javascript:void(0)">'
-                        loginLang += `<img src="asset/images/eng-flag.png" class="flag-lang"> English`
+                        loginLang += `<img src="${flagLogos.flagEng}" class="flag-lang"> English`
                     loginLang += '</a>'
 				loginLang += '</li>'
 				loginLang += '<li>'
                     loginLang += '<a href="javascript:void(0)">'
-                        loginLang += `<img src="asset/images/thai-flag.png" class="flag-lang"> Thailand`
+                        loginLang += `<img src="${flagLogos.flagThai}" class="flag-lang"> Thailand`
                     loginLang += '</a>'
 				loginLang += '</li>'
 			loginLang += '</ul>'
@@ -86,9 +96,9 @@ $(()=>{
     $('.flexLogoLang').html(loginLang)
 });
 
-// https://codepen.io/scverano/pen/vugei
-// ดรอปดาวเปลี่ยนภาษา
 $(document).ready(()=>{
+	// https://codepen.io/scverano/pen/vugei
+	// ดรอปดาวเปลี่ยนภาษา
     function DropDown(el) {
 		this.dd = el;
 		this.initEvents();
@@ -111,12 +121,11 @@ $(document).ready(()=>{
 			$('.wrapper-dropdown-5').removeClass('active');
 		});
 	});
-})
+	// end ดรอปดาวเปลี่ยนภาษา
 
-// https://sweetalert2.github.io/
-// สร้าง resume
-$(document).ready(()=>{
-    $('.swal').on('click', function () {
+	// https://sweetalert2.github.io/
+	// สร้าง resume
+	$('.swal').on('click', function () {
 		Swal.fire({
 			title: 'สร้างเรซูเม่',
 			text: "คุณต้องการที่จะสร้างเรซูเม่ ?",
@@ -138,6 +147,7 @@ $(document).ready(()=>{
 			}
 		});
 	});
+	// end สร้าง resume
 })
 
 // https://codepen.io/sazzad/pen/pqlgy

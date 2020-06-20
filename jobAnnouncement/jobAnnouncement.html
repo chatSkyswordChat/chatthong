@@ -351,7 +351,7 @@
 									<section>
 										<p>จังหวัด <span class="mark">*</span></p>
 										<label class="labelAnnouncement">
-											<select class="form-control orchidControl js-example-basic-multiple-limit"
+											<select class="form-control orchidControl js-example-basic-multiple-province"
 												multiple="multiple">
 												<option>กรุงเทพมหานคร</option>
 												<option>ลพบุรี</option>
@@ -763,7 +763,7 @@
 											<input type="text" class="form-control orchidControl" placeholder="อีเมล">
 										</label>
 									</section>
-									<!--end อีเมล-->									
+									<!--end อีเมล-->
 								</div>
 
 								<!--วิธีการสมัคร-->
@@ -785,7 +785,7 @@
 
 								<section>
 									<ul class="saveCancel">
-										<li><button>บันทึก</button></li>
+										<li id="confirmSave"><button type="button">บันทึก</button></li>
 										<li><button>ยกเลิก</button></li>
 									</ul>
 								</section>
@@ -845,12 +845,12 @@
 <script type="text/javascript" src="js/select2.min.js"></script>
 
 <!-- ปุ่มแฮมเบอเกอ และเมนูด้านข้าง -->
-<script type="text/javascript" src="../asset/js/sideNav/sideNavIn.js"></script>
+<script type="text/javascript" src="../asset/js/sideNav/sideNav.js"></script>
 <!-- login เปลี่ยนภาษา sweetAlert-->
-<script type="text/javascript" src="../asset/js/loginLanguage/loginLanguageIn.js"></script>
+<script type="text/javascript" src="../asset/js/loginLanguage/loginLanguage.js"></script>
 
 <!-- footer -->
-<script type="text/javascript" src="../asset/js/footer/footerIn.js"></script>
+<script type="text/javascript" src="../asset/js/footer/footer.js"></script>
 
 <!--https://codepen.io/andytran/pen/eIgoJ-->
 <!--menuICMS-->
@@ -903,31 +903,47 @@
 
 <!--https://sweetalert2.github.io/-->
 <script>
-	//ปุ่มกดลบ
-	$('.confirm-del').on('click', function () {
-		swal.fire({
-			title: 'คุณต้องการลบประวัติการศึกษา?',
-			text: "You won't be able to revert this!",
-			type: 'warning',
-			showCancelButton: true,
-			cancelButtonText: 'ยกเลิก',
-			confirmButtonColor: '#412e6e',
-			confirmButtonText: 'ตกลง'
+	$(() => {
+		$('#confirmSave').on('click', function () {
+			Swal.fire({
+				title: 'คุณยืนยันที่จะบันทึกข้อมูล ?',
+				text: 'You confirm to save the information ?',
+				icon: 'info',
+				showCancelButton: true,
+				confirmButtonColor: '#412e6e',
+				cancelButtonText: 'ยกเลิก',
+				confirmButtonText: 'ตกลง',
+				showClass: {
+					popup: 'animated fadeInDown faster'
+				},
+				hideClass: {
+					popup: 'animated fadeOutUp faster'
+				}
+			}).then((result) => {
+				if (result.value) {
+					Swal.fire(
+						'คุณบันทึกสำเร็จแล้ว',
+						'You have successfully saved.',
+						'success'
+					)
+				}
+			})
 		});
-	});
+	})
+</script>
 
-	//ปุ่มกดบันทึก
-	$('.confirm-save').on('click', function () {
-		swal.fire({
-			title: 'คุณต้องกาบันทึกข้อมูล?',
-			text: "You won't be able to revert this!",
-			type: 'warning',
-			showCancelButton: true,
-			cancelButtonText: 'ยกเลิก',
-			confirmButtonColor: '#412e6e',
-			confirmButtonText: 'ตกลง'
-		});
+<script>
+	// https://select2.org/placeholders
+	// สามารถเลือกอำเภอได้ไม่เกิน 5 อำเภอ
+	// $(".js-example-basic-multiple-province").on('change',function(){
+	// 	console.log($(this).hasClass('js-example-basic-multiple-province'))
+	// })
+	$(".js-example-basic-multiple-province").select2({
+		maximumSelectionLength: 5,
+		placeholder: $(this).hasClass("js-example-basic-multiple-province") == true ? "ssss" : "dd",
+		allowClear: true
 	});
+	$('.select2-search__field , .select2-search--inline').css('width', '100%');
 </script>
 
 </html>

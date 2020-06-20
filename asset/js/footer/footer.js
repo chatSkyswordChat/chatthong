@@ -1,16 +1,19 @@
 // keyword
 $(()=>{
-    var keyWord = ''
-    var typeWork = [
+    let keyWord = ''
+    let typeWork = [
         'งานเทคโนโลยีสารสนเทศ / IT', 'งานวิศวกร/ช่าง', 'งานการตลาด', 'งานขาย', 'งานบริการลูกค้า/Call Center',
         'งานบริหาร', 'งานบัญชีและการเงิน', 'งานธนาคาร', 'งานเทคโนโลยีอาหาร', 'งานอุตสาหกรรม', 'งานอาหารและโรงแรม', 
         'งานท่องเที่ยว', 'งาน Part-time/พนักงานชั่วคราว', 'งาน Freelance', 'งานแม่บ้าน / รภป.', 'งานสัญญาจ้าง'
     ]
-    var areaWork = [
+    let areaWork = [
         'งานกรุงเทพมหานครและปริมณฑล', 'งานนิคมอุตสาหกรรม', 'งานภาคเหนือ', 'งานภาคใต้', 'งานตะวันออก', 
         'งานภาคตะวันออกเฉียงเหนือ', 'งานภาคกลาง', 'งานเชียงใหม่', 'งานพิษณุโลก', 'งานนครราชสีมา', 
         'งานขอนแก่น', 'งานระยอง', 'งานชลบุรี', 'งานพระนครศรีอยุธยา', 'งานสุราษฎร์ธานี', 'งานภูเก็ต'
     ]
+
+    let jobSearch = ($(location).attr('href').split('/').length == 6) ? '': '../'
+    let linkSearch = { name : jobSearch+'job-search/jobSearch.html' }
 
     keyWord +='<article class="container">'
 		keyWord +='<div class="row">'
@@ -19,10 +22,10 @@ $(()=>{
                     // หางานตามประเภท
 					keyWord +='<section class="flexKeyWord">'
 						keyWord +='<h2>หางานตามประเภท</h2>'
-						keyWord +='<div class="keyWord">'
-                            for (let workType = 0; workType < 16; workType++) {
+                        keyWord +='<div class="keyWord">'
+                            for (let workType = 0; workType < typeWork.length; workType++) {
 							    keyWord +='<p>'
-                                    keyWord +=`<a href="job-search/jobSearch.html" target="_blank"> ${typeWork[workType]}`
+                                    keyWord +=`<a href="${linkSearch.name}" target="_blank"> ${typeWork[workType]}`
                                     keyWord +='</a>'
                                 keyWord +='</p>'
                             }
@@ -34,9 +37,9 @@ $(()=>{
 					keyWord +='<section class="flexKeyWord">'
 						keyWord +='<h2>หางานตามพื้นที่</h2>'
                         keyWord +='<div class="keyWord">'
-                        for (let workArea = 0; workArea < 16; workArea++) {
+                        for (let workArea = 0; workArea < areaWork.length; workArea++) {
 							keyWord +='<p>'
-                                keyWord +=`<a href="job-search/jobSearch.html" target="_blank">${areaWork[workArea]}`
+                                keyWord +=`<a href="${linkSearch.name}" target="_blank">${areaWork[workArea]}`
                                 keyWord +='</a>'
                             keyWord +='</p>'
                         }
@@ -55,16 +58,32 @@ $(()=>{
 // about
 $(()=>{
     var aboutUs = ''
-    var aboutCompany = [
-        'หน้าแรก', 'เกี่ยวกับเรา', 'บริการของเรา', 'ค้นหางาน', 'ประกาศงาน', 'ฝากเรซูเม่', 'ติดต่อเรา', 'จัดหางาน',
+
+    let menuGoIndex = ($(location).attr('href').split('/').length == 6) ? '':'../'
+    let goIndexs = [
+        { name: 'หน้าแรก', linked: menuGoIndex+'index.html'},
+        { name: 'เกี่ยวกับเรา', linked: menuGoIndex+'about-us/about-us.html'},
+        { name: 'บริการของเรา', linked: menuGoIndex+'service/allService.html'},
+        { name: 'ค้นหางาน', linked: menuGoIndex+'job-search/jobSearch.html'},
+        { name: 'ประกาศงาน', linked: 'javascript:void(0)'},
+        { name: 'ฝากเรซูเม่', linked: 'javascript:void(0)'},
+        { name: 'ติดต่อเรา', linked: menuGoIndex+'contact/contact.html'},
+        { name: 'จัดหางาน', linked: 'javascript:void(0)'}
     ]
-    var linked =[
-        'index.html', 'about-us/about-us.html', 'service/allService.html', 'job-search/jobSearch.html',
-        'javascript:void(0)', 'javascript:void(0)', 'contact/contact.html', 'javascript:void(0)'
+
+    let searchWorksGo = ($(location).attr('href').split('/').length == 6)? '':'../'
+    let searchWorks = [
+        { name : 'เว็บไซต์หางาน', linked: searchWorksGo+'job-search/jobSearch.html'},
+        { name : 'บริษัทจัดหางาน', linked: searchWorksGo+'job-search/jobSearch.html'},
+        { name : 'หางาน สมัครงาน', linked: searchWorksGo+'job-search/jobSearch.html'},
+        { name : 'หาคนทำงาน', linked: searchWorksGo+'job-search/jobSearch.html'},
+        { name : 'รับสมัครพนักงาน', linked: searchWorksGo+'job-search/jobSearch.html'},
     ]
-    var searchWork = [
-        'เว็บไซต์หางาน', 'บริษัทจัดหางาน', 'หางาน สมัครงาน', 'หาคนทำงาน', 'รับสมัครพนักงาน', 
-    ]
+    // end footer
+
+    // โลโก้ footer
+    let logoFooter = ($(location).attr('href').split('/').length == 6)? '':'../'
+    let logoFooters = { logo : logoFooter+'asset/images/logo.png', linked : logoFooter+'index.html'}
 
     aboutUs += '<article class="container">'
 		aboutUs += '<div class="row">'
@@ -75,12 +94,12 @@ $(()=>{
                         aboutUs += '<div class="flexListCompany">'
                             aboutUs += '<h2>OrchidJobs</h2>'
                             aboutUs += '<ul>'
-                            for (let companyAbout = 0; companyAbout < 8; companyAbout++) {
+                            goIndexs.forEach((goIndex)=>{
                                 aboutUs += '<li>'
-                                    aboutUs += `<a href="${linked[companyAbout]}"> ${aboutCompany[companyAbout]}`
+                                    aboutUs += `<a href="${goIndex.linked}"> ${goIndex.name}`
                                     aboutUs += '</a>'
                                 aboutUs += '</li>'
-                            }
+                            })
 						    aboutUs += '</ul>'
                         aboutUs += '</div>'
                         // end orchidjobs
@@ -89,12 +108,12 @@ $(()=>{
                         aboutUs += '<div class="flexListCompany">'
                             aboutUs += '<h2>ค้นหางาน</h2>'
                             aboutUs += '<ul>'
-                            for (let workSearch = 0; workSearch < 5; workSearch++) {
+                            searchWorks.forEach((searchWork)=>{
                                 aboutUs += '<li>'
-                                    aboutUs += `<a href="job-search/jobSearch.html" target="_blank">${searchWork[workSearch]}`
+                                    aboutUs += `<a href="${searchWork.linked}" target="_blank">${searchWork.name}`
                                     aboutUs += '</a>'
                                 aboutUs += '</li>'
-                            }
+                            })
 						    aboutUs += '</ul>'
                         aboutUs += '</div>'
                         // end ค้นหางาน
@@ -102,8 +121,8 @@ $(()=>{
 
 					aboutUs += '<section class="flexAddress">'
 						aboutUs += '<div class="footer">'
-							aboutUs += `<a href="index.html">`
-                                aboutUs += `<img src="asset/images/logo.png">`
+							aboutUs += `<a href="${logoFooters.linked}">`
+                                aboutUs += `<img src="${logoFooters.logo}">`
                             aboutUs += '</a>'
 							aboutUs += '<h6>เลขที่ 625 อาคารทัศนียา ห้องเลขที่ ยูนิต เอบีซีดี ชั้น 5'
                                 aboutUs += '<br>'
