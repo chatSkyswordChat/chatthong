@@ -1,10 +1,20 @@
 .container-top{ margin-top: 120px;}
-.borderDashboard{ background: var(--color-white); border: 1px solid var(--color-dark-gray); padding: 0 15px; overflow: hidden;}
+.borderDashboard{ background: var(--color-white); border: 1px solid var(--color-dark-gray); padding: 0 15px 15px; overflow: hidden; margin-bottom: 15px;}
 .printLogo{ display: none;}
-.lineLine{ border-bottom: 1px dashed var(--color-dark-gray); height: 1px; margin: 30px 0;}
+.lineLine{ border-bottom: 1px dashed var(--color-dark-gray); height: 1px; margin: 20px 0;}
 .markRed{ color: var(--color-red);}
 form{ width: 100%;}
-label{ cursor: pointer;}
+label{ cursor: pointer; margin-bottom: 0;}
+
+/*select2*/
+.select2-container{ border-radius: 4px; width: 100% !important;}
+.select2-container--default .select2-selection--multiple{ border: 1px solid #ced4da; border-radius: .25rem;}
+.select2-container .select2-selection--multiple{ min-height: 34px;}
+.select2-container--default.select2-container--focus .select2-selection--multiple{ border: 1px solid #ced4da;}
+.select2-container--default .select2-selection--multiple .select2-selection__clear{ font-size: var(--font16); position: absolute;
+	right: 0;}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered{ display: flex; flex-wrap: wrap;}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li{ margin-bottom: 5px;}
 
 /* เมนู dashboard */
 .dashboardMenu{ margin: 0; padding: 0; list-style: none; display: flex; align-items: center; margin-bottom: 40px;}
@@ -66,10 +76,10 @@ label{ cursor: pointer;}
 .flexProfile{ display: flex; justify-content: space-between; margin-top: 30px;}
 .flexProfile>*{ flex-grow: 1;}
 
-.profileName{ margin: 0; padding: 0; list-style: none;}
+.profileName{ margin: 0; padding: 0; list-style: none; font-size: var(--font18);}
 .profileName li:first-child{ font-weight: 900; color: var(--color-violet);}
 
-.addressName{ margin: 0; padding: 0; list-style: none;}
+.addressName{ margin: 0; padding: 0; list-style: none; font-size: var(--font18);}
 .addressName li{ margin-bottom: 10px; display: flex; align-items: center;}
 .addressName a{ color: var(--color-pink);}
 .addressName img{ max-width: 35px; margin-right: 10px;}
@@ -92,7 +102,8 @@ label{ cursor: pointer;}
 
 .gridForm{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
 .flexForm h2{ color: var(--color-violet); font-size: var(--font24); margin-bottom: 15px;}
-.gridForm h6{ font-weight: 900; color: var(--color-violet); font-size: var(--font16);}
+.gridForm h6{ font-weight: 900; color: var(--color-violet); font-size: var(--font18);}
+.textForm p{ font-size: var(--font18);}
 .orchidFormControl{ height: 100%; border-radius: 4px; font-size: var(--font16); padding: 6px 12px;}
 .colspan1go3{ grid-column: 1 / 3;}
 .colspan1go2{ grid-column: 1 / 2;}
@@ -105,11 +116,39 @@ label{ cursor: pointer;}
 	.colspan2go2{ grid-column: 1 / 3;}	
 }
 
-.confirmSave{ margin: 30px 0; text-align: center;}
+.gridSub{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
+.gridSubFile{ display: grid; grid-template-columns: 1fr 0.3fr; grid-gap: 15px; align-items: center;}
+.gridSubFile p{ text-align: center;}
+
+/* บันทึก */
+.confirmSave{ margin: 20px 0; text-align: center;}
 .confirmSave button{ background: var(--color-gradient-violet); border-radius: 50px; padding: 10px 30px; color: var(--color-white); border: 0;}
 .confirmSave button::before{ background: var(--color-gradient-pink); border-radius: 50px;}
 .confirmSave button:hover::before{ opacity: 1;}
 .confirmSave button:hover{ color: var(--color-white);}
+
+/* ลบ */
+.confirmDel{ text-align: center; margin-top: 20px;}
+.confirmDel button{ background: var(--color-gradient-violet); border-radius: 50px; padding: 10px 30px; color: var(--color-white); 
+	border: 1px solid var(--color-gradient-violet);}
+.confirmDel button::before{ background: var(--color-gradient-pink); border-radius: 50px;}
+.confirmDel button:hover::before{ opacity: 1;}
+.confirmDel button:hover{ color: var(--color-white);}
+
+/* เพิ่มข้อมูล */
+.addData{ text-align: center;}
+.addData button{ background: var(--color-white); color: var(--color-violet); border-radius: 50px; padding: 10px 15px; 
+	border: 1px solid var(--color-violet);}
+.addData button::before{ background: var(--color-gradient-pink); border-radius: 50px;}
+.addData button:hover::before{ opacity: 1;}
+.addData button:hover{ color: var(--color-white); border: 1px solid var(--color-pink);}
+
+.confirmSaveDel{ text-align: center;}
+.confirmSaveDel button{ background: var(--color-gradient-violet); border-radius: 50px; padding: 10px 30px; color: var(--color-white); 
+	border: 1px solid var(--color-gradient-violet);}
+.confirmSaveDel button::before{ background: var(--color-gradient-pink); border-radius: 50px;}
+.confirmSaveDel button:hover::before{ opacity: 1;}
+.confirmSaveDel button:hover{ color: var(--color-white);}
 
 .dialogOrchid{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) !important; width: 100vw; max-width: 700px;}
 .modal-header{ border-bottom: 1px solid var(--color-dark-gray);}
@@ -128,6 +167,91 @@ label{ cursor: pointer;}
 @media (max-width: 768px){
 	.dialogOrchid{ padding: 0 15px; width: inherit;}
 }
+
+.perfectProfile{ margin-bottom: 15px;}
+.perfectProfile p{ font-size: var(--font18); margin-bottom: 10px;}
+.perfectProfile span{ font-weight: 900;}
+
+.carouselCarou{ background: var(--color-light-gray); padding: 15px; border-radius: 10px;}
+.carouselItem{ display: flex; align-items: center; justify-content: space-between;}
+.carouselItem img{ flex: 1 1 auto; max-width: 20%; padding-right: 10px;}
+.carouselItem div{ flex: 1 1 auto; max-width: 80%;}
+.flexDo p{ margin-bottom: 15px; font-size: var(--font18);}
+.flexDo a{ background: var(--color-gradient-violet); color: var(--color-white); border-radius: 50px; 
+	padding: 5px 15px; font-size: var(--font18); text-decoration: none; display: inline-block;}
+.flexDo a::before{ background: var(--color-gradient-pink); border-radius: 50px;}
+.flexDo a:hover::before{ opacity: 1;}
+.flexDo a:hover{ color: var(--color-white);}
+
+.carousel-indicators li{ background-color: var(--color-violet);}
+.carousel-control-next, .carousel-control-prev{ width: 7%;}
+.colorArrow{ border-radius: 50%; width: 30px; height: 30px; background: var(--color-violet); display: flex; 
+	flex-direction: column; align-items: center; justify-content: center;}
+
+@media (max-width:576px){
+	.carouselItem img{ max-width: 30%;}
+	.carouselItem div{ max-width: 70%;}
+	.carousel-control-next, .carousel-control-prev{ width: 10%;}
+}
+
+.dashTop{ margin-top: 15px;}
+.dashTop h2{ font-size: var(--font24); color: var(--color-violet); font-weight: 900;}
+
+.flexWant{ display: grid; grid-template-columns: 15px 1fr; grid-gap: 15px;}
+.flexWanted{ display: grid; grid-template-columns: 1fr; grid-gap: 15px;}
+.hidden{ display: none;}
+
+@media (max-width:991px){
+	.colSpan{ grid-column: 1 / 3;}
+	.flexWanted{ grid-template-columns: 15px 1fr;}
+	.hidden{ display: block;}
+}
+
+.flexMoney{ display: flex; align-items: center; justify-content: space-between;}
+.flexMoney>*{ margin-right: 10px;}
+.flexMoney label{ width: 100%;}
+
+.flexPost{ display: flex; flex-wrap: wrap; margin-top: 5px;}
+.flexPost>*{ padding-right: 15px;}
+
+.gridCom, .gridName{ display: grid; grid-template-columns: 0.3fr 1fr; grid-gap: 15px;}
+.gridCom img{ max-width: 150px;}
+.gridCom h6{ text-align: right;}
+
+@media (max-width:768px){
+	.gridCom{ grid-template-columns: 1fr;}
+}
+
+.gridStrong{ display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); grid-gap: 15px; margin-top: 10px;}
+.flexLangs{ display: flex; flex-direction: column;}
+.flexLangs h6{ color: var(--color-black); margin-bottom: 5px;}
+.flexSpeak{ display: flex; flex-wrap: wrap;}
+.flexSpeak>*{ padding-right: 15px;}
+
+@media (max-width:991px){
+	.gridLang{ grid-template-columns: 1fr;}
+}
+
+.pim{ display: flex; align-items: center;}
+.pim>*{ padding-right: 10px;}
+
+.gridDrive{ display: grid; grid-template-columns: 0.4fr 1fr; grid-gap: 15px;}
+.flexDrive{ display: flex;}
+.flexDrive>*{ padding-right: 15px;}
+
+@media (max-width:768px){
+	.gridDrive{ grid-template-columns: 1fr;}
+}
+
+.gridFile{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
+.gridNameFile{ display: grid; grid-template-columns: 0.4fr 1fr; grid-gap: 15px;}
+.gridButton{ display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 15px;}
+
+.attachments{ text-align: center;}
+.gridButton button{ background: var(--color-white); border-radius: 4px; border: 1px solid var(--color-black); color: var(--color-black);}
+.gridButton button::before{ background: var(--color-gradient-pink); border-radius: 4px;}
+.gridButton button:hover::before{ opacity: 1;}
+.gridButton button:hover{ color: var(--color-white); border: 1px solid var(--color-pink);}
 
 /* end หน้า dashboard candidate */
 
@@ -312,20 +436,6 @@ button.orchid-save:hover{ background: #b9467d; border: 1px solid #b9467d;}
 	.name-company ul li:first-child{ width: 100%; text-align: left;}
 	.name-company ul li:last-child{ width: 100%;}
 }
-
-.number-list{ text-align: right;}
-.select2-container{ /*width: 100% !important; */border-radius: .25rem; display: block;}
-.select2-container--default .select2-selection--multiple{ border: 1px solid #ced4da; border-radius: .25rem;}
-.select2-container .select2-selection--multiple{ min-height: 34px;}
-.select2-container--default.select2-container--focus .select2-selection--multiple{ border: 1px solid #ced4da;}
-.select2-container--default .select2-selection--multiple .select2-selection__clear{ font-size: 1.6rem;}
-/*.select2-container--default .select2-search--inline .select2-search__field{ width: 100vh !important;}*/
-
-.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar { width: 5px;}
-.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-track { background: #f1f1f1;}
-.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-thumb { background: #888;}
-.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-thumb:hover { background: #555;}
-.select2-container .select2-selection--multiple .select2-selection__rendered{ white-space: inherit !important;}
 
 .add-data{ background: #fff; color: #412e6e; border-radius: 4px; padding: 5px; border: 1px solid #412e6e; cursor: pointer}
 .add-data:hover{ background: #412e6e; color: #fff;}
