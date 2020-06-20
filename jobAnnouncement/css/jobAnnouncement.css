@@ -87,7 +87,6 @@ ul.flagLang button::before{ border-radius: 4px; background: var(--color-gradient
 ul.flagLang button:hover::before{ opacity: 1;}
 ul.flagLang li.active button{ background: var(--color-gradient-violet); border: 1px solid var(--color-gradient-violet); 
 	color: var(--color-white);}
-ul.flagLang button:focus{ outline: 0;}
 
 /* ฟอร์มกรอก */
 .gridFormAnnouncement{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
@@ -147,7 +146,6 @@ ul.listApply li{ margin-right: 15px;}
 	border: 1px solid var(--color-gradient-pink); border-radius: 4px;}
 .saveCancel li button:hover::before{ opacity: 1;}
 .saveCancel li button:hover{ color: var(--color-white);}
-.saveCancel li button:focus{ outline: 0;}
 
 
 

@@ -1,28 +1,35 @@
 // blog
-$(function () {
+$(function() {
 
     var append = "";
+    var img = [
+        "blog-1.jpg",
+        "blog-2.jpg",
+        "blog-3.jpg",
+        "blog-4.jpg",
+        "blog-5.jpg",
+        "blog-6.jpg",
+    ];
+    var head = [
+        `Tourism/Airline`,
+        `consectetur adipisicing`,
+        `voluptatem quibusdam itaque`,
+        `Lorem ipsum dolor sit amet`,
+        `corporisofficia veniam voluptatem`,
+        `quibusdam itaque distinctio`,
+    ];
 
-    let blogs = [
-        { img: 'blog-1.jpg', head: 'Tourism/Airline', linked: 'blog/blog-content.html' },
-        { img: 'blog-2.jpg', head: 'consectetur adipisicing', linked: 'blog/blog-content.html' },
-        { img: 'blog-3.jpg', head: 'voluptatem quibusdam itaque', linked: 'blog/blog-content.html' },
-        { img: 'blog-4.jpg', head: 'corporisofficia veniam voluptatem', linked: 'blog/blog-content.html' },
-        { img: 'blog-5.jpg', head: 'quibusdam itaque distinctio', linked: 'blog/blog-content.html' },
-        { img: 'blog-6.jpg', head: 'Lorem ipsum dolor sit amet', linked: 'blog/blog-content.html' },
-    ]
-
-    blogs.forEach((blog) => {
-        append += `<a href="${blog.linked}" class="box-blog">`;
+    for (let i = 0; i < 6; i++) {
+        append += '<a href="blog/blog-content.html" class="box-blog">';
         append += "<figure>";
-        append += `<img src="asset/images/${blog.img}">`;
+        append += `<img src="asset/images/${img[i]}">`;
         append += "</figure>";
 
         append += '<div class="text-blog">';
         append += '<div class="triangle triangle-4"></div>';
         append += "<figcaption>";
         append += '<div class="blog-head-ellipsis">';
-        append += `<h2>${blog.head}</h2>`;
+        append += `<h2>${head[i]}</h2>`;
         append += "</div>";
 
         append += '<div class="blog-sub-ellipsis">';
@@ -37,13 +44,12 @@ $(function () {
         append += "</div>";
         append += "</div>";
         append += "</a>";
-    })
-
+    }
     $(".gridContent").html(append);
 });
 
 //ส่วนของ blog
-$(function () {
+$(function() {
     $(".blog-sub-ellipsis").dotdotdot({
         // รายละเอียด
         height: 72,

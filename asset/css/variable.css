@@ -25,6 +25,23 @@
     --color-gradient-violet: linear-gradient(to bottom right, #4389a2 0%, #5c258d 100%);
     --color-gradient-violeted: linear-gradient(to bottom right, #5c258d 0%, #5c258d 100%);
     --color-gradient-pink: linear-gradient(to bottom right, #b9467d 0%, #8e1951 100%);
+
+
+    --marginBottom10: 10px;
+    --marginBottom15: 15px;
+    --marginBottom30: 30px;
+
+    --marginTop10: 10px;
+    --marginTop15: 15px;
+    --marginTop30: 30px;
+
+    --paddingTop10: 10px;
+    --paddingTop15: 15px;
+    --paddingTop30: 30px;
+
+    --paddingBottom10: 10px;
+    --paddingBottom15: 15px;
+    --paddingBottom30: 30px;
 }
 
 @media (max-width:576px){

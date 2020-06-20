@@ -60,7 +60,7 @@ $(function () {
 
       for (let b = 0; b < 3; b++) {
         append += '<section class="flexCol">';
-        append += '<a href="javascript:void(0)" onclick="return Newpage();" class="inBodyPosition">';
+        append += '<a href="#" target="_blank" class="inBodyPosition">';
         append += `<p>${subPosition[u]}</p>`;
         append += "<p>900 อัตรา</p>";
         append += "</a>";
