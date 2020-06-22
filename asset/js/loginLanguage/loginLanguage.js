@@ -2,7 +2,7 @@ $(function(){
 	var loginLang = ''
 	
 	// โลโก้เมนู เปลี่ยนภาษา
-	let flagLogo = ($(location).attr('href').split('/').length == 7) ? '' : '../';
+	let flagLogo = ($(location).attr('href').split('/').length == 5) ? '' : '../';
 	let flagLogos = { 
 		logo : flagLogo+'asset/images/logo.png', 
 		flagThai : flagLogo+'asset/images/thai-flag.png', 
@@ -11,7 +11,7 @@ $(function(){
 	}
 
 	// user ลงทะเบียน เข้าสู่ระบบ
-	let userAll = ($(location).attr('href').split('/').length == 7)? '':'../'
+	let userAll = ($(location).attr('href').split('/').length == 5)? '':'../'
 	let userRegisters = [
 		{ name: 'ผู้ประกอบการลงทะเบียน', link : userAll+'create-register-login/operatorRegister.html'},
 		{ name: 'ผู้สมัครงานลงทะเบียน', link : userAll+'create-register-login/jobSeekerRegister.html'},

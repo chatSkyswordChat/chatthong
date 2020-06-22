@@ -12,7 +12,7 @@ $(()=>{
         'งานขอนแก่น', 'งานระยอง', 'งานชลบุรี', 'งานพระนครศรีอยุธยา', 'งานสุราษฎร์ธานี', 'งานภูเก็ต'
     ]
 
-    let jobSearch = ($(location).attr('href').split('/').length == 7) ? '': '../'
+    let jobSearch = ($(location).attr('href').split('/').length == 5) ? '': '../'
     let linkSearch = { name : jobSearch+'job-search/jobSearch.html' }
 
     keyWord +='<article class="container">'
@@ -59,7 +59,7 @@ $(()=>{
 $(()=>{
     var aboutUs = ''
 
-    let menuGoIndex = ($(location).attr('href').split('/').length == 7) ? '':'../'
+    let menuGoIndex = ($(location).attr('href').split('/').length == 5) ? '':'../'
     let goIndexs = [
         { name: 'หน้าแรก', linked: menuGoIndex+'index.html'},
         { name: 'เกี่ยวกับเรา', linked: menuGoIndex+'about-us/about-us.html'},
@@ -71,7 +71,7 @@ $(()=>{
         { name: 'จัดหางาน', linked: 'javascript:void(0)'}
     ]
 
-    let searchWorksGo = ($(location).attr('href').split('/').length == 6)? '':'../'
+    let searchWorksGo = ($(location).attr('href').split('/').length == 5)? '':'../'
     let searchWorks = [
         { name : 'เว็บไซต์หางาน', linked: searchWorksGo+'job-search/jobSearch.html'},
         { name : 'บริษัทจัดหางาน', linked: searchWorksGo+'job-search/jobSearch.html'},
@@ -82,7 +82,7 @@ $(()=>{
     // end footer
 
     // โลโก้ footer
-    let logoFooter = ($(location).attr('href').split('/').length == 7)? '':'../'
+    let logoFooter = ($(location).attr('href').split('/').length == 5)? '':'../'
     let logoFooters = { logo : logoFooter+'asset/images/logo.png', linked : logoFooter+'index.html'}
 
     aboutUs += '<article class="container">'

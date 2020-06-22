@@ -3,8 +3,7 @@
 $(() => {
     var sideNav = ''
 
-    // let splits = ($(location).attr('href').split('/').length == 7)?'':'../'
-    let splits = ($(location).attr('href').split('/'))
+    let splits = ($(location).attr('href').split('/').length == 5)?'':'../'
     console.log(splits);
     
     let menuOrchids = [
@@ -22,7 +21,7 @@ $(() => {
     let last_part = path[path.length - 1];
 
     // เปลี่ยนภาษาใน mobile
-    let lang = ($(location).attr('href').split('/').length == 7)?'':'../'
+    let lang = ($(location).attr('href').split('/').length == 5)?'':'../'
     let flag = { flagEng : lang+'asset/images/eng-flag.png', flagThai: lang+'asset/images/thai-flag.png'}
 
     // sideNav
