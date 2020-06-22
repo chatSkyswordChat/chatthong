@@ -3,7 +3,9 @@
 $(() => {
     var sideNav = ''
 
-    let splits = ($(location).attr('href').split('/').length == 6)?'':'../'
+    let splits = ($(location).attr('href').split('/').length == 7)?'':'../'
+    console.log(splits);
+    
     let menuOrchids = [
         { menu: 'Home', icon: 'fa fa-home', link: splits+'index.html'},
         { menu: 'About us', icon: 'far fa-address-book', link: splits+'about-us/about-us.html'},
@@ -19,7 +21,7 @@ $(() => {
     let last_part = path[path.length - 1];
 
     // เปลี่ยนภาษาใน mobile
-    let lang = ($(location).attr('href').split('/').length == 6)?'':'../'
+    let lang = ($(location).attr('href').split('/').length == 7)?'':'../'
     let flag = { flagEng : lang+'asset/images/eng-flag.png', flagThai: lang+'asset/images/thai-flag.png'}
 
     // sideNav
