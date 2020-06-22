@@ -3,7 +3,8 @@
 $(() => {
     var sideNav = ''
 
-    let splits = ($(location).attr('href').split('/').length == 7)?'':'../'
+    // let splits = ($(location).attr('href').split('/').length == 7)?'':'../'
+    let splits = ($(location).attr('href').split('/'))
     console.log(splits);
     
     let menuOrchids = [
