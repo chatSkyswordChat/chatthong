@@ -1,7 +1,8 @@
 .container-top{ margin-top: 120px;}
 .borderDashboard{ background: var(--color-white); border: 1px solid var(--color-dark-gray); padding: 0 15px 15px; overflow: hidden; margin-bottom: 15px;}
 .printLogo{ display: none;}
-.lineLine{ border-bottom: 1px dashed var(--color-dark-gray); height: 1px; margin: 20px 0;}
+.lineLine{ border-bottom: 1px dashed var(--color-dark-gray); height: 2px; margin: 20px 0;}
+.card-header{ background-color: rgba(0,0,0,0)}
 .markRed{ color: var(--color-red);}
 form{ width: 100%;}
 label{ cursor: pointer; margin-bottom: 0;}
@@ -20,7 +21,8 @@ label{ cursor: pointer; margin-bottom: 0;}
 .dashboardMenu{ margin: 0; padding: 0; list-style: none; display: flex; align-items: center; margin-bottom: 40px;}
 .dashboardMenu li{ margin-right: 15px; padding-right: 15px; border-right: 1px solid var(--color-dark-gray);}
 .dashboardMenu li:last-child{ border-right: 0;}
-.dashboardMenu a{ display: block; color: var(--color-gray); padding: 10px; border-radius: 4px; text-decoration: none;}
+.dashboardMenu a{ display: flex; align-items: center; justify-content: center; color: var(--color-gray); padding: 10px; border-radius: 4px; 
+	text-decoration: none; width: 100%;}
 .dashboardMenu a.active{ background: var(--color-gradient-violet); color: var(--color-white);}
 .dashboardMenu a::before{ background: var(--color-gradient-pink); border-radius: 4px;}
 .dashboardMenu a:hover::before{ opacity: 1;}
@@ -28,7 +30,7 @@ label{ cursor: pointer; margin-bottom: 0;}
 .dashboardMenu img{ max-width: 30px;}
 
 @media (max-width: 991px){
-	.dashboardMenu{ display: flex; white-space: nowrap; overflow-x: scroll; padding-bottom: 10px;}
+	.dashboardMenu{ display: flex; overflow-x: scroll; padding-bottom: 10px;}
 	.dashboardMenu li{ min-width: 200px; text-align: center;}
 	.dashboardMenu::-webkit-scrollbar{ height: 10px; background-color: #7D7979;}
 	.dashboardMenu::-webkit-scrollbar-track { box-shadow: inset 0 0 6px rgba(0,0,0,0.3); background-color: #F5F5F5;}
@@ -43,7 +45,7 @@ label{ cursor: pointer; margin-bottom: 0;}
 .flexDash{ display: flex; justify-content: space-between; align-items: center;}
 
 @media (max-width: 991px){
-	.gridDashboard{ grid-template-columns: 1fr;}
+	.gridDashboard{ display: flex; flex-direction: column;}
 }
 
 .selectPic{ margin-top: -50px;}
@@ -53,12 +55,13 @@ label{ cursor: pointer; margin-bottom: 0;}
 .orchidCard{ border: 0;}
 .orchidCard img{ max-width: 50px;}
 .orchidEdit{ border: 0; background: var(--color-light-gray); border-radius: 50%; width: 50px; height: 50px;}
+.orchidEdit:focus{ outline: none;}
 .orchidEdit img{ max-width: 35px;}
 .orchidCardHeader{ border-bottom: 0; padding: 0;}
 
 .collapseTop{ margin-top: 30px; border-top: 1px dashed var(--color-dark-gray); padding-top: 30px;}
 .orchidCardBody{ display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; padding: 0;}
-.orchidCardBody h2{ color: var(--color-violet); font-size: var(--font24); margin-bottom: 15px;}
+.orchidCardBody h2{ color: var(--color-violet); font-size: var(--font24);}
 .flexPic{ text-align: center; margin-bottom: 30px; width: 100%;}
 .flexPic>*{ margin-bottom: 15px;}
 .flexPic h6{ color: var(--color-red); font-size: var(--font16);}
@@ -76,10 +79,10 @@ label{ cursor: pointer; margin-bottom: 0;}
 .flexProfile{ display: flex; justify-content: space-between; margin-top: 30px;}
 .flexProfile>*{ flex-grow: 1;}
 
-.profileName{ margin: 0; padding: 0; list-style: none; font-size: var(--font18);}
+.profileName{ margin: 0; padding: 0; list-style: none;}
 .profileName li:first-child{ font-weight: 900; color: var(--color-violet);}
 
-.addressName{ margin: 0; padding: 0; list-style: none; font-size: var(--font18);}
+.addressName{ margin: 0; padding: 0; list-style: none;}
 .addressName li{ margin-bottom: 10px; display: flex; align-items: center;}
 .addressName a{ color: var(--color-pink);}
 .addressName img{ max-width: 35px; margin-right: 10px;}
@@ -93,7 +96,6 @@ label{ cursor: pointer; margin-bottom: 0;}
 .picBorder{ border: 1px solid var(--color-dark-gray);}
 .flexPortfolio{ display: flex; align-items: center; color: var(--color-violet);}
 .flexPortfolio:hover{ color: var(--color-pink);}
-.flexPortfolio p{ font-size: var(--font18);}
 .flexPortfolio img{ max-width: 70px; margin-right: 15px;}
 
 @media (max-width: 768px){
@@ -102,26 +104,29 @@ label{ cursor: pointer; margin-bottom: 0;}
 
 .gridForm{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
 .flexForm h2{ color: var(--color-violet); font-size: var(--font24); margin-bottom: 15px;}
-.gridForm h6{ font-weight: 900; color: var(--color-violet); font-size: var(--font18);}
-.textForm p{ font-size: var(--font18);}
+.gridForm h6{ font-weight: 900; color: var(--color-violet); font-size: var(--font16); margin-bottom: 5px;}
+
 .orchidFormControl{ height: 100%; border-radius: 4px; font-size: var(--font16); padding: 6px 12px;}
 .colspan1go3{ grid-column: 1 / 3;}
-.colspan1go2{ grid-column: 1 / 2;}
-.colspan2go2{ grid-column: 2 / 2;}
+
 .inputGroupText, .checkCheck{ font-size: var(--font16);}
+.form-group{ margin-bottom: 0;}
+
+.gridOne{ display: grid; grid-template-columns: 1fr; grid-gap: 15px;}
+.gridTwo{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px; align-items: start;}
+.gridThree{ display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 15px; align-items: start;}
+.select2-container--default .select2-search--inline .select2-search__field{ width: 100% !important;}
 
 @media (max-width: 991px){
-	.gridForm{ grid-template-columns: 1fr;}
+	.gridForm, .gridTwo, .gridThree{ grid-template-columns: 1fr;}
 	.colspan1go2{ grid-column: 1 / 3;}
-	.colspan2go2{ grid-column: 1 / 3;}	
 }
 
 .gridSub{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
 .gridSubFile{ display: grid; grid-template-columns: 1fr 0.3fr; grid-gap: 15px; align-items: center;}
-.gridSubFile p{ text-align: center;}
 
 /* บันทึก */
-.confirmSave{ margin: 20px 0; text-align: center;}
+.confirmSave{ margin-top: 20px; text-align: center;}
 .confirmSave button{ background: var(--color-gradient-violet); border-radius: 50px; padding: 10px 30px; color: var(--color-white); border: 0;}
 .confirmSave button::before{ background: var(--color-gradient-pink); border-radius: 50px;}
 .confirmSave button:hover::before{ opacity: 1;}
@@ -197,16 +202,6 @@ label{ cursor: pointer; margin-bottom: 0;}
 .dashTop{ margin-top: 15px;}
 .dashTop h2{ font-size: var(--font24); color: var(--color-violet); font-weight: 900;}
 
-.flexWant{ display: grid; grid-template-columns: 15px 1fr; grid-gap: 15px;}
-.flexWanted{ display: grid; grid-template-columns: 1fr; grid-gap: 15px;}
-.hidden{ display: none;}
-
-@media (max-width:991px){
-	.colSpan{ grid-column: 1 / 3;}
-	.flexWanted{ grid-template-columns: 15px 1fr;}
-	.hidden{ display: block;}
-}
-
 .flexMoney{ display: flex; align-items: center; justify-content: space-between;}
 .flexMoney>*{ margin-right: 10px;}
 .flexMoney label{ width: 100%;}
@@ -222,11 +217,18 @@ label{ cursor: pointer; margin-bottom: 0;}
 	.gridCom{ grid-template-columns: 1fr;}
 }
 
+@media (max-width:576px){
+	.gridName{ grid-template-columns: 1fr; grid-gap: 0; margin-bottom: 15px;}
+	.gridCom h6{ text-align: left;}
+}
+
 .gridStrong{ display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); grid-gap: 15px; margin-top: 10px;}
 .flexLangs{ display: flex; flex-direction: column;}
 .flexLangs h6{ color: var(--color-black); margin-bottom: 5px;}
 .flexSpeak{ display: flex; flex-wrap: wrap;}
 .flexSpeak>*{ padding-right: 15px;}
+
+.gridSpeak{ display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); grid-gap: 0 15px;}
 
 @media (max-width:991px){
 	.gridLang{ grid-template-columns: 1fr;}
@@ -234,17 +236,24 @@ label{ cursor: pointer; margin-bottom: 0;}
 
 .pim{ display: flex; align-items: center;}
 .pim>*{ padding-right: 10px;}
+.flexPim{ display: flex; align-items: center;}
+.flexPim>*{ margin-right: 30px;}
+.flexPim span{ margin: 0 15px;}
 
-.gridDrive{ display: grid; grid-template-columns: 0.4fr 1fr; grid-gap: 15px;}
+.gridDrive{ display: grid; grid-template-columns: 1fr; grid-gap: 15px;}
 .flexDrive{ display: flex;}
 .flexDrive>*{ padding-right: 15px;}
 
-@media (max-width:768px){
-	.gridDrive{ grid-template-columns: 1fr;}
-}
+.flexDriving{ display: flex;}
+.flexDriving>*{ margin-right: 15px;}
+
+.techSkill{ display: flex; flex-wrap: wrap; margin: 0; padding: 0; list-style: none;}
+.techSkill li{ margin-right: 15px; background: var(--color-violet); color: var(--color-white); 
+	border-radius: 50px; padding: 3px 15px; margin-bottom: 10px;}
+.special{ margin: 0; padding: 0; list-style: none;}
 
 .gridFile{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
-.gridNameFile{ display: grid; grid-template-columns: 0.4fr 1fr; grid-gap: 15px;}
+.gridNameFile{ display: grid; grid-template-columns: 0.4fr 1fr; grid-gap: 15px; align-items: center;}
 .gridButton{ display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 15px;}
 
 .attachments{ text-align: center;}
@@ -253,227 +262,40 @@ label{ cursor: pointer; margin-bottom: 0;}
 .gridButton button:hover::before{ opacity: 1;}
 .gridButton button:hover{ color: var(--color-white); border: 1px solid var(--color-pink);}
 
+@media (max-width:991px){
+	.gridNameFile{ grid-template-columns: 0.2fr 1fr;}
+}
 /* end หน้า dashboard candidate */
 
-.edit-profile{ margin-top: 40px;}
-.edit-profile img{ max-width: 35px;}
+/* dashboardJobApplication */
+.member span{ font-weight: 900; color: var(--color-violet);}
+.flexMember{ display: flex;}
+.flexMember>*{ margin-right: 15px;}
 
-.profile-name ul{ margin: 0; padding: 0; list-style: none;}
-.address-name ul{ margin: 0; padding: 0; list-style: none;}
-.address-name ul li{ margin-bottom: 10px;}
-.address-name ul li a{ color: #555; text-decoration: none;}
-.address-name ul li a:hover{ color: #412e6e;}
-.address-name ul img{ max-width: 25px;}
+.bodyTable a{ color: var(--color-pink);}
+.bodyTable button{ background: var(--color-gradient-violet); border: 1px solid var(--color-gradient-violet); color: var(--color-white); 
+	border-radius: 4px; padding: 5px 15px;}
+.bodyTable button::before{ background: var(--color-gradient-pink); border-radius: 4px;}
+.bodyTable button:hover::before{ opacity: 1;}
+.table-bordered thead tr th{ vertical-align: middle;}
 
-@media (max-width: 380px){
-	.dropdown-custom ul.dropdown-lv1 li{ float: none; width: 100%; margin-bottom: 10px;}
-	.dropdown-custom ul.dropdown-lv1 li button{ width: 100%;}
-}
-
-.dropdown-custom .btn-secondary{ color: #fff; background: #412e6e; border: 1px solid #412e6e; border-radius: 4px; padding: 15px;}
-.dropdown-custom .btn-secondary:not(:disabled):not(.disabled).active, .dropdown-custom .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{ background: #b9467d; 
-	border: 1px solid #b9467d;}
-.dropdown-custom .btn-secondary:hover{ background: #b9467d; border: 1px solid #b9467d;}
-.dropdown-menu-cus{ width: 300px; box-shadow: -webkit-box-shadow: 5px 5px 5px 0px rgba(191,191,191,1); -moz-box-shadow: 5px 5px 5px 0px rgba(191,191,191,1); 
-	box-shadow: 5px 5px 5px 0px rgba(191,191,191,1);}
-.dropdown-custom a{ padding: 15px; cursor: pointer; overflow: hidden; border-bottom: 1px solid #bfbfbf; display: block; color: #000;}
-.dropdown-custom a:last-child{ border-bottom: 0;}
-.dropdown-custom button{ padding: 15px; cursor: pointer; overflow: hidden; border-bottom: 1px solid #bfbfbf;}
-.dropdown-custom a:hover, .dropdown-custom button:hover{ background: #ebebeb;}
-.dropdown-item-cus{ position: relative;}
-
-@media (max-width: 380px){
-	.dropdown-menu-cus{ width: 100%;}
-}
-
-.icon-dash{ width: 20%; float: left;}
-.text-dash{ width: 80%; float: left;}
-.right-dash{ position: absolute; top: 20px; right: 15px;}
-
-.dropdown-menu-cus::-webkit-scrollbar { width: 5px;}
-.dropdown-menu-cus::-webkit-scrollbar-track { background: #f1f1f1;}
-.dropdown-menu-cus::-webkit-scrollbar-thumb { background: #888;}
-.dropdown-menu-cus::-webkit-scrollbar-thumb:hover { background: #555;}
-
-
-
-.edit-data a{ background: transparent; border-radius: 50%; padding: 7px;}
-.edit-data a:hover{ background: #ebebeb;}
-.edit-data img{ max-width: 25px;}
-
-.data-profile img{ max-width: 25px;}
-
-@media (max-width: 576px){
-	.data-profile{ max-width: 20%;}
-	.data-detail{ max-width: 80%;}
-}
-
-.edit-button{ position: absolute; top: 10px; right: 20px;}
-.edit-button img{ max-width: 25px; background: #ebebeb; padding: 5px; border-radius: 50%;}
-.edit-button label.pointer input[type="file"] { display: none;}
-
-.input-button label.input-file{ padding: 10px; background: #412e6e; display: table; color: #fff; font-weight: 100; 
-	border-radius: 10px; cursor: pointer; margin-bottom: 0; width: 100%;
-	transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -ms-transition: all 0.3s ease-in;}
-.input-button label.pointer input[type="file"] { display: none;}
-.input-button label.pointer:hover{ background: #b9467d;}
-
-.add-profile img{ max-width: 25px;}
-.pic-border{ border: 1px solid #bfbfbf; overflow: hidden;}
-.pic-border a{ color: #412e6e;}
-.pic-border a:hover p{ text-decoration: underline;}
-.pic-border img{ max-width: 100%;}
-.pic-pic{ width: 25%; float: left; padding-right: 15px;}
-.text-text{ width: 75%; float: left; position: relative; top: 30px; padding: 0 15px;}
-
-@media (max-width: 1199px){
-	.text-text{ top: 15px;}
-}
+.note{ display: grid; grid-template-columns: 0.1fr 1fr; grid-gap: 15px;}
+.note ul{ margin: 0; padding: 0; list-style: none;}
+.note li{ display: grid; grid-template-columns: 5px 1fr; grid-gap: 15px;}
+.note b{ color: var(--color-violet);}
+/* end dashboardJobApplication */
 
 /* My Skills */
 .progress{ height: 3rem; font-size: 1.6rem; border-radius: 4px;}
-.progress-bar { background: #b9467d;}
+.progress-bar { background: var(--color-pink);}
 
-.bg-icon{ background: #fff; border: 1px solid #bfbfbf; padding: 15px 0; margin: 0 15px; overflow: hidden;}
-.click-click{ background: #412e6e; border-radius: 4px; padding: 5px 10px; border: 1px solid #412e6e; color: #fff; cursor: pointer;}
-.click-click:hover{ background: #b9467d; border: 1px solid #b9467d;}
+/* setting */
+.gridSetting{ display: grid; grid-template-columns: 0.3fr 1fr; grid-gap: 15px;}
+.flexSetting{ display: flex; flex-direction: column;}
 
-.text-technique ul{ margin: 0; padding: 0; list-style: none;}
-.text-technique ul li:first-child{ margin-bottom: 20px;}
-.text-technique ul li a{ display: inline-block; background: #412e6e; padding: 5px 10px; color: #fff; border-radius: 4px; text-decoration: none;}
-.text-technique ul li a:hover{ background: #b9467d;}
-
-.add-plus img{ max-width: 35px;}
-.edit-small a{ background: transparent; border-radius: 50%; padding: 10px 7px;}
-.edit-small a:hover{ background: #ebebeb;}
-.edit-small img{ max-width: 25px;}
-
-@media (max-width: 576px){
-	.edit-small a{ padding: 0;}
-	.edit-small a:hover{ background: transparent;}
-}
-
-.list-list ul{ margin: 0; padding: 0; list-style: none;}
-
-/*=========หน้างานที่สมัคร=========*/
-.tag-dashboard ul{ margin: 0 -10px; padding: 0; list-style: none;}
-.tag-dashboard ul li{ float: left; padding: 0 10px;}
-.tag-dashboard ul li a{ color: #412e6e;}
-.tag-dashboard ul li a:hover{ color: #b9467d;}
-.tag-dashboard ul li a.active{ color: #b9467d;}
-
-.use-work ul{ margin: 0 -10px; padding: 0; list-style: none;}
-.use-work ul li{ float: left; padding: 0 10px; border-right: 1px solid #bfbfbf;}
-.use-work ul li:last-child{ border-right: 0;}
-
-.status ul{ margin: 0 -10px; padding: 0; list-style: none;}
-.status ul li{ float: left; padding: 0 10px; border-right: 1px solid #bfbfbf;}
-.status ul li:last-child{ border-right: 0;}
-
-.note ul{ margin: 0; padding: 0; list-style: none;}
-.five-percent{ width: 2%; float: left;}
-.ninety-five{ width: 98%; float: left;}
-
-@media (max-width: 425px){
-	.five-percent{ width: 4%;}
-	.ninety-five{ width: 96%;}
-}
-
-/*=========ตั้งค่าบัญชีผู้ใช้=========*/
-.form-left{ text-align: right;}
-button.info{ background: transparent; border: 0; color: #421e6e; cursor: pointer;}
-button.info:hover{ color: #b9467d;}
-
-.orchid-control{ border-radius: 4px; height: 34px;}
-button.control-change{ background: #412e6e; border: 1px solid #412e6e; border-radius: 4px; color: #fff; cursor: pointer; padding: 5px 10px;}
-button.control-change:hover{ background: #b9467d; border: 1px solid #b9467d;}
-
-/*========แก้ไข=============*/
-label{ display: block;}
-
-.orchid-card{ border: 0; text-align: right;}
-.orchid-card-header{ padding: 0; background-color: rgba(0,0,0,0);}
-.orchid-card-body{ padding: 25px 15px 20px;}
-
-button.orchid-edit{ background: #ebebeb; border-radius: 50%; border: 1px solid #fff; padding: 10px; cursor: pointer;}
-button.orchid-edit:hover{ background: #bfbfbf;}
-button:focus { outline: 0; outline: 0 auto -webkit-focus-ring-color;}
-
-.select-img img{  max-width: 150px; background: #ebebeb; border-radius: 50%; border: 3px solid #fff; box-shadow: -webkit-box-shadow: 5px 5px 5px 0px rgba(191,191,191,1); 
-	-moz-box-shadow: 5px 5px 5px 0px rgba(191,191,191,1); box-shadow: 5px 5px 5px 0px rgba(191,191,191,1);}
-
-
-.form-left{ text-align: right;}
-.orchid-form-control{ height: 34px;}
-.form-bottom{ margin-bottom: 10px;}
-
-textarea.orchid-area{ height: 70px;}
-button.orchid-save{ background: #412e6e; border: 1px solid #412e6e; border-radius: 4px; color: #fff; padding: 5px 10px; cursor: pointer;}
-button.orchid-save:hover{ background: #b9467d; border: 1px solid #b9467d;}
-
-.sub-head{ text-decoration: underline;}
-.work-work ul{ margin: 0 -10px; padding: 0; list-style: none;}
-.work-work ul li{ float: left; padding: 0 10px;}
-.work-work ul li.number{ width: 5%;}
-
-.name-company ul{ margin: 0 -10px; padding: 0; list-style: none;}
-.name-company ul li{ float: left; padding: 0 10px;}
-.name-company ul li:first-child{ width: 25%; text-align: right;}
-.name-company ul li:last-child{ width: 75%;}
-
-.name-company ul.ul-list li.list-salary{ float: left; width: inherit;}
-.name-company ul.ul-list li.list-salary:first-child{ text-align: left;}
-
-.name-company ul.ul-list li.list-list{ float: none; width: 100%;}
-.name-company ul.ul-list li.list-list:first-child{ text-align: left;}
-
-@media (max-width: 991px){
-	.name-company ul li:first-child{ width: 30%;}
-	.name-company ul li:last-child{ width: 70%;}
-}
-
-@media (max-width: 767px){
-	.name-company ul li:first-child{ width: 100%; text-align: left;}
-	.name-company ul li:last-child{ width: 100%;}
-}
-
-.add-data{ background: #fff; color: #412e6e; border-radius: 4px; padding: 5px; border: 1px solid #412e6e; cursor: pointer}
-.add-data:hover{ background: #412e6e; color: #fff;}
-.delete-data{ background: #412e6e; border: 1px solid #412e6e; color: #fff; border-radius: 4px; padding: 5px; 
-	cursor: pointer;}
-.delete-data:hover{ background: #b9467d; color: #fff; border: 1px solid #b9467d;}
-
-.typewriter{ text-align: right;}
-
-@media (max-width: 767px){
-	.typewriter{ text-align: left;}
-}
-
-.skill-drive ul{ margin: 0 -10px; padding: 0; list-style: none;}
-.skill-drive ul li{ float: left; padding: 0 10px;}
-
-.border-file{ border: 1px solid #bfbfbf; border-radius: 4px; padding: 15px; text-align: center;}
-.close-file{ background: transparent; border: 0; color: #412e6e; cursor: pointer;}
-
-.capsha{ text-align: center;}
-.capsha ul{ margin: 0 -10px; padding: 0; list-style: none; display: inline-flex; align-items: center;}
-.capsha ul li{ float: left; padding: 0 10px;}
-.capsha ul li button{ background: #412e6e; border: 1px solid #412e6e; border-radius: 4px; padding: 5px 10px; color: #fff; cursor: pointer;}
-.capsha ul li button:hover{ background: #b9467d; border: 1px solid #b9467d;}
-
-.lang-right{ text-align: right;}
-
-@media (max-width: 991px){
-	.lang-right{ text-align: left;}
-}
-
-.skill-driver ul{ margin: 0 -10px; padding: 0; list-style: none;}
-.skill-driver ul li{ float: left; padding: 0 10px;}
-
-.skill-com ul{ margin: 0 -10px; padding: 0; list-style: none;}
-.skill-com ul li{ float: left; padding: 0 10px;}
-
-.skill-list ul{ margin: 0; padding: 0; list-style: none;}
+.gridSetting h6{ color: var(--color-violet); font-weight: 900; font-size: var(--font16); text-align: right;}
+.flexSetting button{ background: transparent; border: 0; color: var(--color-violet); font-size: var(--font18);}
+.flexSetting button:hover{ color: var(--color-pink);}
 
 /*==========preview resume==========*/
 .container-height{ min-height: 100%; overflow: hidden;}
@@ -575,15 +397,6 @@ button.orchid-save:hover{ background: #b9467d; border: 1px solid #b9467d;}
 
 .btn-orchid{ background: #412e6e; border: 1px solid #412e6e;}
 .btn-orchid:hover, .btn-orchid:focus, .btn-orchid:visited, .btn-orchid:active{ background: #b9467d; border: 1px solid #b9467d; outline: none;}
-
-.selectFile{ align-items: center;}
-.listFile .attachments{ display: block; text-align: center;}
-.listFile button{ background: #412e6e; border: 1px solid #412e6e; padding: 5px 12px; color: #fff; border-radius: 4px; font-size: 1.4rem; width: 100%;}
-.listFile button:hover{ background: #b9467d; border: 1px solid #b9467d;}
-.listFile button.delFile{ background: #333; border: 1px solid #333;}
-.listFile button.delFile:hover{ background: #000; border: 1px solid #000;}
-.listFile a{ background: #412e6e; padding: 5px 12px; color: #fff; border-radius: 4px; font-size: 1.4rem; display: block; text-decoration: none;}
-.listFile a:hover{ background: #b9467d;}
 
 @media (max-width: 480px){
 	.listFile3{ max-width: 100%; flex: 100%; -ms-flex: 100%;}

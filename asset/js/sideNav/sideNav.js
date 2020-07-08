@@ -4,6 +4,7 @@ $(() => {
     var sideNav = ''
 
     let splits = ($(location).attr('href').split('/').length == 5)?'':'../'
+    // let splits = ($(location).attr('href').split('/').length == 7)?'':'../'
     console.log(splits);
     
     let menuOrchids = [
@@ -22,11 +23,12 @@ $(() => {
 
     // เปลี่ยนภาษาใน mobile
     let lang = ($(location).attr('href').split('/').length == 5)?'':'../'
+    // let lang = ($(location).attr('href').split('/').length == 7)?'':'../'
     let flag = { flagEng : lang+'asset/images/eng-flag.png', flagThai: lang+'asset/images/thai-flag.png'}
 
     // sideNav
+    sideNav += '<div class="bgShadow"></div>'
     sideNav += '<ul>'
-    // show on mobile
     sideNav += '<li class=" lang-mobile">'
     sideNav += '<a href="javascript:void(0)">'
     sideNav += '<i class="fas fa-globe-asia">'
@@ -47,7 +49,6 @@ $(() => {
     sideNav += '</li>'
     sideNav += '</ul>'
     sideNav += '</li>'
-    // end show on mobile
 
     menuOrchids.forEach((menuOrchid)=>{
         let classActive = ''
@@ -76,11 +77,17 @@ $(() => {
     $('.left').html(sideNav)
 });
 
-$(document).ready(() => {
+$(document).ready(function() {
     $("#showmenu").click(function (e) {
-        $("#menu").toggleClass("show");
-
+        $("#menu").toggleClass("show active")
+        $("#showmenu").toggleClass("colorMenu")
     });
+
+    $(".bgShadow").click(function(){
+        $("#menu").removeClass("show active")
+        $("#showmenu").removeClass("colorMenu")
+    })
+
     $("#menu a").click(function (event) {
         if ($(this).next('ul').length) {
             event.preventDefault();

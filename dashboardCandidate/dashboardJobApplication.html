@@ -1,18 +1,19 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title>dashboard งานที่สมัคร</title>
 
-<link rel="stylesheet" type="text/css" href="../asset/css/bootstrap-reboot.min.css">
-<link rel="stylesheet" type="text/css" href="../asset/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="../asset/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="../asset/css/animate.min.css">
-<link rel="stylesheet" type="text/css" href="../asset/css/variable.css">
-<link rel="stylesheet" type="text/css" href="../asset/css/main.css">
-<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>dashboard งานที่สมัคร</title>
+
+	<link rel="stylesheet" type="text/css" href="../asset/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/variable.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/dashboard.css">
 
 </head>
 
@@ -38,134 +39,73 @@
 	<!--dashboard-->
 	<section class="container container-top">
 		<article class="row">
-			<!--เมนู-->
-			<div id="dashBoardMenu">
-				<!-- js/dashBoard.js -->
-			</div>
-			<!--end เมนู-->
-
-			<!--งานที่สมัคร-->
-			<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12">
-				<div class="row">
-					<!--แทค สมัครสมาชิก-->
-					<div class="col-12 tag-dashboard font-size-16 margin-bottom-20">
-						<ul>
-							<li><a href="dashboard-ผู้สมัคร.html">หน้า Dashboard ></a></li>
-							<li><a href="#" class="active">งานที่สมัคร</a></li>
-						</ul>
-					</div>
-					<!--end แทค สมัครสมาชิก-->
-					
-					<div class="col-12 margin-bottom-20">
-						<div class="line-line"></div>
-					</div>
-					
-					<!--รหัสสมาชิก-->
-					<div class="col-12 margin-bottom-20">
-						<div class="row">
-							<div class="col-8">
-								<div class="row">
-									<div class="col-12 font-size-16 color-blue">
-										<p><b>รหัสสมาชิก : 99999999</b></p>
-									</div>
-									
-									<div class="col-12 use-work font-size-16">
-										<ul>
-											<li>แก้ไขข้อมูลล่าสุด : 31 ม.ค. 2563</li>
-											<li>เข้าใช้งานล่าสุด : 31 ม.ค. 2564</li>
-										</ul>
-									</div>
-									
-									<div class="col-12 status font-size-16">
-										<ul>
-											<li>สถานะ : <span class="color-green">ผ่านการตรวจสอบแล้ว</span></li>
-											<li>เป้นสมาชิกตั้งแต่ : 31 ม.ค. 2561</li>
-										</ul>
-									</div>
-								</div>
+			<div class="col-12">
+				<!--เมนู-->
+				<div id="dashBoardMenu">
+					<!-- js/dashBoard.js -->
+				</div>
+				<!--end เมนู-->
+				
+				<section class="gridDashboard">
+					<article>
+						<div class="mb-4 member">
+							<p><span>รหัสสมาชิก :</span> 99999999</p>
+							<div class="flexMember">
+								<p><span>แก้ไขข้อมูลล่าสุด :</span> 31 ม.ค. 2563</p>
+								<p><span>เข้าใช้งานล่าสุด :</span> 31 ม.ค. 2564</p>
+							</div>
+							<div class="flexMember">
+								<p><span>สถานะ :</span> ผ่านการตรวจสอบแล้ว</p>
+								<p><span>เป็นสมาชิกตั้งแต่ :</span> 31 ม.ค. 2561</p>
 							</div>
 						</div>
-					</div>
-					<!--end รหัสสมาชิก-->
-					
-					<!--table-->
-					<div class="col-12 margin-bottom-20 font-size-16">
-						<div class="table-responsive">
+	
+						<!--table-->
+						<div class="table-responsive-lg mb-4">
 							<table class="table table-bordered table-hover table-striped">
 								<thead>
 									<tr>
 										<th scope="col" class="text-align-center">ลำดับ</th>
 										<th scope="col">ชื่อบริษัท</th>
 										<th scope="col">ตำแหน่งงาน</th>
-										<th scope="col" class="text-align-center">วันที่ส่งใบสมัคร</th>
-										<th scope="col" class="text-align-center">ลบ</th>
-										<th scope="col" class="text-align-center">บันทึกจาก</th>
+										<th scope="col" class="text-align-center" style="width: 120px;">วันที่ส่งใบสมัคร</th>
+										<th scope="col" class="text-align-center" style="width: 80px;">ลบ</th>
+										<th scope="col" class="text-align-center" style="width: 80px;">บันทึกจาก</th>
 									</tr>
 								</thead>
-
-								<tbody>
-									<tr>
-									  <th scope="row" class="text-align-center">1</th>
-									  <td><a href="#">Tarad</a></td>
-									  <td><a href="#">Project Manager</a></td>
-									  <td class="text-align-center">8 พ.ค. 62</td>
-									  <td class="text-align-center"><a href="#">ลบ</a></td>
-									  <td class="text-align-center">pc</td>
-									</tr>
-									
-									<tr>
-									  <th scope="row" class="text-align-center">1</th>
-									  <td><a href="#">Tarad</a></td>
-									  <td><a href="#">Project Manager</a></td>
-									  <td class="text-align-center">8 พ.ค. 62</td>
-									  <td class="text-align-center"><a href="#">ลบ</a></td>
-									  <td class="text-align-center">pc</td>
-									</tr>
-									
-									<tr>
-									  <th scope="row" class="text-align-center">1</th>
-									  <td><a href="#">Tarad</a></td>
-									  <td><a href="#">Project Manager</a></td>
-									  <td class="text-align-center">8 พ.ค. 62</td>
-									  <td class="text-align-center"><a href="#">ลบ</a></td>
-									  <td class="text-align-center">มือถือ</td>
-									</tr>
+	
+								<tbody id="table" class="bodyTable">
+									<!-- js/dashBoard.js -->
 								</tbody>
 							</table>
 						</div>
-					</div>
-					<!--end table-->
-						
-					<!--note-->
-					<div class="col-12 margin-bottom-20 font-size-14">
-						<div class="row">
-							<div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 col-2">
-								<p>หมายเหตุ</p>
-							</div>
-							
-							<div class="col-xl-11 col-lg-10 col-md-10 col-sm-10 col-10 note">
-								<ul>
-									<li><span class="five-percent">:</span> <span class="ninety-five">ประกาศงาน อาจมีการเปลี่ยนแปลง / แก้ไข ท่านสามารถตรวจสอบข้อมูลได้จาก Orchidjobs หรือบริษัทฯเจ้าของประกาศตามข้อมูลการติดต่อที่แจ้งไว้</span></li>
-									<li><span class="five-percent">:</span> <span class="ninety-five">ประวัติการสมัครงานที่ถูกเก็บไว้เกิน 30 วัน จะถูกลบโดยอัตดนมัติ</span></li>
-								</ul>
-							</div>
+						<!--end table-->
+	
+						<!--note-->
+						<div class="note mb-5">
+							<p><b>หมายเหตุ :</b></p>
+							<ul>
+								<li>
+									<span>-</span>
+									<span>ประกาศงานอาจมีการเปลี่ยนแปลง / แก้ไข ท่านสามารถตรวจสอบข้อมูลได้จาก
+										<b>Orchidjobs</b>
+										หรือบริษัทฯเจ้าของประกาศตามข้อมูลการติดต่อที่แจ้งไว้</span>
+								</li>
+								<li>
+									<span>-</span>
+									<span>ประวัติการสมัครงานที่ถูกเก็บไว้เกิน 30 วัน จะถูกลบโดยอัตโนมัติ</span>
+								</li>
+							</ul>
 						</div>
-					</div>
-					<!--end note-->
-				</div>
-				
+						<!--end note-->
+					</article>
+	
+					<article>
+						<div style="background: #ebebeb; height: 250px;" class="mb-4"></div>
+						<div style="background: #ebebeb; height: 250px;" class="mb-4"></div>
+					</article>
+				</section>
 			</div>
-			<!--end งานที่สมัคร-->
-
-			<!--คอนเท้น-->
-			<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
-				<div class="row">
-					<div class="col-12">
-					<div style="background: #ebebeb; height: 250px;"></div>
-					</div>
-				</div>
-			</div>
-			<!--end คอนเท้น-->
 		</article>
 	</section>
 	<!--end dashboard-->
@@ -191,7 +131,8 @@
 		<article class="container container-banner">
 			<div class="row">
 				<div class="col-12 copyright">
-					<h6>JOBBKK.COM © สงวนลิขสิทธิ์ 2018 All Right Reserved including text, graphics, interfaces and design thereof are all rights reserved.</h6>
+					<h6>JOBBKK.COM © สงวนลิขสิทธิ์ 2018 All Right Reserved including text, graphics, interfaces and
+						design thereof are all rights reserved.</h6>
 				</div>
 			</div>
 		</article>
@@ -199,12 +140,11 @@
 	<!--end copyright-->
 
 	<!--backtotop-->
-    <a href="#" class="cd-top">Top</a>
+	<a href="#" class="cd-top">Top</a>
 </body>
 
 <script type="text/javascript" src="../asset/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="../asset/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="../asset/js/jquery.dotdotdot.min.js"></script>
 <script type="text/javascript" src="../asset/js/sweetalert2.all.min.js"></script>
 <script type="text/javascript" src="../asset/js/wow.min.js"></script>
 <script type="text/javascript" src="../asset/js/backToTop/backToTop.js"></script>
@@ -217,6 +157,6 @@
 <script type="text/javascript" src="../asset/js/loginLanguage/loginLanguage.js"></script>
 
 <!-- footer -->
-<script type="text/javascript" src="../asset/js/footer/footer.js"></script>	
+<script type="text/javascript" src="../asset/js/footer/footer.js"></script>
 
 </html>
